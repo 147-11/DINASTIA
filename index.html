@@ -8,12 +8,17 @@
     <title>DINASTÍA</title>
 </head>
 <body>
-    <header class="encabezado">
-        <div class="container">
-            <div class="menu-btn">
-                <label for="menu-btn">☰</label>
-            </div>
-        </div>
+    <header>
+        <input type="checkbox" id="menu-btn">
+        <label for="menu-btn">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#clb_intro">El Club</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#" id="Productos">Productos</a></li>
+            </ul>
+        </nav>
     </header>
 
         <main class="container_main">
@@ -57,21 +62,20 @@
                     </div>
 
                 </div>
-            </section>       
+            </section> 
+
+            <section class="Productos">
+                <div class="Productos_img">
+                    <h1 class="productos_title">
+                        PRODUCTOS
+                    </h1>
+                    <img src="img/ROPA.png" class="logo_ropa"  alt="ROPA">
+                    <img src="img/ACCESORIOS.png" class="logo_accesorios" alt="ACCESORIOS">
+                    <img src="img/PATINES.png" class="logo_patines" alt="PATINES">
+                </div>    
+            </section>      
         </main>
 
-        <input type="checkbox" id="menu-btn">
-        <div class="container-menu">
-            <div class="cont-menu">
-                <nav>
-                    <a href="index.html" >Inicio</a>
-                    <a href="#clb_intro" id="El_Club"> El Club</a>
-                    <a href="#ctg" >Categorías</a>
-                    <a href="#" >Productos</a>
-                </nav>
-                <label for="menu-btn">☰</label>
-            </div>
-        </div>
     <script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
 </body>
 </html>
