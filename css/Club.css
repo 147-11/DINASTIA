@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary:#667eea;
+    --color-primary:#764ba2;
+    --boton-padding:20px 40px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.encabezado{
+width: 90%;
+margin: 0 auto;
+overflow: hidden;
+padding:80px 0;
+}
+.Mision_contenedor{
+    width: 90%;
+    margin: 0 auto;
+    background:White;
+    overflow: hidden;
+    padding:80px 0;
+    }
+
+.VISION_contenedor{
+    width: 90%;
+    margin: 0 auto;
+    background:#1C2343;
+    overflow: hidden;
+    padding:80px 0;
+}
+.Objetivos_contenedor{
+    width: 90%;
+    margin: 0 auto;
+    background:White;
+    overflow: hidden;
+    padding:80px 0;
+}
+.Historia_contenedor{
+    width: 90%;
+    margin: 0 auto;
+    background:#1C2343;
+    overflow: hidden;
+    padding:80px 0;
+}
+.PoliticasBien_contenedor{
+    width: 90%;
+    margin: 0 auto;
+    background:White;
+    overflow: hidden;
+    padding:80px 0;
+}
+.Contactanos_contenedor{
+    width: 90%;
+    margin: 0 auto;
+    background:rgb(255, 252, 75);
+    overflow: hidden;
+    padding:80px 0;
+}
