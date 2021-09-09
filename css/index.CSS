@@ -80,21 +80,6 @@ header label {
     #menu-btn:checked ~ .menu {
         margin: 0% 30%;
     }
-    #primera_clasef {
-        color:#707070;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-    }
-    #inscribirsef {
-        background-color: #F4E649;
-        width: 20%;
-        padding: 2%;
-        border-radius: 10px;
-        margin: 0 auto;
-    }
-    
 }
 #logo_img{
     width: 50%;
@@ -173,21 +158,22 @@ position: relative;
     transition: opacity .5s;
 }
 
-#primera_clasef {
+.inflex h1 {
+    color:#1C2343;
     background-color: #9F9F9F;
-    width: 20%;
-    padding: 5%;
+    width: 100px;
+    padding: 0 40px;
     border-radius: 20px;
-    margin: -20% 65%;
+    margin-left: 75%;
+    margin-top: -15%;
 }
 #inscribirsef {
-    display: row;
     color:#707070;
     background-color: #F4E649;
-    width: 20%;
-    padding: 2%;
+    width: 100px;
+    padding: 20px;
     border-radius: 10px;
-    margin: 20% 68%;
+    margin-left: 76.5%;
 }
 .pie {
     background-color: #F4E649;
@@ -202,8 +188,38 @@ position: relative;
     justify-content: center;
 }
 .cmr {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
-    /*align-items: baseline;*/
+    align-items: baseline;
     justify-content: space-between;
+}
+.inflex {
+    padding: 0;
+    flex: 1;
+}
+.inflex :first-child {
+    padding: 0;
+    flex: 2;
+}
+
+@media (max-width:1173px) {
+    .inflex h1 {
+        color:#1C2343;
+        background-color: #9F9F9F;
+        width: 100px;
+        padding: 0 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    #inscribirsef {
+        color:#707070;
+        background-color: #F4E649;
+        width: 100px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
 }
