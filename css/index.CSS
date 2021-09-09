@@ -156,10 +156,6 @@ position: relative;
     transition: all 0.05s;
 }
 
-.content_img a img{
-    text-decoration: none;
-    color:white;
-}
 
 .content_img img{
     height: 100%;
