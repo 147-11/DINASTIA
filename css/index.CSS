@@ -74,6 +74,20 @@ header label {
     #menu-btn:checked ~ .menu {
         margin: 0% 30%;
     }
+    #primera_clasef {
+        color:#707070;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    #inscribirsef {
+        background-color: #F4E649;
+        width: 20%;
+        padding: 2%;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
     
 }
 #logo_img{
@@ -89,7 +103,8 @@ header label {
     text-align: center;
 }
 .inscribirse a {
-    text-align: center;
+    color:#707070;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -102,22 +117,80 @@ header label {
     margin: 0 auto;
 }
 
-.conten_galery{
-    position:relative;
-    height: 200px;
+.galeria{
+    background-color: #1C2343;
+    position: relative;
+    height: 500px;
 }
-.imgs{
-    background-color: #7f8ecf;
+
+
+#content_imgs{
+    height: 300px;
+    width: 40%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+
+.item_imgs1{
+background-color: burlywood;
+height: 100%;
+position: relative;
+}
+
+.img1{
+    background-color: cadetblue;
     height: 100%;
 }
-.flechas{
-    background-color: #F4E649;
+
+.flechas_uno{
     position: absolute;
-    bottom: 0;    
+    bottom: 0;
     height: 10%;
-    width: 50%;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    
+    background-color: #1C2343;
+    transition: all 0.05s;
+}
+
+.content_img a img{
+    text-decoration: none;
+    color:white;
+}
+
+.content_img img{
+    height: 100%;
+    width: 100%;
+    transition: opacity .5s;
+}
+
+#primera_clasef {
+    background-color: #9F9F9F;
+    width: 20%;
+    padding: 5%;
+    border-radius: 20px;
+    margin: -20% 65%;
+}
+#inscribirsef {
+    color:#707070;
+    background-color: #F4E649;
+    width: 20%;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 20% 68%;
+}
+.pie {
+    background-color: #F4E649;
+    margin: 0;
+    padding: 5%;
+}
+.l_contactos ul{
+    flex-direction: column;
+    margin: 0 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
