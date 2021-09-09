@@ -100,21 +100,16 @@ header label {
     text-align: center;
 }
 
-_.Productos_img img {
-    position: absolute;
-    background-color:#F4E649;
+.categoria_prod {
     width: 245px;
 }
 .logo_ropa {
-    position: relative;
     width: 172px;
 }
 .logo_accesorios {
-    position: relative;
     width: 172px;
 }
 .logo_patines {
-    position: relative;
     width: 123px;
 }
 
