@@ -4,6 +4,9 @@
     margin:0%;
     padding: 0%;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0 230px;
     font-family: 'Roboto', sans-serif;
@@ -82,6 +85,10 @@ header label {
     #menu-btn:checked ~ .menu {
         margin: 0% 30%;
     }
+    .categoria_prod {
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
 #logo_img{
     width: 50%;
@@ -96,30 +103,129 @@ header label {
     text-align: center;
 }
 /*Categorías*/
+.categorias_img{
+    margin: 0 auto;    
+}
+.grilla_img{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.grilla_img .inicia,.grilla_img .medio,.grilla_img .pre_club{
+    display: flex;
+    justify-content: space-around;
+}
+.grilla_img img{
+    padding: 10px;
+    width: 40%;
+    height: 40%;
+}
+/*Productos*/
 .Productos h1 {
+    margin: 5%;
     text-align: center;
 }
 .categoria_prod {
+    margin: 5%;
     display: flex;
     justify-content: center;
 }
-.logo_ropa {
+.contenedor_r {
+    position: relative;
     background-color:#F4E649;
-    width: 100px;
-    padding: 50px;
+    width: 245px;
+    height: 245px;
     border-radius: 20px;
+    border-right: 8px solid #fff ;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+}
+.logo_ropa {
+    width: 168px;
+    padding: 50px 40px;
+    cursor: pointer;
+    transition: all 250ms ease-out;
+}
+.r{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    font-size: 90px;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+}
+.contenedor_r:hover > .r {
+    opacity: 1;
+}
+.contenedor_r:hover > .logo_ropa {
+    opacity: 0;
+}
+.contenedor_a {
+    position: relative;
+    background-color:#F4E649;
+    width: 245px;
+    height: 245px;
+    border-radius: 20px;
+    border-right: 8px solid #fff ;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
 }
 .logo_accesorios {
+    width: 168px;
+    padding: 50px 40px;
+    cursor: pointer;
+}
+.accesorios {
+    position: absolute;
+    top: 16%;
+    width: 100%;
+    height: 100%;
+    font-size: 65px;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+}
+.contenedor_a:hover > .accesorios {
+    opacity: 1;
+}
+.contenedor_a:hover > .logo_accesorios {
+    opacity: 0;
+}
+.contenedor_p {
+    position: relative;
     background-color:#F4E649;
-    width: 100px;
-    padding: 48px;
+    width: 245px;
+    height: 245px;
     border-radius: 20px;
+    border-right: 8px solid #fff ;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
 }
 .logo_patines {
-    background-color:#F4E649;
-    width: 100px;
-    padding: 33px 46px;
-    border-radius: 20px;
+    width: 168px;
+    padding: 30px 40px;
+    cursor: pointer;
+}
+.patines {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+}
+.contenedor_p:hover > .patines {
+    opacity: 1;
+}
+.contenedor_p:hover > .logo_patines {
+    opacity: 0;
 }
 
 .inscribirse a {
