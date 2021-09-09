@@ -120,34 +120,35 @@ header label {
 .galeria{
     background-color: #1C2343;
     position: relative;
-    height: 500px;
 }
 
 
 #content_imgs{
-    height: 300px;
+    height: 600px;
     width: 40%;
     overflow: hidden;
     margin: 0 auto;
 }
-
-
-
 .item_imgs1{
-background-color: burlywood;
+
 height: 100%;
 position: relative;
 }
 
 .img1{
-    background-color: cadetblue;
-    height: 100%;
+    height: 75%;
+    text-align: center;
+}
+
+.galeria_tittle{
+    padding-top: 25px;
+    color: white;
 }
 
 .flechas_uno{
+    padding-top: 15px;
     position: absolute;
-    bottom: 0;
-    height: 10%;
+    height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -156,7 +157,10 @@ position: relative;
     transition: all 0.05s;
 }
 
-
+.content_img a img{
+    height: 100%;
+    width: 100%;
+}
 .content_img img{
     height: 100%;
     width: 100%;
