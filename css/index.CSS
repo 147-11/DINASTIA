@@ -151,7 +151,9 @@ position: relative;
 }
 
 .galeria_tittle{
+    text-align: center;
     padding-top: 25px;
+    padding-bottom: 25px;
     color: white;
 }
 
@@ -167,16 +169,25 @@ position: relative;
     transition: all 0.05s;
 }
 
-.content_img a img{
-    height: 100%;
-    width: 100%;
-}
+
 .content_img img{
     height: 100%;
     width: 100%;
     transition: opacity .5s;
 }
-
+@media(max-width:430px){
+    #content_imgs{
+        height: 300px;
+    }
+    .flechas_uno img{
+        margin: 0 auto;
+        height: 40px;
+        width: 30px;
+    }
+    .flechas_uno{
+        padding-top: 10px;
+    }
+}
 .inflex h1 {
     color:#1C2343;
     background-color: #9F9F9F;
