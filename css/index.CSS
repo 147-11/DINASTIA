@@ -4,10 +4,6 @@
     margin:0%;
     padding: 0%;
 }
-html{
-    scroll-behavior:smooth;
-}
-
 body {
     margin: 0 230px;
     font-family: 'Roboto', sans-serif;
@@ -99,18 +95,31 @@ header label {
     padding-bottom: 30px;
     text-align: center;
 }
-
+/*Categorías*/
+.Productos h1 {
+    text-align: center;
+}
 .categoria_prod {
-    width: 245px;
+    display: flex;
+    justify-content: center;
 }
 .logo_ropa {
-    width: 172px;
+    background-color:#F4E649;
+    width: 100px;
+    padding: 50px;
+    border-radius: 20px;
 }
 .logo_accesorios {
-    width: 172px;
+    background-color:#F4E649;
+    width: 100px;
+    padding: 48px;
+    border-radius: 20px;
 }
 .logo_patines {
-    width: 123px;
+    background-color:#F4E649;
+    width: 100px;
+    padding: 33px 46px;
+    border-radius: 20px;
 }
 
 .inscribirse a {
@@ -130,7 +139,6 @@ header label {
 
 .galeria{
     background-color: #1C2343;
-    position: relative;
 }
 
 
@@ -141,9 +149,9 @@ header label {
     margin: 0 auto;
 }
 .item_imgs1{
-
-height: 100%;
 position: relative;
+height: 100%;
+
 }
 
 .img1{
@@ -167,7 +175,6 @@ position: relative;
     align-items: center;
     justify-content: space-between;
     background-color: #1C2343;
-    transition: all 0.05s;
 }
 
 
@@ -189,23 +196,6 @@ position: relative;
         padding-top: 10px;
     }
 }
-.inflex h1 {
-    color:#1C2343;
-    background-color: #9F9F9F;
-    width: 100px;
-    padding: 0 40px;
-    border-radius: 20px;
-    margin-left: 75%;
-    margin-top: -15%;
-}
-#inscribirsef {
-    color:#707070;
-    background-color: #F4E649;
-    width: 100px;
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 76.5%;
-}
 .pie {
     background-color: #F4E649;
     margin: 0;
@@ -221,14 +211,52 @@ position: relative;
 .cmr {
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
 }
+#mapa {
+    width:328.35;
+    height:195.6px; 
+    border:0;
+    padding-left:2px;
+    padding-right: 2px;
+}
+#calendario {
+    border: 0;
+    width:325.95; 
+    height:183.49px; 
+    mask-border:0; 
+    scroll-margin:none;
+    padding-right: 2px;
+}
+.inflex h1 {
+    color:#1C2343;
+    background-color: #9F9F9F;
+    width: 80px;
+    height: 15;
+    padding: 0 40px;
+    border-radius: 20px;
+    margin-left: 75.6%;
+    margin-top: -22%;
+}
+@media(max-width: 692px){
+    .inflex {
+        text-align: center;
+    }
+}
+#inscribirsef {
+    color:#707070;
+    background-color: #F4E649;
+    width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 76.5%;
+}
 .inflex {
     padding: 0;
+    margin-left: 13px;
     flex: 1;
 }
 .inflex :first-child {
@@ -236,7 +264,7 @@ position: relative;
     flex: 2;
 }
 
-@media (max-width:1173px) {
+@media (max-width:1323px) {
     .inflex h1 {
         color:#1C2343;
         background-color: #9F9F9F;
