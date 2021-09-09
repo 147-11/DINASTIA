@@ -93,6 +93,25 @@ header label {
     padding-bottom: 30px;
     text-align: center;
 }
+
+_.Productos_img img {
+    position: absolute;
+    background-color:#F4E649;
+    width: 245px;
+}
+.logo_ropa {
+    position: relative;
+    width: 172px;
+}
+.logo_accesorios {
+    position: relative;
+    width: 172px;
+}
+.logo_patines {
+    position: relative;
+    width: 123px;
+}
+
 .inscribirse a {
     color:#707070;
     margin: 0 auto;
@@ -137,32 +156,25 @@ position: relative;
 }
 
 .flechas_uno{
-    padding-top: 50px;
+    padding-top: 15px;
     position: absolute;
-    height: 10%;
+    height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #1C2343;
+    transition: all 0.05s;
 }
 
-.content_img img{
+.content_img a img{
     height: 100%;
     width: 100%;
 }
-
-@media(max-width:430px){
-    .flechas_uno img{
-        height: 40px;
-        width: 25px;
-    }
-    .flechas_uno{
-        padding-top: 20px;
-    }
-    #content_imgs{
-    height: 300px;
-    }
+.content_img img{
+    height: 100%;
+    width: 100%;
+    transition: opacity .5s;
 }
 
 .inflex h1 {
@@ -175,7 +187,6 @@ position: relative;
     margin-top: -15%;
 }
 #inscribirsef {
-    display: row;
     color:#707070;
     background-color: #F4E649;
     width: 100px;
@@ -196,8 +207,38 @@ position: relative;
     justify-content: center;
 }
 .cmr {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
-    /*align-items: baseline;*/
+    align-items: baseline;
     justify-content: space-between;
+}
+.inflex {
+    padding: 0;
+    flex: 1;
+}
+.inflex :first-child {
+    padding: 0;
+    flex: 2;
+}
+
+@media (max-width:1173px) {
+    .inflex h1 {
+        color:#1C2343;
+        background-color: #9F9F9F;
+        width: 100px;
+        padding: 0 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    #inscribirsef {
+        color:#707070;
+        background-color: #F4E649;
+        width: 100px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
 }
