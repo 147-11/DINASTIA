@@ -168,17 +168,16 @@ position: relative;
 }
 
 @media(max-width:430px){
-.flechas_uno img{
-    height: 40px;
-    width: 25px;
-}
-.flechas_uno{
-    padding-top: 20px;
-}
-#content_imgs{
-height: 300px;
-}
-
+    .flechas_uno img{
+        height: 40px;
+        width: 25px;
+    }
+    .flechas_uno{
+        padding-top: 20px;
+    }
+    #content_imgs{
+    height: 300px;
+    }
 }
 
 #primera_clasef {
