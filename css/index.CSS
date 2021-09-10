@@ -64,6 +64,10 @@ header label {
     padding-bottom: 30px;
     text-align: center;
  }
+ #logo_img{
+    width: 160px;
+    height: 191;
+}
  
  .inscribirse a {
      color:#707070;
@@ -83,6 +87,7 @@ header label {
      padding:10px;
      color:#707070;
  }
+ 
 
 /*club*/
 
@@ -117,12 +122,6 @@ header label {
     border-radius: 10px;
     margin-left: 40%;
 }
-#logo_img{
-    width: 50%;
-    height: 50%;
-    align-content: center;
-   }
-
 
 @media (max-width:768px) {
     header {

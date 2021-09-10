@@ -4,44 +4,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Club.css">
-    <title>EL CLUBkjbkvbk</title>
+    <title>EL CLUBk</title>
 </head>
 <body>
-    <header class="encabezado">
-        <div class="container">
-            <div class="menu">
-                <a href="index.html" >Inicio</a>
-                <a href="Club.html" >El Club</a>
-                <a href="#" >Categorías</a>
-                <a href="#" >Productos</a>
-            </div>
-            <section class="encabezado_contenedor">
-                <div clas="encabezado_text">
-                    <h1 class="encabezado_Titulo">EL CLUB 
+    <header>
+        <input type="checkbox" id="menu-btn">
+        <label for="menu-btn">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"><b>INICIO</b></a></li>
+                <li><a href="index.html#clb_intro" id="club"><b>EL CLUB</b></a></li>
+                <li><a href="index.html#cate"><b>CATEGORÍAS</b></a></li>
+                <li><a href="index.html#produc"><b>PRODUCTOS</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container_main">
+            <section class="banner">
+                <img src="img/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
+                    <h1>
+                        <a>EL CLUB</a>
                     </h1>
-                    <h2 class="primera_clase">!Tu primera clase Gratis! 
+                <section class="ins">
+                    <h2 class="primera_clase">
+                        ¡Tu Primera Clase Gratis!
                     </h2>
-                    <a href="incribete_ya" >Inscribete YA</a>
-                </div>
+                    <div class="inscribirse">
+                        <a href="#clb_intro"><b>Inscribete YA</b></a>
+                    </div>
+                </section>
             </section>
 
-            <section class="Mision_contenedor">
-                <div class="Mision_Texto">
-                    <h2 class="mision_suptitulo">MISIÓN</h2>
-                    <P class="mision_parrafo">
-                        La mision de la acedemia de
-                        patinaje Disnastia es bla 
-                        bla bla bla bla bla bla
-                        bla bla bla bla bla bla
-                        bla bla bla bla bla bla
-                        bla bla bla bla bla bla
-                        bla bla bla bla bla bla
-                        bla bla bla bla bla bla    
-                    </P>
+            <section class="club_mision" id="clb_mision">
+                <h1 class="mision">
+                    MISIÓN
+                </h1>
+                <div class="club_text">
+                    <div class="text_into">
+                        <P class="intro_club">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolor, quidem laboriosam facere odio esse ab iure voluptatem eius amet nesciunt doloremque corporis dolorem exercitationem voluptatibus aut? Explicabo, repellat fugiat!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere eaque praesentium fugiat nam, blanditiis earum tenetur repudiandae dolor voluptate aspernatur quisquam veritatis dolores, consectetur esse quae dolorem illo placeat.
+                        </P>
+                    </div>
+                    <div class="text_into">
+                        <figure class="intro_img">
+                            <img src="img/default.png" class="club_img" alt="loguito">
+                        </figure>
+                    </div>
                 </div>
-                <figure class= "Mision_Img">
-                    <img src="#" class="Imagen">
-                </figure>
             </section>
 
             <section class="VISION_contenedor">
@@ -127,16 +137,32 @@
                 </h2>
                 <a href="incribete_ya">Inscribete YA</a>
             </section>
-
-            <section class="Contactanos_contenedor">
-                <div class="Contactanos_Texto">
-                    <h2 class="Contactanos_suptitulo">CONTACTANOS</h2>
-                </div>
-                <a href="#" >Chat whatsapp</a>
-                <a href="#" >Facebook</a>
-                <a href="#">Instagram</a>
-            </section>
-        </div>
-    </header><br>
+        </main>
+        <footer class="pie"> 
+            <div class="contactos_text">
+                <nav class="nav_footer">
+                    <ul>
+                        <il><a href="index.html"> Inicio</a> </il><br>
+                        <il><a href="#clb_intro">   El Club</a> </il><br>
+                        <il><a href="#cate"> Categorías</a> </il><br>
+                        <il><a href="#produc"> Productos</a> </il>
+                    </ul>
+                </nav>
+                <section class="contac">
+                <h1 class="contactos">
+                    CONTACTOS
+                </h1>
+                    <nav class="l_contactos">
+                        <ul>
+                            <il><a class="fas fa-envelope" hrfe=""> xxxx@xxxx.com</a> </il><br>
+                            <il><a class="fab fa-facebook-f" hrfe="#">   xxxxx xxx</a> </il><br>
+                            <il><a class="fab fa-instagram" hrfe="#"> xxxx_xx</a> </il><br>
+                            <il><a class="fab fa-whatsapp" hrfe="#"> xxx xxx xx xxx</a> </il>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
 </body>
 </html>
