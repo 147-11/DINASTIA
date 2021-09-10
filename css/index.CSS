@@ -105,6 +105,7 @@ header label {
 .intro_club{
     text-align: justify;
     margin: 0px 0px 30px 83px;
+    padding-bottom: 50px;
 }
 
 #club-btn{
@@ -113,8 +114,7 @@ header label {
     width: 20%;
     padding: 5%;
     border-radius: 10px;
-    margin: 0px 0px 0px 125px;
-    
+    margin-left: 40%;
 }
 #logo_img{
     width: 50%;
@@ -195,7 +195,7 @@ header label {
     border-radius: 10px;
     margin: 15px auto 0;
     }
-    #clubb{
+    .text_into a{
         text-align: center;
     }
     .club_img{
