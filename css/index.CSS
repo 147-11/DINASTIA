@@ -94,6 +94,7 @@ header label {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .club_img{
@@ -645,4 +646,19 @@ height: 100%;
     padding: 0;
     display: flex;
     justify-content: center;
+}
+@media (max-widht:768px) {
+    .nav_footer ul{
+        flex-direction:column;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;}
+    .l_contactos ul{
+        flex-direction: column;
+        padding: -20%;
+        display: flex;
+        justify-content: center;
+    }
 }
