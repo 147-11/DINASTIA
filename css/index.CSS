@@ -3,6 +3,8 @@
 *{
     margin:0%;
     padding: 0%;
+    /*background-color: #1C2343;
+    opacity: 50%;*/
 }
 html{
     scroll-behavior: smooth;
@@ -56,6 +58,71 @@ header label {
     color: #fff;
 }
 
+.banner{
+    background-color: #1C2343;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+ }
+ 
+ .inscribirse a {
+     color:#707070;
+     margin: 0 auto;
+     width: 100%;
+     height: 100%;
+     text-decoration: none;
+ }
+ .inscribirse {
+     background-color: #F4E649;
+     width: 20%;
+     padding: 2%;
+     border-radius: 10px;
+     margin: 0 auto;
+ }
+ .primera_clase{
+     padding:10px;
+     color:#707070;
+ }
+
+/*club*/
+
+.titulo{
+    padding-top: 20px;
+    text-align: center;
+}
+.club_text{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.club_img{
+    width: 412px;
+    height: 379px;
+    margin: 0 83px 30px 83px;
+}
+
+.intro_club{
+    text-align: justify;
+    margin: 0px 0px 30px 83px;
+}
+
+#club-btn{
+    text-decoration: none;
+    background-color: #F4E649;
+    width: 20%;
+    padding: 5%;
+    border-radius: 10px;
+    margin: 0px 0px 0px 125px;
+    
+}
+#logo_img{
+    width: 50%;
+    height: 50%;
+    align-content: center;
+   }
+
+
 @media (max-width:768px) {
     header {
         background-color: #fff;
@@ -106,19 +173,41 @@ header label {
     .logo_patines {
         padding: 30px 40px;
     }
-}
-#logo_img{
+    .club_text{
+        display:flex;
+        flex-direction: column;
+    }
+    .text_into{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .intro_club{
+        text-align: justify;
+        margin: 0 ;
+     
+    }
+    #club-btn{
+    text-decoration: none;
+    background-color: #F4E649;
     width: 50%;
-    height: 50%;
-    align-content: center;
+    padding: 5%;
+    border-radius: 10px;
+    margin: 15px auto 0;
+    }
+    #clubb{
+        text-align: center;
+    }
+    .club_img{
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0;
+    }
 }
 
-.banner{
-    background-color: #1C2343;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
+
 /*Categorías*/
 #cate_intro{
     padding: 40px;
@@ -145,10 +234,14 @@ header label {
 .grilla_img .inici_img img{
     width: 100%;
     height: 100%;
+    transition: all 0.5s ease-out;
 }
+
 .grilla_img .inici_img{
     width: 30%;
     position: relative;
+    overflow: hidden;
+    padding-top: 20px;
 }
 .grilla_img .incia_text{
     padding: 15px;
@@ -156,13 +249,105 @@ header label {
     bottom: 0;
     background:rgba(0, 0, 0, 0.7) ;
     color: white;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
 }
-
 .grilla_img .incia_text p{
     text-align: justify;
 }
+.grilla_img .caja_1{
+    cursor: pointer;
+}
+#caja1{
+    display: none;
+}
+#caja1:checked ~ .incia_text{
+   transform: translateY(0%);
+}
+.grilla_img .caja_2{
+    cursor: pointer;
+}
 
-/*Productos*/
+#caja2{
+    display: none;
+}
+#caja2:checked ~ .incia_text{
+    transform: translateY(0%);
+}
+
+.grilla_img .caja_3{
+    cursor: pointer;
+}
+
+#caja3{
+    display: none;
+}
+#caja3:checked ~ .incia_text{
+    transform: translateY(0%);
+}
+
+.grilla_img .caja_4{
+    cursor: pointer;
+}
+
+#caja4{
+    display: none;
+}
+#caja4:checked ~ .incia_text{
+    transform: translateY(0%);
+}
+.grilla_img .caja_5{
+    cursor: pointer;
+}
+
+#caja5{
+    display: none;
+}
+#caja5:checked ~ .incia_text{
+    transform: translateY(0%);
+}
+.grilla_img .caja_6{
+    cursor: pointer;
+}
+
+#caja6{
+    display: none;
+}
+#caja6:checked ~ .incia_text{
+    transform: translateY(0%);
+}
+@media(max-width:768px){
+    .grilla_img .inicia,.grilla_img .medio{
+        background-color: #1C2343;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    .grilla_img .inici_img{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .grilla_img{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+    }
+    .grilla_img .incia_text{
+        width: 100%;
+        height: 40%;
+        font-size: 10%;
+        padding: 5px;
+    }
+    .grilla_img .incia_text p{
+        padding-right: 10px;
+    }
+}
+
+/*PRODUCTOS*/
 .Productos h1 {
     margin: 5%;
     text-align: center;
@@ -275,20 +460,7 @@ header label {
     opacity: 0;
 }
 
-.inscribirse a {
-    color:#707070;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-}
-.inscribirse {
-    background-color: #F4E649;
-    width: 20%;
-    padding: 2%;
-    border-radius: 10px;
-    margin: 0 auto;
-}
+/*GALERIA FOTOS*/
 
 .galeria{
     background-color: #1C2343;
@@ -336,7 +508,8 @@ height: 100%;
     width: 100%;
     transition: opacity .5s;
 }
-@media(max-width:430px){
+
+@media(max-width:768px){
     #content_imgs{
         height: 300px;
     }
@@ -348,19 +521,19 @@ height: 100%;
     .flechas_uno{
         padding-top: 10px;
     }
+    .inscribirse {
+        background-color: #F4E649;
+        width: 30%;
+        padding: 2%;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .primera_clase{
+        padding:10px;
+        color:#707070;
+    }
 }
-.pie {
-    background-color: #F4E649;
-    margin: 0;
-    padding: 5%;
-}
-.l_contactos ul{
-    flex-direction: column;
-    margin: 0 50px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
+
 .cmr {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -443,4 +616,33 @@ height: 100%;
     .logo_patines {
         padding: 20% 8%;
     }
+}
+/*Footer*/
+.pie {
+    background-color: #F4E649;
+    margin: 0;
+    padding: 5%;
+}
+.contactos_text {
+    color: #707070;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+.nav_footer ul{
+    flex-direction:column;
+    margin: 0px 70px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}.nav_footer il a {
+    color: #707070;
+    text-decoration: none;
+    font-size: 20px;
+}
+.l_contactos ul{
+    flex-direction: column;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }

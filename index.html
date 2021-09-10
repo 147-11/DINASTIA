@@ -33,20 +33,23 @@
             </section>
 
             <section class="club_intro" id="clb_intro">
+                <h1 class="titulo">
+                    EL CLUB
+                </h1>
                 <div class="club_text">
-                    <h1 class="titulo">
-                        EL CLUB
-                    </h1>
+                    <div class="text_into">
                         <P class="intro_club">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolor, quidem laboriosam facere odio esse ab iure voluptatem eius amet nesciunt doloremque corporis dolorem exercitationem voluptatibus aut? Explicabo, repellat fugiat!
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere eaque praesentium fugiat nam, blanditiis earum tenetur repudiandae dolor voluptate aspernatur quisquam veritatis dolores, consectetur esse quae dolorem illo placeat.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, laborum doloribus aperiam dicta eaque perspiciatis atque voluptas sapiente, odio, quod alias eum ea! Facere, nisi reiciendis necessitatibus possimus dignissimos voluptatem?
                         </P>
-                    <a href="Club.html" class="club-btn">Conoce el Club</a>
+                        <a href="Club.html" id="club-btn"><p id="clubb">Conoce el Club</p></a>
+                    </div>
+                    <div class="text_into">
+                        <figure class="intro_img">
+                            <img src="img/default.png" class="club_img" alt="loguito">
+                        </figure>
+                    </div>
                 </div>
-                <figure class="intro_img">
-                    <img src="" class="club_img" alt="loguito">
-                </figure>
             </section>
 
             <section class="Categorias_intro" id="ctg">
@@ -57,7 +60,10 @@
                     <div class="grilla_img">
                         <div class="inicia">
                             <section class="inici_img">
-                                    <img src="img/default.png">
+                                <input type="checkbox" id="caja1">
+                                <label for="caja1" class="caja_1">
+                                    <img src="img/default.png" id="imgg">
+                                </label>
                                 <section class="incia_text">
                                     <h2>INICIACIÓN</h2>
                                     <p>
@@ -66,7 +72,10 @@
                                 </section>
                             </section>
                             <section class="inici_img">
-                                    <img src="img/default.png">
+                                <input type="checkbox" id="caja2">
+                                <label for="caja2" class="caja_2">
+                                    <img src="img/default.png" id="imgg1">
+                                </label>
                                 <section class="incia_text">
                                     <h2>BÁSICO</h2>
                                     <p>
@@ -75,7 +84,10 @@
                                 </section>
                             </section>
                             <section class="inici_img">
-                                    <img src="img/default.png">
+                                <input type="checkbox" id="caja3">
+                                <label for="caja3" class="caja_3">
+                                    <img src="img/default.png" id="imgg1">
+                                </label>
                                 <section class="incia_text">
                                     <h2>MEDIO</h2>
                                     <p>
@@ -86,7 +98,10 @@
                         </div>
                         <div class="medio">
                             <section class="inici_img">
-                                    <img src="img/default.png">
+                                <input type="checkbox" id="caja4">
+                                <label for="caja4" class="caja_4">
+                                    <img src="img/default.png" id="imgg1">
+                                </label>
                                 <section class="incia_text">
                                     <h2>AVANZADO</h2>
                                     <p>
@@ -95,7 +110,10 @@
                                 </section>
                             </section>
                             <section class="inici_img">
-                                    <img src="img/default.png">
+                                <input type="checkbox" id="caja5">
+                                <label for="caja5" class="caja_5">
+                                    <img src="img/default.png" id="imgg1">
+                                </label>
                                 <section class="incia_text">
                                     <h2>PRE-CLUB</h2>
                                     <p>
@@ -104,7 +122,10 @@
                                 </section>
                             </section>
                             <section class="inici_img">
-                                    <img src="img/default.png">
+                                <input type="checkbox" id="caja6">
+                                <label for="caja6" class="caja_6">
+                                    <img src="img/default.png" id="imgg1">
+                                </label>
                                 <section class="incia_text">
                                     <h2>CLUB</h2>
                                     <p>
@@ -203,23 +224,32 @@
              </div>
             </div>
             </section>
-        <section class="pie"> 
+        </main>
+        <footer class="pie"> 
             <div class="contactos_text">
-                <h1 class="contactos">
-                    CONTACTOS:
+                <nav class="nav_footer">
+                    <ul>
+                        <il><a href="index.html"> Inicio</a> </il><br>
+                        <il><a href="#clb_intro">   El Club</a> </il><br>
+                        <il><a href="#cate"> Categorías</a> </il><br>
+                        <il><a href="#produc"> Productos</a> </il>
+                    </ul>
+                </nav>
+                <section>
+                <h1 class="contactos" style="text-align: left;">
+                    CONTACTOS
                 </h1>
                     <nav class="l_contactos">
                         <ul>
-                            <il><a hrfe="#">xxxx@xxxx.com</a> </il>
-                            <il><a hrfe="#">xxxxx xxx</a> </il>
-                            <il><a hrfe="#">xxxx_xx</a> </il>
-                            <il><a hrfe="#">xxx xxx xx xxx</a> </il>
+                            <il><a class="fas fa-envelope" hrfe=""> xxxx@xxxx.com</a> </il><br>
+                            <il><a class="fab fa-facebook-f" hrfe="#">   xxxxx xxx</a> </il><br>
+                            <il><a class="fab fa-instagram" hrfe="#"> xxxx_xx</a> </il><br>
+                            <il><a class="fab fa-whatsapp" hrfe="#"> xxx xxx xx xxx</a> </il>
                         </ul>
                     </nav>
+                </section>
             </div>
-        </section>
-        </main>
-
+        </footer>
     <script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
 </body>
 </html>
