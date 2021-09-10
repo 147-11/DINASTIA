@@ -643,7 +643,7 @@ height: 100%;
     font-size: 20px;
 }
 .contac {
-    padding-left: 15%;
+    padding-left:50%;
 }
 .contactos {
     text-align: left;
@@ -658,11 +658,24 @@ height: 100%;
 @media (max-width:829px) {
     .contac {
         padding-top: 16%;
+        padding-left: 2%;
     }
 }
 @media (max-width:768px){
     .contac {
         padding-top: 0%;
+    }
+}
+@media (max-width:365px){
+    .contac {
+        padding-top: 16%;
         padding-left: 0%;
+        text-align: center;
+    }
+    .contactos {
+        text-align: center;
+    }
+    .nav_footer ul{
+        text-align: center;
     }
 }
