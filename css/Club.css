@@ -167,41 +167,210 @@ header label {
     text-align: center;
 }
 
-.Mision_contenedor{
-    width: 90%;
-    margin: 0 auto;
-    background:White;
-    overflow: hidden;
-    padding:80px 0;
-    }
+/*MISION*/
 
-.VISION_contenedor{
-    width: 90%;
-    margin: 0 auto;
-    background:#1C2343;
-    overflow: hidden;
-    padding:80px 0;
+.club_item{
+    display: flex;
 }
-.Objetivos_contenedor{
-    width: 90%;
-    margin: 0 auto;
-    background:White;
-    overflow: hidden;
-    padding:80px 0;
+
+.text_mision h1{
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
 }
-.Historia_contenedor{
-    width: 90%;
-    margin: 0 auto;
-    background:#1C2343;
-    overflow: hidden;
-    padding:80px 0;
+
+.text_mision{
+    width: 100%;   
+    padding: 30px;
 }
-.PoliticasBien_contenedor{
-    width: 90%;
-    margin: 0 auto;
-    background:White;
+
+.text_mision p{
+    text-align: justify;
+    margin-left: 30px;
+    color: #707070;
+}
+
+.mision_img{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin:30px;
+}
+
+.mision_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*VISION*/
+.club_vision{
+    background-color:#1C2343;
+}
+
+.club_item2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.text_vision h1{
+    text-align: center;
+    padding: 20px;
+    padding-right: 50px;
+    color: white;
+}
+
+.text_vision{
+    width: 100%;   
+    padding: 30px;
+}
+
+.text_vision p{
+    text-align: justify;
+    margin-right: 30px;
+    color:#707070;
+}
+
+.vision_img{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin:30px;
+}
+
+.vision_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*OBJETIVOS*/
+.Objetivos_texto{
+    display: flex;
+    padding: 20px;
+}
+
+.obj_GEN,.obj_esp{
+    width: 100%;
+    padding: 20px;
+}
+
+.obj_GEN h2,.obj_esp h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.obj_esp p,.obj_GEN p{
+    text-align: justify;
+    margin: 0 10px;
+    color: #707070;
+}
+.obj_esp li{
+    padding: 5px;
+}
+
+/*historia*/
+
+.content_histo{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1C2343;
+    /*padding: 40px 0;*/
+}
+.historia_text{
+    width: 100%;
+}
+#titulito{
+    color:white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+#parrafo_histo{
+    color: #707070;
+    text-align: justify;
+    padding: 10px 50px;
+}
+#content_imgs{
+    height: 420px;
+    width: 3000px;
     overflow: hidden;
-    padding:80px 0;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+.item_imgs1{
+position: relative;
+height: 100%;
+}
+
+.img1{
+    height: 75%;
+    text-align: center;
+}
+.flechas_uno{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.content_img img{
+    width: 100%;
+    margin-top: 30px;
+}
+.flechas_uno img{
+    height: 45%;
+    /*margin-top: 20px;*/
+}
+
+/*POLITICA DE BIENESTAR*/
+.PoliticasBien_Texto{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.PoliticasBien_Texto .politica{
+    width: 100%;
+    height: 100%;
+    padding: 0 0 40px 40px;
+}
+
+.PoliticasBien_Texto .politica h2{
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+}
+.PoliticasBien_Texto .politica p{
+    text-align: justify;
+}
+
+.PoliticasBien_Texto .btn-ins{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+   
+}
+.PoliticasBien_Texto .btn-ins a{
+    text-align: center;
+    color: #764ba2;
+    background-color: #F4E649;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 20px;
+    width: 25%;
+}
+.PoliticasBien_Texto .btn-ins h2{
+    font-size: 30px;
+    width: 40%;
+    color:#1C2343;
+    background-color: #9F9F9F;
+    border-radius: 10px;
+    text-align: center;
+    padding:20px;
 }
 /*Footer*/
 .pie {
