@@ -228,39 +228,68 @@ header label {
 #parrafo_histo{
     color: #707070;
     text-align: justify;
-    padding: 10px 50px;
+    padding: 10px 50px 50px;
 }
-#content_imgs{
-    height: 420px;
-    width: 3000px;
+/*GALERIA FOTOS*/
+.galeria_tittle{
+    display: none;
+}
+.galeria {
+    width: 100%;
+    margin: 6.6% 16% 0 0;
+}
+.galeria__content {
+    height: 30%;
+    width: 50%;
+    padding: 76%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
     overflow: hidden;
-    padding-right: 50px;
-    margin-top: 20px;
-}
-.item_imgs1{
-position: relative;
-height: 100%;
+    position: relative;
 }
 
-.img1{
-    height: 75%;
-    text-align: center;
-}
-.flechas_uno{
+.galeria__slide {
     position: absolute;
-    height: 20%;
+    height: 100%;
     width: 100%;
-    bottom: 5px;
+}
+
+.galeria__img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.galeria__buttons {
+    position: absolute;
+    z-index:1;
+    padding-top:16px;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.content_img img{
-    width: 100%;
-    margin-top: 30px;
+
+.galeria__btn--left,
+.galeria__btn--right {
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
 }
-.flechas_uno img{
-    height: 45%;
-    /*margin-top: 20px;*/
+.galeria__btn--left img,
+.galeria__btn--right img{
+    padding-top:50% ;
+    width: 30px;
+}
+.galeria__img--visible {
+    opacity: 1 !important;
 }
 
 /*POLITICA DE BIENESTAR*/
@@ -311,6 +340,7 @@ height: 100%;
     text-align: center;
     padding:20px;
 }
+
 /*Footer*/
 .pie {
     background-color: #F4E649;
@@ -405,9 +435,9 @@ height: 100%;
         margin: 0% 30%;
     }
     .primera_clase{
-        padding-top: 100%;
+        padding-top: 0%;
         color:#707070;
-        font-size: 8px;
+        font-size: 20px;
     }
     .banner h1 {
         padding-top: 0%;
@@ -415,25 +445,21 @@ height: 100%;
         font-size: 300%;
         color: #fff;
     }
-    .banner {
-    display: flex;
-    grid-template-columns: 0;
-    }
     #logo_img{
-        width: 80px;
-        height: 95;
-        padding-left: 5%;
+        width: 100px;
+        height: 115;
+        padding-left: 30%;
     }
     .inscribirse a {
         color:#707070;
         width: 100%;
         height: 100%;
-        font-size: 10px;
+        font-size: 20px;
     }
     #inscribirse {
         position: absolute;
-        width: 18%;
-        padding: 3%;
+        width: 16%;
+        padding: 2%;
         margin-left: 0;
         border-radius: 10px;
         align-content: center;
@@ -471,7 +497,7 @@ height: 100%;
         padding: 0;
     }
     .club_vision{
-        padding-bottom: 30%;
+        padding-bottom: 10%;
     }
     .club_item2{
         flex-direction: column;
@@ -485,7 +511,7 @@ height: 100%;
     .vision_img{
         width: 100%;
         height: 100%;
-        padding: 0px;
+        padding: 20px 0px;
         margin: 0;
     }
     /*objetivos*/
@@ -515,31 +541,71 @@ height: 100%;
 
     .content_histo{
         flex-direction: column;
-        padding: 40px 0;
-        }
-    #content_imgs{
+        padding: 0;
+    }
+    #parrafo_histo{
+        color: #707070;
+        text-align: justify;
+        padding: 10px 16px 50px;
+    }
+    .galeria {
+        width: 100%;
+        height: 700px;
+        margin: 6.6% 16% 0 0;
+    }
+    .galeria__content {
+        height: 100%;
+        width: 100%;
+        top:-330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .galeria__slide {
+        position: absolute;
+        height: 100%;
         width: 100%;
     }
-    .flechas_uno img{
-        margin: 0 auto;
-        height: 50%;
-        width: 100%;
+    
+    .galeria__img {
+        position: absolute;
+        top: 0%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        max-width: 36%;
+        opacity: 0;
+        transition: all 0.5s;
     }
-    .flechas_uno{
-        padding-top: 10px;
-        padding-left: 0.3%;
-        width: 11%;
+    
+    .galeria__buttons {
+        position: absolute;
+        top:0;
+        left: 4%;
+        padding: 0%;
+        height: 100%;
+        width:32%;
+        display: flex;
+        justify-content: space-between;
     }
-    .inscribirse {
-        background-color: #F4E649;
-        width: 30%;
-        padding: 2%;
-        border-radius: 10px;
-        margin: 0 auto;
+    
+    .galeria__btn--left,
+    .galeria__btn--right {
+        align-self: left;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
     }
-    .primera_clase{
-        padding:10px;
-        color:#707070;
+    .galeria__btn--left img,
+    .galeria__btn--right img {
+        width: 50px;
+    }
+    
+    .galeria__img--visible {
+        opacity: 1 !important;
     }
     /*politicas de bienestar*/
     .PoliticasBien_Texto{
@@ -550,5 +616,105 @@ height: 100%;
         width: 100%;
         height: 100%;
         padding: 0;
+    }
+}
+@media (max-width:365px){
+    .primera_clase{
+        padding-top: 0;
+        color:#707070;
+        font-size: 15px;
+    }
+    .banner h1 {
+        padding-top: 0%;
+        text-align: center;
+        font-size: 300%;
+        color: #fff;
+    }
+    #logo_img{
+        width: 80px;
+        height: 95;
+        padding-left: 5%;
+    }
+    .inscribirse a {
+        color:#707070;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+    #inscribirse {
+        position: absolute;
+        width: 18%;
+        padding: 3%;
+        margin-left: 0;
+        border-radius: 10px;
+        align-content: center;
+    }
+    /*historia*/
+    .content_histo{
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    #parrafo_histo{
+        color: #707070;
+        text-align: justify;
+        padding: 10px 10px 50px;
+    }
+    .galeria {
+        width: 100%;
+        height: 300px;
+        margin: 6.6% 16% 0 0;
+    }
+    .galeria__content {
+        height: 100%;
+        width: 100%;
+        top:-150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .galeria__slide {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .galeria__img {
+        position: absolute;
+        top: 0%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        max-width: 36%;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .galeria__buttons {
+        position: absolute;
+        top:30;
+        left: 2%;
+        padding: 0%;
+        height: 100%;
+        width:35%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .galeria__btn--left,
+    .galeria__btn--right {
+        align-self: left;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+    .galeria__btn--left img,
+    .galeria__btn--right img{
+    width: 30px;
+    }
+    .galeria__img--visible {
+        opacity: 1 !important;
     }
 }
