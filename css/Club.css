@@ -62,67 +62,6 @@ header label {
 .menu li a:hover {
     color: #fff;
 }
-@media (max-width:768px) {
-    header {
-        background-color: #fff;
-    }
-    header label {
-        display: block;
-    }
-    body {
-        margin: 0 8px;
-    }
-    .menu {
-        position: absolute;
-        width: 70%;
-        margin-left: 100%;
-        transition: all 0.5s;
-        background-color: #fff;
-    }
-    .menu ul {
-        flex-direction: column;
-    }
-    .menu li {
-        border-left: 8px solid #fff;
-        border-right: 8px solid #fff;
-        border-bottom-right-radius: 0%;
-        border-bottom-left-radius: 0%;
-    }
-    #menu-btn:checked ~ .menu {
-        margin: 0% 30%;
-    }
-    .inscribirse a {
-        color:#707070;
-        width: 100%;
-        height: 100%;
-        font-size: 16px;
-    }
-    .inscribirse {
-        background-color: #F4E649;
-        width: 70%;
-        padding: 50%;
-        margin-left: 21%;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .primera_clase{
-        padding-top: 100%;
-        color:#707070;
-        font-size: 8px;
-    }
-    .banner h1 {
-        padding-top: 15%;
-        text-align: center;
-        font-size: 300%;
-        color: #fff;
-    }
-    .banner {
-        
-    display: flex;
-    grid-template-columns: 0;
-    grid-template-columns: repeat(0);
-    }
-}
 
 .banner{
     background-color: #1C2343;
@@ -352,7 +291,7 @@ height: 100%;
     flex-direction: column;
     align-items: center;
     padding-top: 45px;
-   
+   padding-bottom: 45px;
 }
 .PoliticasBien_Texto .btn-ins a{
     text-align: center;
@@ -431,5 +370,180 @@ height: 100%;
     }
     .nav_footer ul{
         text-align: center;
+    }
+}
+@media (max-width:768px) {
+    header {
+        background-color: #fff;
+    }
+    header label {
+        display: block;
+    }
+    body {
+        margin: 0 8px;
+    }
+    .menu {
+        position: absolute;
+        width: 70%;
+        margin-left: 100%;
+        transition: all 0.5s;
+        background-color: #fff;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-left: 8px solid #fff;
+        border-right: 8px solid #fff;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+    #menu-btn:checked ~ .menu {
+        margin: 0% 30%;
+    }
+    .inscribirse a {
+        color:#707070;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+    .inscribirse {
+        background-color: #F4E649;
+        width: 70%;
+        padding: 50%;
+        margin-left: 21%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .primera_clase{
+        padding-top: 100%;
+        color:#707070;
+        font-size: 8px;
+    }
+    .banner h1 {
+        padding-top: 15%;
+        text-align: center;
+        font-size: 300%;
+        color: #fff;
+    }
+    .banner {
+        
+    display: flex;
+    grid-template-columns: 0;
+    grid-template-columns: repeat(0);
+    }
+    /*mision*/}
+    .text_mision{
+        padding: 0;
+        margin: 0%;
+    }
+    .text_mision p{
+        margin-left: 0%;
+        text-align: justify;
+        width: 100%;
+    }
+    .mision_img{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0;
+    }
+    .club_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .mision_img{
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    /*vision*/
+    .text_vision{
+        padding: 0;
+    }
+    .club_vision{
+        padding-bottom: 30%;
+    }
+    .club_item2{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0%;
+    }
+    .parra_vision{
+        text-align: justify;
+        width: 100%;
+    }
+    .vision_img{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0;
+    }
+    /*objetivos*/
+    .Objetivos_texto{
+        flex-direction: column;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .obj_GEN,.obj_esp{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px;
+    }
+    .Obj_G_parra{
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+        width: 100%;
+    }
+    .Obj_E_parra{
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+        width: 100%;
+    }
+    /*historia*/
+
+    .content_histo{
+        flex-direction: column;
+        padding: 40px 0;
+        }
+    #content_imgs{
+        width: 100%;
+        height: 100%;
+    }
+    .flechas_uno img{
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+    }
+    .flechas_uno{
+        padding-top: 10px;
+        padding-left: 0.3%;
+        width: 11%;
+    }
+    .inscribirse {
+        background-color: #F4E649;
+        width: 30%;
+        padding: 2%;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .primera_clase{
+        padding:10px;
+        color:#707070;
+    }
+    /*politicas de bienestar*/
+    .PoliticasBien_Texto{
+        flex-direction: column;;
+        padding: 0px;
+    }
+    .PoliticasBien_Texto .politica{
+        width: 100%;
+        height: 100%;
+        padding: 0;
     }
 }
