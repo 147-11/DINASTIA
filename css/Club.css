@@ -72,7 +72,21 @@ header label {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr 2fr 1fr));
     align-content: center;
  }
- .inscribirse a {
+#logo_img{
+    width: 160px;
+    height: 191;
+    padding-left: 5%;
+}
+.banner h1 {
+    padding-top: 15%;
+    text-align: center;
+    font-size: 300%;
+    color: #fff;
+}
+.ins {
+    text-align: center;
+}
+.inscribirse a {
     color:#707070;
     width: 100%;
     height: 100%;
@@ -91,20 +105,6 @@ header label {
     color:#707070;
     font-size: 15px;
 }
-#logo_img{
-    width: 160px;
-    height: 191;
-    padding-left: 5%;
-}
-.banner h1 {
-    padding-top: 15%;
-    text-align: center;
-    font-size: 300%;
-    color: #fff;
-}
-.ins {
-    text-align: center;
-}
 
 /*MISION*/
 
@@ -112,7 +112,7 @@ header label {
     display: flex;
 }
 
-.text_mision h1{
+#titulo_mision{
     text-align: center;
     padding: 20px;
     padding-left: 50px;
@@ -152,7 +152,7 @@ header label {
     flex-direction: row-reverse;
 }
 
-.text_vision h1{
+#titulo_vision{
     text-align: center;
     padding: 20px;
     padding-right: 50px;
@@ -383,6 +383,7 @@ height: 100%;
         margin: 0 8px;
     }
     .menu {
+        z-index:1;
         position: absolute;
         width: 70%;
         margin-left: 100%;
@@ -390,9 +391,11 @@ height: 100%;
         background-color: #fff;
     }
     .menu ul {
+        position: relative;
         flex-direction: column;
     }
     .menu li {
+        position: relative;
         border-left: 8px solid #fff;
         border-right: 8px solid #fff;
         border-bottom-right-radius: 0%;
@@ -401,36 +404,39 @@ height: 100%;
     #menu-btn:checked ~ .menu {
         margin: 0% 30%;
     }
-    .inscribirse a {
-        color:#707070;
-        width: 100%;
-        height: 100%;
-        font-size: 16px;
-    }
-    .inscribirse {
-        background-color: #F4E649;
-        width: 70%;
-        padding: 50%;
-        margin-left: 21%;
-        border-radius: 10px;
-        text-align: center;
-    }
     .primera_clase{
         padding-top: 100%;
         color:#707070;
         font-size: 8px;
     }
     .banner h1 {
-        padding-top: 15%;
+        padding-top: 0%;
         text-align: center;
         font-size: 300%;
         color: #fff;
     }
     .banner {
-        
     display: flex;
     grid-template-columns: 0;
-    grid-template-columns: repeat(0);
+    }
+    #logo_img{
+        width: 80px;
+        height: 95;
+        padding-left: 5%;
+    }
+    .inscribirse a {
+        color:#707070;
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+    }
+    #inscribirse {
+        position: absolute;
+        width: 18%;
+        padding: 3%;
+        margin-left: 0;
+        border-radius: 10px;
+        align-content: center;
     }
     /*mision*/
     .text_mision{
@@ -513,11 +519,10 @@ height: 100%;
         }
     #content_imgs{
         width: 100%;
-        height: 100%;
     }
     .flechas_uno img{
         margin: 0 auto;
-        height: 100%;
+        height: 50%;
         width: 100%;
     }
     .flechas_uno{
@@ -538,7 +543,7 @@ height: 100%;
     }
     /*politicas de bienestar*/
     .PoliticasBien_Texto{
-        flex-direction: column;
+        flex-direction: column;;
         padding: 0px;
     }
     .PoliticasBien_Texto .politica{

@@ -461,77 +461,120 @@ header label {
 }
 
 /*GALERIA FOTOS*/
-
 .galeria{
     background-color: #1C2343;
 }
-
-
-#content_imgs{
-    height: 600px;
-    width: 40%;
-    overflow: hidden;
-    margin: 0 auto;
-}
-.item_imgs1{
-position: relative;
-height: 100%;
-
-}
-
-.img1{
-    height: 75%;
-    text-align: center;
-}
-
-.galeria_tittle{
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+#gale{
     color: white;
+    text-align: center;
+    padding-top: 50px;
 }
-
-.flechas_uno{
-    padding-top: 15px;
-    position: absolute;
-    height: 20%;
+.galeria__content {
+    height: 700px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #1C2343;
+    gap: 80px;
+    overflow: hidden;
+    position: relative;
 }
 
-
-.content_img img{
+.galeria__slide {
+    position: absolute;
     height: 100%;
     width: 100%;
-    transition: opacity .5s;
 }
 
+.galeria__img {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.galeria__buttons {
+    position: absolute;
+    padding: 0 20px;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galeria__btn--left,
+.galeria__btn--right {
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.galeria__img--visible {
+    opacity: 1 !important;
+}
+
+
+
 @media(max-width:768px){
-    #content_imgs{
-        height: 300px;
+    #gale{
+        color: white;
+        text-align: center;
+        padding-top: 50px;
     }
-    .flechas_uno img{
-        margin: 0 auto;
-        height: 40px;
-        width: 30px;
+    .galeria__content {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        overflow: hidden;
+        position: relative;
     }
-    .flechas_uno{
-        padding-top: 10px;
+    
+    .galeria__slide {
+        position: absolute;
+        height: 100%;
+        width: 100%;
     }
-    .inscribirse {
-        background-color: #F4E649;
-        width: 30%;
-        padding: 2%;
-        border-radius: 10px;
-        margin: 0 auto;
+    
+    .galeria__img {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 95%;
+        opacity: 0;
+        transition: all 0.5s;
     }
-    .primera_clase{
-        padding:10px;
-        color:#707070;
+    
+    .galeria__buttons {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(140px);
+        padding: 0 20px;
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
     }
+    
+    .galeria__btn--left,
+    .galeria__btn--right {
+        align-self: center;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .galeria__img--visible {
+        opacity: 1 !important;
+    }
+    
 }
 
 .cmr {
