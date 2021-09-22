@@ -9,10 +9,12 @@ body{
     background-color: rgba(28, 35, 67, 80%);
 }
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 230px;
-    padding-bottom: 5.1%;
     background-color: #1C2343;
-    justify-content: center;
 }
 .logo {
     background-color: #1C2343;
@@ -20,18 +22,21 @@ main{
     padding-bottom: 30px;
     text-align: center;
  }
+
  #logo_img{
-    width: 160px;
-    height: 191;
+    width: 230px;
+    height: 250px;
 }
 .fondo {
-    margin-left: 13%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 0px 50px 5px #000;
-    width: 664px;
-    height: 400%;
+    width: 70%;
 }
 h1 {
     padding: 5%;
@@ -46,30 +51,87 @@ h1 {
     padding-top: 3px;
     height: 30px;
 }
-input[type="text"], input[type="password"] {
-    border: none;
+.login input {
+    border: 0;
+    outline: none;
     font-size: 150%;
     width: 82%;
     padding: 10px;   
     background-color:#CECECE ;
 }
-.login section{
-    width: 496px;
-    height: 43px;
-    margin-left: 13%;
+
+.login section {
+    width: 80%;
     background-color: #CECECE;
-    padding: 20px;
+    padding: 10px;
     border-radius: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+}
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.acceder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 .acceder input {
     border: none;
-    padding: 2%;
+    padding: 10%;
     border-radius: 20px;
     font-size: 30px;
     background-color: #F4E649;
+    margin-bottom: 20%;
 }
 .acceder input:hover {
+    cursor: pointer;
     color: #fff;
     background-color: #b8ac2b;
+}
+@media (max-width:1024px) {
+    main {
+        margin: 0 8px;
+    }
+    body{
+        background-color: #1C2343;
+    }
+    #logo_img {
+        padding-top: 10%;
+        width: 330px;
+        height: 360px;
+    }
+}
+@media (max-width:414px) {
+    main {
+        margin: 0 20px;
+    }
+    .fondo {
+        width: 100%;
+        padding: 10px;
+    }
+    #logo_img {
+        padding-top: 5%;
+    }
+    .login section {
+        width: 92%;
+    }
+   
+}
+@media (max-width:320px) {
+    .fondo {
+        width: 100%;
+        padding: 10px;
+    }
+    .login section {
+        width: 96%;
+    }
+    .login img{
+        width: 20px;
+        height: 25px;
+    }
 }
