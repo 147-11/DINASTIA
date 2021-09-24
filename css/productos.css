@@ -333,6 +333,9 @@ header label {
     .container{
         margin:0;   
     }
+    .fila {
+        flex-direction: column;
+    }
     .btn-ins h2{
         font-size: 20px;
     }
