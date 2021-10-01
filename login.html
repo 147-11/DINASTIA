@@ -25,34 +25,16 @@
                     </section>   
                 </div>
                 <div class="acceder">
-                    <input onclick="login()" type="submit" value="Acceder">
+                    <input onclick="log" type="submit" value="Acceder">
                 </div>
             </div>
     </main>
-    <script type="module" src="./js/login.js">
     
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBuehf15Tx-RANkCftP8sAH2uJyeQjjVWw",
-          authDomain: "dinastiaclub-4a8fb.firebaseapp.com",
-          projectId: "dinastiaclub-4a8fb",
-          storageBucket: "dinastiaclub-4a8fb.appspot.com",
-          messagingSenderId: "1080239593789",
-          appId: "1:1080239593789:web:b8184a4123d38eb50ccd54",
-          measurementId: "G-468Q4BMWQ9"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-      <script src="js/login.js"></script>
+    <script type="module" src="./js/login.js"></script>
+    <script type="module">
+        
+        import { login } from './js/login.js';
+        let log = login();
+    </script>
 </body>
 </html>
