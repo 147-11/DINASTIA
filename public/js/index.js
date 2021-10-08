@@ -1,7 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
-import { getDatabase } from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,30 +22,46 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 //club
-//var t=document.getElementById("title").value;
+const t=document.getElementById("title");
 
-import { collection, getDocs } from "/firebase/firestore";
-var db = firebase.firestore();
+/*import { getDatabase } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
+const database = getDatabase(app);
+// TODO: Add SDKs for Firebase products that you want to use";
+var db = app.database;*/
 
-const querySnapshot = await getDocs(collection(db, "index"));
-querySnapshot.forEach((doc) => {
-  console.log(`${doc.id} => ${doc.data()}`);
+import { getDatabase, ref} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
+const db = getDatabase();
+
+var firebaseRef = ref(db, "index/club");
+
+
+
+firebaseRef.once('value', snapshot => {
+  console.log('User data: ', snapshot.val());
 });
+
+var canOnlyFireOnce = once('value', snapshot => {
+  console.log('User data: ', snapshot.val());
+})
+
+function once(fn, context) { 
+	var result;
+
+	return function() { 
+		if(fn) {
+			result = fn.apply(context || this, arguments);
+			fn = null;
+		}
+
+		return result;
+	};
+}
+
 
 /*
 var ti = document.getElementById('title')
 var info = database.ref('index/club/titulo')
 
-info.once('value').then(function(snap){
-    ti.innerText = snap.val()
-})
-function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email,
-    profile_picture : imageUrl
-  });
-}/*
 
 /*document.getElementById("clb_intro").onclick =function () {
     firebase.database().ref('index/'+rollV).on('value', function (snapshot) {
