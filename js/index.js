@@ -22,25 +22,28 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 //club
-const t=document.getElementById("title");
+var t=document.getElementById("title");
 
 /*import { getDatabase } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
 const database = getDatabase(app);
 // TODO: Add SDKs for Firebase products that you want to use";
 var db = app.database;*/
 
-import { getDatabase, ref} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
+import { getDatabase, ref, get} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
 const db = getDatabase();
 
 var firebaseRef = ref(db, "index/club");
 
-
-
-firebaseRef.once('value', snapshot => {
-  console.log('User data: ', snapshot.val());
+firebaseRef.on('value', (snapshot) => {
+  const data = snapshot.val();
+  updateStarCount(t, data);
 });
 
-var canOnlyFireOnce = once('value', snapshot => {
+/*firebaseRef.once('value', snapshot => {
+  console.log('User data: ', snapshot.val());
+});*/
+
+/*var canOnlyFireOnce = once('value', snapshot => {
   console.log('User data: ', snapshot.val());
 })
 
@@ -56,7 +59,7 @@ function once(fn, context) {
 		return result;
 	};
 }
-
+*/
 
 /*
 var ti = document.getElementById('title')
