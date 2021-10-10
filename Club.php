@@ -7,6 +7,7 @@
     <title>EL CLUB</title>
 </head>
 <body>
+<?php include('conexion.php') ?>
     <header>
         <input type="checkbox" id="menu-btn">
         <label for="menu-btn">☰</label>
@@ -37,15 +38,23 @@
             <section class="club_mision" id="clb_mision">
                 <div class="club_item">
                     <div class="text_mision">
+                    <?php
+                    $club_page="SELECT * FROM `club_page`";
+                    $club_page_r=mysqli_query($conn, $club_page);
+                    $id_mision=0
+                    while($club_page_mostrar=mysqli_fetch_assoc($club_page_r)){
+                        if ($id_mision==0){
+                    ?>
                         <h2 id="titulo_mision">
-                            MISIÓN
+                        <?php echo $club_page_mostrar["titulo_club_page"] ?>
                         </h2>
                         <P class="parra_mision">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quam quibusdam dolores et libero consectetur, eveniet porro velit. Amet animi obcaecati quas autem maxime ipsum odit molestias praesentium voluptatibus aspernatur?
+                        <?php echo $club_page_mostrar["descripcion_club_page"] ?>
                         </P>
+                        <?php $id++;} } ?>
                     </div>
                     <div class="mision_img">
-                        <img src="img/default.png" alt="mision_img">
+                        <img src="<?php echo $club_page_mostrar["descripcion_club_page"] ?>" alt="mision_img">
                     </div>
                 </div>
             </section>

@@ -9,6 +9,7 @@
 
 </head>
 <body>
+<?php include('conexion.php') ?>
     <main>
             <div class="logo">
                 <img src="img/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
@@ -36,7 +37,7 @@
             $login="SELECT * FROM `login`";
             $login_r=mysqli_query($conn, $login);
             while($login_mostrar=mysqli_fetch_assoc($login_r) ){
-        ?>
+            ?>
             var clave=document.getElementById("clave").value;
             var usuario=document.getElementById("usuario_correo").value;
 
