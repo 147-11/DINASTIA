@@ -202,12 +202,12 @@ header label {
     padding: 20px;
 }
 
-.obj_esp p,.obj_GEN p{
+.obj_esp P,.obj_GEN p{
     text-align: justify;
     margin: 0 10px;
     color: #707070;
 }
-.obj_esp li{
+.list_objs{
     padding: 5px;
 }
 
@@ -239,7 +239,7 @@ header label {
 }
 .galeria {
     width: 100%;
-    margin: 6.6% 16% 0 0;
+    margin: 0;
 }
 .galeria__content {
     height: 30%;

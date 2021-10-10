@@ -21,7 +21,7 @@
         </nav>
     </header>
     <section class="banner">
-        <img src="img/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
+        <img src="img/index/logos/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
             <h1>
                 <a>EL CLUB</a>
             </h1>
@@ -35,132 +35,216 @@
         </section>
     </section>
     <main class="container_main">
+    <?php   $club_page="SELECT * FROM `club_page`";
+            $club_page_r=mysqli_query($conn, $club_page);
+            $id_mision=0;
+            while($club_page_mostrar=mysqli_fetch_assoc($club_page_r)){ 
+            ?>
             <section class="club_mision" id="clb_mision">
                 <div class="club_item">
+                <?php if ($id_mision==0){ ?>
                     <div class="text_mision">
-                    <?php
-                    $club_page="SELECT * FROM `club_page`";
-                    $club_page_r=mysqli_query($conn, $club_page);
-                    $id_mision=0
-                    while($club_page_mostrar=mysqli_fetch_assoc($club_page_r)){
-                        if ($id_mision==0){
-                    ?>
                         <h2 id="titulo_mision">
                         <?php echo $club_page_mostrar["titulo_club_page"] ?>
                         </h2>
                         <P class="parra_mision">
                         <?php echo $club_page_mostrar["descripcion_club_page"] ?>
                         </P>
-                        <?php $id++;} } ?>
                     </div>
                     <div class="mision_img">
-                        <img src="<?php echo $club_page_mostrar["descripcion_club_page"] ?>" alt="mision_img">
+                        <img src="<?php echo $club_page_mostrar["img_club_page"] ?>" alt="mision_img">
                     </div>
+                    <?php } ?>
                 </div>
             </section>
 
             <section class="club_vision" id="clb_vision">
                 <div class="club_item2">
+                <?php if ($id_mision==1){   ?>
                     <div class="text_vision">
                         <h2 id="titulo_vision">
-                            VISIÓN
+                        <?php echo $club_page_mostrar["titulo_club_page"] ?>
                         </h2>
                         <P class="parra_vision">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quam quibusdam dolores et libero consectetur, eveniet porro velit. Amet animi obcaecati quas autem maxime ipsum odit molestias praesentium voluptatibus aspernatur?
-                    </P>
+                        <?php echo $club_page_mostrar["descripcion_club_page"] ?>   
+                        </P>
                     </div>
                     <div class="vision_img">
-                        <img src="img/default.png" alt="vision_img">
+                        <img src="<?php echo $club_page_mostrar["img_club_page"] ?>" alt="vision_img">
                     </div>
+                    <?php }  ?>
                 </div>
             </section>
-
+            <?php 
+            switch($id_mision){
+                case 0:
+                    $id_mision=1;
+                     break;
+                case 1:
+                    $id_mision=2;
+                    break;}
+                }
+                ?>
+    
             <section class="Objetivos_contenedor">
                 <div class="Objetivos_Texto">
+                <?php   $club_page="SELECT * FROM `club_page`";
+            $club_page_r=mysqli_query($conn, $club_page);
+            $id_mision=0;
+            while($club_page_mostrar=mysqli_fetch_assoc($club_page_r)){ 
+                if ($id_mision==2){
+            ?>
                     <div class="obj_GEN">
-                        <h2 class="Obj_G">OBJETIVO GENERAL</h2>
+                    
+                        <h2 class="Obj_G"><?php echo $club_page_mostrar["titulo_club_page"] ?></h2>
                         <P class="Obj_G_parra">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora qui optio temporibus vitae corporis sequi, accusamus perferendis id vel voluptatibus fugit magni, earum nam? Architecto et rem iste autem fuga.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloribus unde sed optio, tempore magnam aliquam dolorem cupiditate facilis corporis facere et nulla. Exercitationem sit perspiciatis temporibus mollitia in animi?
+                        <?php echo $club_page_mostrar["descripcion_club_page"] ?>
                         </P>
                     </div>
+                    <?php } 
+                    if ($id_mision==3){?>
+
                     <div class="obj_esp">
-                        <h2 id="Obj_E">OBJETIVOS ESPECIFICOS</h2>
+                        <h2 id="Obj_E"><?php echo $club_page_mostrar["titulo_club_page"] ?></h2>
                         <P class="Obj_E_parra">
-                            <ul class="list_objs">
-                                <li>
-                                   <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur est iure similique harum velit!
-                                   </p>
-                                </li>
-                                <li>
-                                    <p>
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur est iure similique harum velit!
-                                    </p>
-                                 </li>
-                                 <li>
-                                    <p>
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur est iure similique harum velit!
-                                    </p>
-                                 </li>
-                            </ul>
-                        </P>
+                            <p class="list_objs">
+                            <?php echo $club_page_mostrar["descripcion_club_page"] ?>
+                         </p>
+                        </P>  
                     </div>
+                    <?php }
+                switch($id_mision){
+                    case 0:
+                        $id_mision=1;
+                         break;
+                    case 1:
+                        $id_mision=2;
+                        break;
+                        case 2:
+                            $id_mision=3;
+                            break;
+                        case 3:
+                            $id_mision=4;
+                             break;}
+                        } ?>
                 </div>
             </section>
 
+            
             <section class="Historia_contenedor">
             <div class="content_histo">
+            <?php   $club_page="SELECT * FROM `club_page`";
+            $club_page_r=mysqli_query($conn, $club_page);
+            $id_mision=0;
+            while($club_page_mostrar=mysqli_fetch_assoc($club_page_r)){ 
+                if($id_mision==4){
+            ?>
                 <div class="hitoria_text">
+                
                     <h2 id="titulito">
-                        HISTORIA
+                    <?php echo $club_page_mostrar["titulo_club_page"] ?>
                     </h2>
                     <p id="parrafo_histo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto fuga quo quidem provident vel voluptas impedit aperiam molestias atque. Recusandae, aliquam. Doloremque corporis animi perspiciatis. Sit dolor maxime quod.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eum reiciendis fuga aliquam porro ducimus alias nesciunt? In similique asperiores odio ipsa veniam, minus itaque quisquam quod, hic harum laborum!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur eveniet deleniti suscipit illum ducimus sequi, recusandae laboriosam aliquid cupiditate optio deserunt quibusdam aliquam consectetur consequatur esse ipsa? Officiis, optio.
+                    <?php echo $club_page_mostrar["descripcion_club_page"] ?>
                     </p>
+                    <?php }
+            switch($id_mision){
+                case 0:
+                    $id_mision=1;
+                     break;
+                case 1:
+                    $id_mision=2;
+                    break;
+                    case 2:
+                        $id_mision=3;
+                        break;
+                    case 3:
+                        $id_mision=4;
+                         break;
+                    case 4:
+                        $id_mision=5;
+                        break;}
+                    }
+                    ?>
                 </div>
+                
+                <?php   $club_page="SELECT * FROM `club_page`";
+            $club_page_r=mysqli_query($conn, $club_page);
+            $id_mision=0;
+            while($club_page_mostrar=mysqli_fetch_assoc($club_page_r)){ 
+                if($id_mision==4){
+            ?>
                 <section class="galeria">
                     <h2 class="galeria_tittle" id="gale">
-                        GALERIA
-                    </h2>
-                    <div class="galeria__content" id="content_imgs">
-                        <div class="galeria__slide">
-                            <img class="galeria__img" src="img/dos.jpg" alt="segunda">
-                        </div>
-        
-                        <div class="galeria__slide">
-                            <img class="galeria__img" src="img/tres.jpg" alt="tercera">
-                        </div>
-        
-                        <div class="galeria__slide">
-                            <img class="galeria__img" src="img/uno.jpg" alt="primera">
-                        </div>
-        
-                        <div class="galeria__buttons">
-                            <button class="galeria__btn--left" href="#imagen3">
-                                <img src="img/left.png">
-                            </button>
-                            <button class="galeria__btn--right" href="#imagen2">
-                                <img src="img/right.png">
-                            </button>
-                        </div>
+                    GALERIA
+                </h2>
+                <div class="galeria__content" id="content_imgs">
+                <?php
+                        $galeria="SELECT * FROM `galeria`";
+                        $galeria_r=mysqli_query($conn, $galeria);
+                        while($galeria_mostrar=mysqli_fetch_assoc($galeria_r) ){ ?>
+                    <div class="galeria__slide">
+                        <img class="galeria__img" src="<?php echo $galeria_mostrar['g_img1']?>" alt="segunda">
                     </div>
+    
+                    <div class="galeria__slide">
+                        <img class="galeria__img" src="<?php echo $galeria_mostrar['g_img2']?>" alt="tercera">
+                    </div>
+    
+                    <div class="galeria__slide">
+                        <img class="galeria__img" src="<?php echo $galeria_mostrar['g_img3']?>" alt="primera">
+                    </div>
+    
+                    <div class="galeria__buttons">
+                        <button class="galeria__btn--left" href="#imagen3">
+                            <img src="img/left.png">
+                        </button>
+                        <button class="galeria__btn--right" href="#imagen2">
+                            <img src="img/right.png">
+                        </button>
+                    </div>
+                    <?php } ?>
+                </div>
                 </section>
                 </div>
+                
             </div>
+            
             </section>
+            <?php }
+            switch($id_mision){
+                case 0:
+                    $id_mision=1;
+                     break;
+                case 1:
+                    $id_mision=2;
+                    break;
+                    case 2:
+                        $id_mision=3;
+                        break;
+                    case 3:
+                        $id_mision=4;
+                         break;
+                    case 4:
+                        $id_mision=5;
+                        break;}
+                    }
+                    ?>
 
             <section class="PoliticasBien_contenedor">
+            <?php   $club_page="SELECT * FROM `club_page`";
+            $club_page_r=mysqli_query($conn, $club_page);
+            $id_mision=0;
+            while($club_page_mostrar=mysqli_fetch_assoc($club_page_r)){ 
+                if ($id_mision==5){
+            ?>
                 <div class="PoliticasBien_Texto">
                     <div class="politica">
                         <h2 class="PoliticasBien_suptitulo">
-                            POLITICAS DE BIENESTAR
+                        <?php echo $club_page_mostrar["titulo_club_page"] ?>
                         </h2>
                         <P class="PoliticasBien_parrafo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestias at doloribus consectetur architecto tenetur rerum, unde cum tempore deserunt enim, necessitatibus fugiat corporis soluta reiciendis ullam, odio cumque a?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro et voluptatum temporibus rem laboriosam,  adipisci molestiae assumenda non delectus, similique commodi sed maiores, libero facilis nam debitis quo natus!
+                        <?php echo $club_page_mostrar["descripcion_club_page"] ?>
                         </P>
                     </div>
                     <div class="btn-ins">
@@ -168,6 +252,29 @@
                         <a href="incribete_ya">Inscribete YA</a>
                     </div>
                 </div>
+                <?php } 
+                    switch($id_mision){
+                        case 0:
+                            $id_mision=1;
+                             break;
+                        case 1:
+                            $id_mision=2;
+                            break;
+                            case 2:
+                                $id_mision=3;
+                                break;
+                            case 3:
+                                $id_mision=4;
+                                 break;
+                            case 4:
+                                $id_mision=5;
+                                break;
+                            case 5:
+                                $id_mision=6;
+                                break;   
+                                }
+                        }
+                    ?>
             </section>
         </main>
         
@@ -175,23 +282,28 @@
             <div class="contactos_text">
                 <nav class="nav_footer">
                     <ul>
-                        <il><a href="index.html">Inicio</a> </il><br>
-                        <il><a href="Club.html">El Club</a> </il><br>
-                        <il><a href="index.html#cate"> Categorías</a> </il><br>
-                        <il><a href="index.html#produc"> Productos</a> </il>
+                        <il><a href="index.html"> Inicio</a> </il><br>
+                        <il><a href="#clb_intro">   El Club</a> </il><br>
+                        <il><a href="#cate"> Categorías</a> </il><br>
+                        <il><a href="#produc"> Productos</a> </il>
                     </ul>
                 </nav>
                 <section class="contac">
-                <h1 class="contactos">
+                <h2 class="contactos">
                     CONTACTOS
-                </h1>
+                </h2>
                     <nav class="l_contactos">
+                        <?php
+                        $footer="SELECT * FROM `footer`";
+                        $footer_r=mysqli_query($conn, $footer);
+                        while($footer_mostrar=mysqli_fetch_assoc($footer_r) ){  ?>
                         <ul>
-                            <il><a class="fas fa-envelope" hrfe=""> xxxx@xxxx.com</a> </il><br>
-                            <il><a class="fab fa-facebook-f" hrfe="#"> xxxxx xxx</a> </il><br>
-                            <il><a class="fab fa-instagram" hrfe="#"> xxxx_xx</a> </il><br>
-                            <il><a class="fab fa-whatsapp" hrfe="#"> xxx xxx xx xxx</a> </il>
+                            <il><a class="fas fa-envelope" hrfe="<?php echo $footer_mostrar['f_correo'] ?>"> <?php echo $footer_mostrar['f_correo'] ?></a> </il><br>
+                            <il><a class="fab fa-facebook-f" hrfe="<?php echo $footer_mostrar['f_facebook'] ?>">   <?php echo $footer_mostrar['f_facebook'] ?></a> </il><br>
+                            <il><a class="fab fa-instagram" hrfe="<?php echo $footer_mostrar['f_instagram'] ?>"> <?php echo $footer_mostrar['f_instagram'] ?></a> </il><br>
+                            <il><a class="fab fa-whatsapp" hrfe="<?php echo $footer_mostrar['f_whatsapp'] ?>"> <?php echo $footer_mostrar['f_whatsapp'] ?></a> </il>
                         </ul>
+                        <?php } ?>
                     </nav>
                 </section>
             </div>

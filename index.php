@@ -45,7 +45,7 @@
                         <P class="intro_club">
                         <?php echo $club_index_mostrar['descripcion_club_index'] ?>
                         </P>
-                        <a href="Club.html" id="club-btn">Conoce el Club</a>
+                        <a href="Club.php" id="club-btn">Conoce el Club</a>
                     </div>
                     <div class="text_into">
                         <figure class="intro_img">
