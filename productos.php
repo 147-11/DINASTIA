@@ -8,6 +8,7 @@
     <title>PRODUCTOS</title>
 </head>
 <body>
+<?php include('conexion.php') ?>
     <header>
         <input type="checkbox" id="menu-btn">
         <label for="menu-btn">☰</label>
@@ -21,7 +22,7 @@
         </nav>
     </header>
     <section class="banner">
-        <img src="img/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
+        <img src="img/index/logosLOLOGO BLANCO.png" id="logo_img" alt="loguito">
             <h1>
                 <a>ROPA</a>
             </h1>
@@ -38,33 +39,63 @@
   
     <div class="container">
         <div class="fila">
+        <?php   
+        $productos_page="SELECT * FROM `productos_page`";
+            $productos_page_r=mysqli_query($conn, $productos_page);
+            $id_productos=0;
+            while($productos_page_mostrar=mysqli_fetch_assoc($productos_page_r)){
+                $categoria=$productos_page_mostrar["categoria_producto"];
+                if($categoria==1){
+            ?>
             <div class="item_container">
                 <section>
-                    <img src="img/default.png" alt="imagen1">
+                    <?php if ($id_productos==0){ ?>
+                    <img src="<?php echo $productos_page_mostrar["url_img_producto"] ?>" alt="imagen1">
                     <section class="texto">
                         <h2>
-                            LICRA 
+                        <?php echo $productos_page_mostrar["nombre_producto"] ?>
                         </h2>
-                        <h3>$1000</h3>
+                        <h3>$<?php echo $productos_page_mostrar["precio_producto"] ?></h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        <?php echo $productos_page_mostrar["descripcion_producto"] ?> 
                         </p>
                     </section>
+                    <?php } ?>
                 </section>
             </div>
             <div class="item_container">
-                <img src="img/default.png" alt="imagen1">
+            <?php if ($id_productos==3){?>
+                <img src="<?php echo $productos_page_mostrar["url_img_producto"] ?>" alt="imagen1">
                 <section class="texto">
                     <h2>
-                        LICRA 
+                    <?php echo $productos_page_mostrar["nombre_producto"] ?> 
                     </h2>
-                    <h3>$1000</h3>
+                    <h3>$<?php echo $productos_page_mostrar["precio_producto"] ?></h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    <?php echo $productos_page_mostrar["descripcion_producto"] ?>  
                     </p>
                 </section>
-                
+                <?php } ?>
             </div>
+            <?php }
+            switch($id_productos){
+                case 0:
+                    $id_productos=1;
+                     break;
+                case 1:
+                    $id_productos=2;
+                    break;
+                    case 2:
+                        $id_productos=3;
+                        break;
+                    case 3:
+                        $id_productos=4;
+                         break;
+                    case 4:
+                        $id_productos=5;
+                        break;}
+                    }
+            ?>
         </div>
         <div class="fila">
             <div class="item_container">
@@ -112,7 +143,6 @@
             </button>
             </section>
         </div>
-    </div>
 </main>
     <footer class="pie"> 
         <div class="contactos_text">
