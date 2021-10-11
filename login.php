@@ -9,6 +9,7 @@
 
 </head>
 <body>
+<?php include('conexion.php') ?>
     <main>
             <div class="logo">
                 <img src="img/index/logos/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
