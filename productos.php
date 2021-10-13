@@ -14,10 +14,10 @@
         <label for="menu-btn">☰</label>
         <nav class="menu">
             <ul>
-                <li><a href="index.html"><b>INICIO</b></a></li>
-                <li><a href="Club.html" id="club"><b>EL CLUB</b></a></li>
-                <li><a href="index.html#cate"><b>CATEGORÍAS</b></a></li>
-                <li><a href="index.html#produc"><b>PRODUCTOS</b></a></li>
+                <li><a href="index.php"><b>INICIO</b></a></li>
+                <li><a href="Club.php" id="club"><b>EL CLUB</b></a></li>
+                <li><a href="index.php#cate"><b>CATEGORÍAS</b></a></li>
+                <li><a href="index.php#produc"><b>PRODUCTOS</b></a></li>
             </ul>
         </nav>
     </header>
@@ -179,10 +179,10 @@
         <div class="contactos_text">
             <nav class="nav_footer">
                 <ul>
-                    <il><a href="index.html">Inicio</a> </il><br>
-                    <il><a href="Club.html">El Club</a> </il><br>
-                    <il><a href="index.html#cate"> Categorías</a> </il><br>
-                    <il><a href="index.html#produc"> Productos</a> </il>
+                    <il><a href="index.php">Inicio</a> </il><br>
+                    <il><a href="Club.php">El Club</a> </il><br>
+                    <il><a href="index.php#cate"> Categorías</a> </il><br>
+                    <il><a href="index.php#produc"> Productos</a> </il>
                 </ul>
             </nav>
             <section class="contac">

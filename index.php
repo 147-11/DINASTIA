@@ -14,7 +14,7 @@
         <label for="menu-btn">☰</label>
         <nav class="menu">
             <ul>
-                <li><a href="index.html"><b>INICIO</b></a></li>
+                <li><a href="index.php"><b>INICIO</b></a></li>
                 <li><a href="#clb_intro" id="club"><b>EL CLUB</b></a></li>
                 <li><a href="#cate"><b>CATEGORÍAS</b></a></li>
                 <li><a href="#produc"><b>PRODUCTOS</b></a></li>
@@ -223,19 +223,23 @@
                         if ($id_prod==0){ ?>
                         <figure class="contenedor_r">
                             <img src="<?php echo $productos_index_mostrar['logo_producto_index']?>" class="logo_ropa"  alt="ROPA">
-                            <div class="r"><a href="productos.html"><b><?php echo $productos_index_mostrar['nombre_producto_index']?></b></a></div>
+                            <div class="r"><a href="productos.php"><b><?php echo $productos_index_mostrar['nombre_producto_index']?></b></a></div>
                         </figure>
                         <?php }
                         if ($id_prod==1){ ?>
-                        <figure class="contenedor_a">
-                            <img src="<?php echo $productos_index_mostrar['logo_producto_index']?>" class="logo_accesorios" alt="ACCESORIOS">
-                            <div class="accesorios"><strong><b><?php echo $productos_index_mostrar['nombre_producto_index']?></b></strong></div>
+                        <!--figure class="contenedor_a">
+                            <img src="<!?php echo $productos_index_mostrar['logo_producto_index']?>" class="logo_accesorios" alt="ACCESORIOS">
+                            <div class="accesorios"><a href="productos.php"><b><!?php echo $productos_index_mostrar['nombre_producto_index']?></b></a></div>
+                        </figure-->
+                        <figure class="contenedor_r">
+                            <img src="<?php echo $productos_index_mostrar['logo_producto_index']?>" class="logo_ropa"  alt="ROPA">
+                            <div class="r"><a href="productos.php"><b><?php echo $productos_index_mostrar['nombre_producto_index']?></b></a></div>
                         </figure>
                         <?php }
                         if ($id_prod==2){ ?>
                         <figure class="contenedor_p">
                             <img src="<?php echo $productos_index_mostrar['logo_producto_index']?>" class="logo_patines" alt="PATINES">
-                            <div class="patines"><strong><b><?php echo $productos_index_mostrar['nombre_producto_index']?></b></strong></div>
+                            <div class="patines" id="p"><a href="productos.php"><b><?php echo $productos_index_mostrar['nombre_producto_index']?></b></a></div>
                         </figure>
                         <?php } 
                         switch($id_prod){
@@ -309,7 +313,7 @@
             <div class="contactos_text">
                 <nav class="nav_footer">
                     <ul>
-                        <il><a href="index.html"> Inicio</a> </il><br>
+                        <il><a href="index.php"> Inicio</a> </il><br>
                         <il><a href="#clb_intro">   El Club</a> </il><br>
                         <il><a href="#cate"> Categorías</a> </il><br>
                         <il><a href="#produc"> Productos</a> </il>

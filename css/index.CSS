@@ -426,6 +426,14 @@ header label {
     opacity: 0;
     text-align: center;
 }
+.accesorios a{
+    text-decoration: none;
+    color: #000;
+}
+.contenedor_a:hover > .accesorios a{
+    opacity: 1;
+    text-decoration: none;
+}
 .contenedor_a:hover > .accesorios {
     opacity: 1;
 }
@@ -449,6 +457,7 @@ header label {
     padding: 30px 40px;
     cursor: pointer;
     transition: all 250ms ease-out;
+    opacity: 1;
 }
 .patines {
     position: absolute;
@@ -459,6 +468,10 @@ header label {
     transition: all 250ms ease-in;
     opacity: 0;
     text-align: center;
+}
+#p a{
+    text-decoration: none;
+    color: #000;
 }
 .contenedor_p:hover > .patines {
     opacity: 1;
