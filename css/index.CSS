@@ -699,7 +699,7 @@ header label {
     display: flex;
     justify-content: center;
     text-decoration: none;
-}.nav_footer il a {
+}.nav_footer il a{
     color: #707070;
     text-decoration: none;
     font-size: 20px;
@@ -717,6 +717,11 @@ header label {
     justify-content: center;
     font-size: 16px;
 }
+
+.fas fa-envelope {
+    margin-right: 10px;
+}
+
 @media (max-width:829px) {
     .contac {
         padding-top: 16%;
