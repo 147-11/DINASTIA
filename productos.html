@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/productos.css">
+    <title>PRODUCTOS</title>
+</head>
+<body>
+<?php include('conexion.php') ?>
+    <header>
+        <input type="checkbox" id="menu-btn">
+        <label for="menu-btn">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.php"><b>INICIO</b></a></li>
+                <li><a href="Club.php" id="club"><b>EL CLUB</b></a></li>
+                <li><a href="index.php#cate"><b>CATEGORÍAS</b></a></li>
+                <li><a href="index.php#produc"><b>PRODUCTOS</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <img src="img/index/logos/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
+            <h1>
+                <a>ROPA</a>
+            </h1>
+        <section class="ins">
+            <h2 class="primera_clase">
+                ¡Tu Primera Clase Gratis!
+            </h2>
+            <div class="inscribirse" id="inscribirse">
+                <a href="#clb_intro"><b>Inscribete YA</b></a>
+            </div>
+        </section>
+    </section>
+<main>
+  
+    <div class="container">
+        <div class="fila">
+            <div class="item_container">
+                <section>
+                    <img src="" alt="imagen1" id="i1">
+                    <section class="texto">
+                        <h2 id="t1"></h2>
+                        <h3 id="p1"></h3>
+                        <p id="d1"></p>
+                    </section>
+                </section>
+            </div>
+            <div class="item_container">
+                <img src="" alt="imagen1" id="i2">
+                <section class="texto">
+                    <h2 id="t2"></h2>
+                    <h3 id="p2"></h3>
+                    <p id="d2"></p>
+                </section>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item_container">
+                <img src="" alt="imagen1" id="i3">
+                <section class="texto">
+                    <h2 id="t3"></h2>
+                    <h3 id="p3"></h3>
+                    <p id="d3"></p>
+                </section>
+            </div>
+            <div class="item_container">
+                <img src="" alt="imagen1" id="i4">
+                <section class="texto">
+                    <h2 id="t4"></h2>
+                    <h3 id="p4"></h3>
+                    <p id="d4"></p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="final">
+        <div class="galeria__buttons">
+            <section>
+            <button class="galeria__btn--left" href="#imagen3">
+                <img src="img/left.png">
+            </button>
+            </section>
+        </div>
+        <section class="btn-ins">
+            <h2 class="primera_clase">!Tu primera clase Gratis! </h2>
+            <a href="incribete_ya">Inscribete YA</a>
+        </section>
+        <div class="galeria__buttons">
+            <section>
+            <button class="galeria__btn--right" href="#imagen2">
+                <img src="img/right.png">
+            </button>
+            </section>
+        </div>
+</main>
+    <footer class="pie"> 
+        <div class="contactos_text">
+            <nav class="nav_footer">
+                <ul>
+                    <il><a href="index.php">Inicio</a> </il><br>
+                    <il><a href="Club.php">El Club</a> </il><br>
+                    <il><a href="index.php#cate"> Categorías</a> </il><br>
+                    <il><a href="index.php#produc"> Productos</a> </il>
+                </ul>
+            </nav>
+            <section class="contac">
+            <h1 class="contactos">
+                CONTACTOS
+            </h1>
+            <nav class="l_contactos" id="l_con">
+                <ul>
+                    <il><a class="fas fa-envelope" hrfe="" id="f1" target="blank"> </a> </il><br>
+                    <il><a class="fab fa-facebook-f" hrfe="" id="f2" target="blank"></a> </il><br>
+                    <il><a class="fab fa-instagram" hrfe="" id="f3" target="blank"></a> </il><br>
+                    <il><a class="fab fa-whatsapp" hrfe="" id="f4" target="blank"></a> </il>
+                </ul>
+            </nav>
+            </section>
+        </div>
+    </footer>
+<script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
+<script src="js/productos.js"></script>
+</body>
+</html>

@@ -3,7 +3,6 @@ xhr.open("GET","php/club.php");
 xhr.send();
 xhr.onload=function(){
     var club= JSON.parse(this.response);
-    console.log(club);
 
     //mision
     document.getElementById('titulo_mision').innerHTML = club[0].titulo_club_page;
