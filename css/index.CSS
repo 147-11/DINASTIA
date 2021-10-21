@@ -89,10 +89,96 @@ header label {
      padding:10px;
      color:#707070;
  }
+ .cerrarsesion {
+     position: relative;
+     display: none;
+     background-color:#F4E649;
+     padding: 0.5%;
+ }
+ .cerrarsesion a{
+     position: absolute;
+     top: 15%;
+     right: 1%;
+     padding: 0.3%;
+     border-radius: 10px;
+     cursor: pointer;
+}
+.cerrarsesion a:hover{
+    color: #fff;
+    text-shadow: 0px 2px 5px #000;
+}
+.cerrarsesion h2{
+    color:#e6e6e6;
+    text-shadow: 2px 2px 5px rgb(102, 0, 0);
+}
  
 
 /*club*/
 
+.editarclub {
+    display: none;
+}
+.editarclub label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#ec {
+    display: none;
+}
+
+.modal {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#ec:checked ~ .modal {
+    opacity: 1;
+    visibility: visible;
+}
+#ec:checked ~ body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#contenido {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenido h2{
+    padding-bottom: 5%;
+}
+#contenido input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dci {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+
+
+.club_intro {
+    position: relative;
+}
 .titulo{
     padding-top: 20px;
     text-align: center;

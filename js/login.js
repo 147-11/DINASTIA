@@ -1,5 +1,8 @@
+var usuario; var clave; var a=0;
+
 var xhr = new XMLHttpRequest();
 var u; var c;
+
 xhr.open("GET","php/login.php");
 xhr.send();
 xhr.onload=function(){
@@ -9,14 +12,18 @@ xhr.onload=function(){
 };
 
 function login(){
-        var usuario=document.getElementById("usuario_correo").value;
-        var clave=document.getElementById("clave").value;
+        usuario=document.getElementById("usuario_correo").value;
+        clave=document.getElementById("clave").value;
     
-      
         if(usuario==u && clave==c){
           window.location.href = "index.html";
+          sessionStorage.setItem("usuario","dinastia1234");
         }
         else{
           window.alert("Usuario o contraseña inválidos");
         }
-    }
+}
+function sesion(){
+  sessionStorage.removeItem("usuario");
+  window.location.href = "login.html";
+}

@@ -9,11 +9,15 @@
 </head>
 <body>
     <header >
+        <div class="cerrarsesion" id="cerrarsesion">
+            <h2>BIENVENIDO A VERSIÓN EDITOR!</h2>
+            <a onclick="sesion()"><b>Cerrar Sesión</b></a>
+        </div>
         <input type="checkbox" id="menu-btn">
         <label for="menu-btn">☰</label>
         <nav class="menu">
             <ul>
-                <li><a href="index.php"><b>INICIO</b></a></li>
+                <li><a href="index.html"><b>INICIO</b></a></li>
                 <li><a href="#clb_intro" id="club"><b>EL CLUB</b></a></li>
                 <li><a href="#cate"><b>CATEGORÍAS</b></a></li>
                 <li><a href="#produc"><b>PRODUCTOS</b></a></li>
@@ -32,11 +36,27 @@
     <!--SECCIÓN CLUB-->
         <main class="container_main" action="index.php">
             <section class="club_intro" id="clb_intro">
+                <div class="editarclub" id="editarclub">
+                    <input type="checkbox" id="ec">
+                    <label for="ec"><b>Editar</b></label>
+                    <div class="modal">
+                        <div id="contenido">
+                            <h2>EDITAR CLUB</h2>
+                        <p>Titulo</p> 
+                        <input type="text" id="tci" placeholder="Modificar Titulo"> 
+                        <p>Descripción</p>
+                        <textarea id="dci" placeholder="Modificar Descripción"></textarea>
+                        <p>Imagen</p>
+                        <input type="file" id="ici" placeholder="Subir Imagen">
+                        <input onclick="" id="guardar_ci" type="submit" value="Guardar" >
+                        </div>
+                    </div>
+                </div>
                 <h2 class="titulo" id="title"></h2>
                 <div class="club_text">
                     <div class="text_into">
                         <P class="intro_club" id="des_club_index"></P>
-                        <a href="Club.php" id="club-btn">Conoce el Club</a>
+                        <a href="club.html" id="club-btn">Conoce el Club</a>
                     </div>
                     <div class="text_into">
                         <figure class="intro_img">
@@ -127,15 +147,15 @@
                     <div class="categoria_prod">
                         <figure class="contenedor_r">
                             <img src="" class="logo_ropa" id="log1" alt="ROPA">
-                            <div class="r"><a href="productos.php"><b id="b1"></b></a></div>
+                            <div class="r"><a href="productos.html"><b id="b1"></b></a></div>
                         </figure>
                         <figure class="contenedor_a">
                             <img src="" class="logo_accesorios" id="log2" alt="ACCESORIOS">
-                            <div class="accesorios"><a href="productos.php"><b id="b2"></b></a></div>
+                            <div class="accesorios"><a href="productos.html"><b id="b2"></b></a></div>
                         </figure>
                         <figure class="contenedor_p">
                             <img src="" class="logo_patines" id="log3" alt="PATINES">
-                            <div class="patines" id="p"><a href="productos.php"><b id="b3"></b></a></div>
+                            <div class="patines" id="p"><a href="productos.html"><b id="b3"></b></a></div>
                         </figure>
                     </div>
                 </div>    
@@ -191,7 +211,7 @@
             <div class="contactos_text">
                 <nav class="nav_footer">
                     <ul>
-                        <il><a href="index.php"> Inicio</a> </il><br>
+                        <il><a href="index.html"> Inicio</a> </il><br>
                         <il><a href="#clb_intro">   El Club</a> </il><br>
                         <il><a href="#cate"> Categorías</a> </il><br>
                         <il><a href="#produc"> Productos</a> </il>
@@ -203,10 +223,10 @@
                 </h2>
                     <nav class="l_contactos" id="l_con">
                         <ul>
-                            <il><a class="fas fa-envelope" hrfe="" id="f1" target="blank"> </a> </il><br>
-                            <il><a class="fab fa-facebook-f" hrfe="" id="f2" target="blank"></a> </il><br>
-                            <il><a class="fab fa-instagram" hrfe="" id="f3" target="blank"></a> </il><br>
-                            <il><a class="fab fa-whatsapp" hrfe="" id="f4" target="blank"></a> </il>
+                            <il><a class="fas fa-envelope" id="f1" target="blank"> </a> </il><br>
+                            <il><a class="fab fa-facebook-f" id="f2" target="blank"></a> </il><br>
+                            <il><a class="fab fa-instagram" id="f3" target="blank"></a> </il><br>
+                            <il><a class="fab fa-whatsapp" id="f4" target="blank"></a> </il>
                         </ul>
                     </nav>
                 </section>
@@ -215,5 +235,7 @@
     <script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
     <script src="js/galeria.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/editor.js"></script>
 </body>
 </html>

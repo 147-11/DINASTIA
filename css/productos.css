@@ -117,13 +117,19 @@ header label {
 .fila{
     display: flex;
     justify-content: space-between;
+    
 }
 .fila img{
+    position: relative;
     padding: 20px;
-    width: 88%;
+    width: 100%;
     border:20px transparent ;
 }
 .item_container{
+    position: absolute;
+    overflow: hidden;
+    width: 359px;
+    height: 292px;
     padding:0 0 20px 0;
 }
 .item_container p{
