@@ -25,5 +25,5 @@ $conn=conn();
         array_push($tablas, $footer_mostrar); 
     };
 
-        echo json_encode($tablas,JSON_UNESCAPED_SLASHES);
+    echo json_encode($tablas,JSON_UNESCAPED_SLASHES);
 ?>
