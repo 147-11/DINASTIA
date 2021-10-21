@@ -1,0 +1,158 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Club.css">
+    <title>EL CLUB</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-btn">
+        <label for="menu-btn">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.php"><b>INICIO</b></a></li>
+                <li><a href="Club.php" id="club"><b>EL CLUB</b></a></li>
+                <li><a href="index.php#cate"><b>CATEGORÍAS</b></a></li>
+                <li><a href="index.php#produc"><b>PRODUCTOS</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <img src="img/index/logos/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
+            <h1>
+                <a>EL CLUB</a>
+            </h1>
+        <section class="ins">
+            <h2 class="primera_clase">
+                ¡Tu Primera Clase Gratis!
+            </h2>
+            <div class="inscribirse" id="inscribirse">
+                <a href="#clb_intro"><b>Inscribete YA</b></a>
+            </div>
+        </section>
+    </section>
+    <main class="container_main">
+            <section class="club_mision" id="clb_mision">
+                <div class="club_item">
+                    <div class="text_mision">
+                        <h2 id="titulo_mision"></h2>
+                        <P class="parra_mision" id="p_m"></P>
+                    </div>
+                    <div class="mision_img">
+                        <img src="" alt="mision_img" id="i_m">
+                    </div>
+                    <?php } ?>
+                </div>
+            </section>
+
+            <section class="club_vision" id="clb_vision">
+                <div class="club_item2">
+                <?php if ($id_mision==1){   ?>
+                    <div class="text_vision">
+                        <h2 id="titulo_vision"></h2>
+                        <P class="parra_vision" id="p_v"></P>
+                    </div>
+                    <div class="vision_img">
+                        <img src="" alt="vision_img" id="i_v">
+                    </div>
+                </div>
+            </section>
+            <section class="Objetivos_contenedor">
+                <div class="Objetivos_Texto">
+                    <div class="obj_GEN">
+                    
+                        <h2 class="Obj_G" id="G"></h2>
+                        <P class="Obj_G_parra" id="p_G"></P>
+                    </div>
+                    <div class="obj_esp">
+                        <h2 id="Obj_E"></h2>
+                        <P class="Obj_E_parra">
+                            <p class="list_objs" id="p_E"></p>
+                        </P>  
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="Historia_contenedor">
+            <div class="content_histo">
+                <div class="hitoria_text">
+                    <h2 id="titulito"></h2>
+                    <p id="parrafo_histo"></p>
+                </div>
+                <section class="galeria">
+                    <h2 class="galeria_tittle" id="gale">
+                    GALERIA
+                </h2>
+                <div class="galeria__content" id="content_imgs">
+                    <div class="galeria__slide">
+                        <img class="galeria__img" src="" alt="segunda" id="gale1">
+                    </div>
+    
+                    <div class="galeria__slide">
+                        <img class="galeria__img" src="" alt="tercera" id="gale2">
+                    </div>
+    
+                    <div class="galeria__slide">
+                        <img class="galeria__img" src="" alt="primera" id="gale3">
+                    </div>
+    
+                    <div class="galeria__buttons">
+                        <button class="galeria__btn--left" href="#imagen3">
+                            <img src="img/left.png">
+                        </button>
+                        <button class="galeria__btn--right" href="#imagen2">
+                            <img src="img/right.png">
+                        </button>
+                    </div>
+                </div>
+                </section>
+                </div>   
+            </div>
+            </section>
+            <section class="PoliticasBien_contenedor">
+                <div class="PoliticasBien_Texto">
+                    <div class="politica">
+                        <h2 class="PoliticasBien_suptitulo" id="t_pb"></h2>
+                        <P class="PoliticasBien_parrafo" id="d_pb"></P>
+                    </div>
+                    <div class="btn-ins">
+                        <h2 class="primera_clase">!Tu primera clase Gratis! </h2>
+                        <a href="incribete_ya">Inscribete YA</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="pie"> 
+            <div class="contactos_text">
+                <nav class="nav_footer">
+                    <ul>
+                    <il><a href="index.php">Inicio</a> </il><br>
+                    <il><a href="Club.php">El Club</a> </il><br>
+                    <il><a href="index.php#cate"> Categorías</a> </il><br>
+                    <il><a href="index.php#produc"> Productos</a> </il>
+                    </ul>
+                </nav>
+                <section class="contac">
+                <h2 class="contactos">
+                    CONTACTOS
+                </h2>
+                <nav class="l_contactos" id="l_con">
+                    <ul>
+                        <il><a class="fas fa-envelope" hrfe="" id="f1" target="blank"> </a> </il><br>
+                        <il><a class="fab fa-facebook-f" hrfe="" id="f2" target="blank"></a> </il><br>
+                        <il><a class="fab fa-instagram" hrfe="" id="f3" target="blank"></a> </il><br>
+                        <il><a class="fab fa-whatsapp" hrfe="" id="f4" target="blank"></a> </il>
+                    </ul>
+                </nav>
+                </section>
+            </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/club.js"></script>
+</body>
+</html>

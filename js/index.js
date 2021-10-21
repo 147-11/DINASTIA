@@ -3,7 +3,6 @@ xhr.open("GET","php/index.php");
 xhr.send();
 xhr.onload=function(){
     var index= JSON.parse(this.response);
-    console.log(index);
 
     //El club
     document.getElementById('title').innerHTML = index[0].titulo_club_index;
