@@ -36,9 +36,10 @@
     <!--SECCIÓN CLUB-->
         <main class="container_main" action="index.php">
             <section class="club_intro" id="clb_intro">
+                <!--editar club-->
                 <div class="editarclub" id="editarclub">
                     <input type="checkbox" id="ec">
-                    <label for="ec"><b>Editar</b></label>
+                    <label for="ec" class="botoneditar"><b>Editar</b></label>
                     <div class="modal">
                         <div id="contenido">
                             <h2>EDITAR CLUB</h2>
@@ -67,14 +68,123 @@
             </section>
 
             <section class="Categorias_intro" id="ctg">
+                
                 <div class="Categorias_img" id="cate_intro">
                     <h2 class="titulo" id="cate">
                         CATEGORÍAS
                     </h2>
+                    <!--editar iniciacion-->
+                    <div class="editariniciacion" id="editariniciacion">
+                        <input type="checkbox" id="ei">
+                        <label for="ei" class="botoneditari"><b>Editar</b></label>
+                        <div class="modali">
+                            <div id="contenidoi">
+                                <h2>EDITAR INICIACIÓN</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="ti" placeholder="Modificar Titulo"> 
+                            <p>Descripción</p>
+                            <textarea id="di" placeholder="Modificar Descripción"></textarea>
+                            <p>Imagen</p>
+                            <input type="file" id="ii" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_i" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--editar basico-->
+                    <div class="editarbasico" id="editarbasico">
+                        <input type="checkbox" id="eb">
+                        <label for="eb" class="botoneditarb"><b>Editar</b></label>
+                        <div class="modalb">
+                            <div id="contenidob">
+                                <h2>EDITAR BÁSICO</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="tb" placeholder="Modificar Titulo"> 
+                            <p>Descripción</p>
+                            <textarea id="db" placeholder="Modificar Descripción"></textarea>
+                            <p>Imagen</p>
+                            <input type="file" id="ib" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_b" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--editar medio-->
+                    <div class="editarmedio" id="editarmedio">
+                        <input type="checkbox" id="em">
+                        <label for="em" class="botoneditarm"><b>Editar</b></label>
+                        <div class="modalm">
+                            <div class="contenidom" id="contenidom">
+                                <h2>EDITAR MEDIO</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="tm" placeholder="Modificar Titulo"> 
+                            <p>Descripción</p>
+                            <textarea id="dm" placeholder="Modificar Descripción"></textarea>
+                            <p>Imagen</p>
+                            <input type="file" id="im" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_m" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--editar avanzado-->
+                    <div class="editaravanzado" id="editaravanzado">
+                        <input type="checkbox" id="ea">
+                        <label for="ea" class="botoneditara"><b>Editar</b></label>
+                        <div class="modala">
+                            <div id="contenidoa">
+                                <h2>EDITAR AVANZADO</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="ta" placeholder="Modificar Titulo"> 
+                            <p>Descripción</p>
+                            <textarea id="da" placeholder="Modificar Descripción"></textarea>
+                            <p>Imagen</p>
+                            <input type="file" id="ia" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_a" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--editar preclub-->
+                    <div class="editarpreclub" id="editarpreclub">
+                        <input type="checkbox" id="ep">
+                        <label for="ep" class="botoneditarp"><b>Editar</b></label>
+                        <div class="modalp">
+                            <div id="contenidop">
+                                <h2>EDITAR PRE-CLUB</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="tp" placeholder="Modificar Titulo"> 
+                            <p>Descripción</p>
+                            <textarea id="dp" placeholder="Modificar Descripción"></textarea>
+                            <p>Imagen</p>
+                            <input type="file" id="ip" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_p" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--editar club-->
+                    <div class="editarcl" id="editarcl">
+                        <input type="checkbox" id="ecl">
+                        <label for="ecl" class="botoneditarcl"><b>Editar</b></label>
+                        <div class="modalcl">
+                            <div id="contenidocl">
+                                <h2>EDITAR CLUB</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="tcl" placeholder="Modificar Titulo"> 
+                            <p>Descripción</p>
+                            <textarea id="dcl" placeholder="Modificar Descripción"></textarea>
+                            <p>Imagen</p>
+                            <input type="file" id="icl" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_cl" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+
                      <div class="grilla_img">
                         <div class="inicia">
                             <section class="inici_img">
-                            <input type="checkbox" id="caja1">
+                                <input type="checkbox" id="caja1">
                                 <label for="caja1" class="caja_1">
                                     <img src="" id="imgg">
                                 </label>
@@ -144,6 +254,51 @@
                     <h2 class="productos_title" id="produc">
                         PRODUCTOS
                     </h2>
+                    <!--ropa-->
+                    <div class="editarropa" id="editarropa">
+                        <input type="checkbox" id="er">
+                        <label for="er" class="botoneditarr"><b>Editar</b></label>
+                        <div class="modalr">
+                            <div class="contenidor" id="contenidor">
+                                <h2>EDITAR ROPA</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="tr" placeholder="Modificar Titulo"> 
+                            <p>Imagen</p>
+                            <input type="file" id="ir" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_r" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+                    <!--accesorios-->
+                    <div class="editaraccesorios" id="editaraccesorios">
+                        <input type="checkbox" id="eacc">
+                        <label for="eacc" class="botoneditaracc"><b>Editar</b></label>
+                        <div class="modalacc">
+                            <div class="contenidoacc" id="contenidoacc">
+                                <h2>EDITAR ACCESORIOS</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="tacc" placeholder="Modificar Titulo"> 
+                            <p>Imagen</p>
+                            <input type="file" id="iacc" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_acc" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
+                    <!--patines-->
+                    <div class="editarpatines" id="editarpatines">
+                        <input type="checkbox" id="epat">
+                        <label for="epat" class="botoneditarpat"><b>Editar</b></label>
+                        <div class="modalpat">
+                            <div class="contenidopat" id="contenidopat">
+                                <h2>EDITAR PATINES</h2>
+                            <p>Titulo</p> 
+                            <input type="text" id="tpat" placeholder="Modificar Titulo"> 
+                            <p>Imagen</p>
+                            <input type="file" id="ipat" placeholder="Subir Imagen">
+                            <input onclick="" id="guardar_pat" type="submit" value="Guardar" >
+                            </div>
+                        </div>
+                    </div>
                     <div class="categoria_prod">
                         <figure class="contenedor_r">
                             <img src="" class="logo_ropa" id="log1" alt="ROPA">
@@ -165,6 +320,23 @@
                 <h2 class="galeria_tittle" id="gale">
                     GALERIA
                 </h2>
+                <!--galeria-->
+                <div class="editargaleria" id="editargaleria">
+                    <input type="checkbox" id="eg">
+                    <label for="eg" class="botoneditarg"><b>Editar</b></label>
+                    <div class="modalg">
+                        <div class="contenidog" id="contenidog">
+                            <h2>EDITAR GALERIA</h2>
+                        <p>Imagen 1</p> 
+                        <input type="file" id="g1" placeholder="Modificar Titulo"> 
+                        <p>Imagen 2</p>
+                        <input type="file" id="g2" placeholder="Subir Imagen">
+                        <p>Imagen 3</p>
+                        <input type="file" id="g3" placeholder="Subir Imagen">
+                        <input onclick="" id="guardar_pat" type="submit" value="Guardar" >
+                        </div>
+                    </div>
+                </div>
                 <div class="galeria__content" id="content_imgs">
                         
                     <div class="galeria__slide">

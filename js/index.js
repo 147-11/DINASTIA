@@ -67,6 +67,8 @@ xhr.onload=function(){
     document.getElementById('f4').innerHTML = index[11].f_whatsapp;
 
 
+
+    
 };
 
 

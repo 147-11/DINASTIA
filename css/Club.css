@@ -65,13 +65,11 @@ header label {
 }
 
 .banner{
-    background-color: #1C2343;
+    background-color:#1C2343;
     padding-top: 30px;
     padding-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    /*grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr 2fr 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));*/
     gap: 10px;
     align-content: center;
  }
@@ -108,11 +106,97 @@ header label {
     color:#707070;
     font-size: 15px;
 }
+.cerrarsesionclub {
+    position: relative;
+    display: none;
+    background-color:#F4E649;
+    padding: 0.5%;
+}
+.cerrarsesionclub a{
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    padding: 0.3%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cerrarsesionclub a:hover{
+   color: #fff;
+   text-shadow: 0px 2px 5px #000;
+}
+.cerrarsesionclub h2{
+   color:#e6e6e6;
+   text-shadow: 2px 2px 5px rgb(102, 0, 0);
+}
+
+
 
 /*MISION*/
 
+.editarmision {
+    display: none;
+    position: absolute;
+}
+.editarmision label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#em {
+    display: none;
+}
+
+.modalm {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#em:checked ~ .modalm {
+    opacity: 1;
+    visibility: visible;
+}
+#em:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidom {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidom h2{
+    padding-bottom: 5%;
+}
+#contenidom input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dm {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
 .club_item{
     display: flex;
+    position: relative;
 }
 
 #titulo_mision{
@@ -146,6 +230,69 @@ header label {
 }
 
 /*VISION*/
+
+.editarvision {
+    display: none;
+    position: absolute;
+}
+.editarvision label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#ev {
+    display: none;
+}
+
+.modalv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#ev:checked ~ .modalv {
+    opacity: 1;
+    visibility: visible;
+}
+#ev:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidov {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidov h2{
+    padding-bottom: 5%;
+}
+#contenidov input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dv {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+
 .club_vision{
     background-color:#1C2343;
 }
@@ -187,6 +334,133 @@ header label {
 }
 
 /*OBJETIVOS*/
+
+/* OG */
+.editarog {
+    display: none;
+    position: absolute;
+}
+.editarog label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#eog {
+    display: none;
+}
+
+.modalog {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#eog:checked ~ .modalog {
+    opacity: 1;
+    visibility: visible;
+}
+#eog:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidoog {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidoog h2{
+    padding-bottom: 5%;
+}
+#contenidoog input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dog {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+/* OE */
+.editaroe {
+    display: none;
+    position: absolute;
+}
+.editaroe label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#eoe {
+    display: none;
+}
+
+.modaloe {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#eoe:checked ~ .modaloe {
+    opacity: 1;
+    visibility: visible;
+}
+#eoe:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidooe {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidooe h2{
+    padding-bottom: 5%;
+}
+#contenidooe input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#doe {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+
+
 .Objetivos_texto{
     display: flex;
     padding: 20px;
@@ -212,6 +486,68 @@ header label {
 }
 
 /*historia*/
+
+.editarhistoria {
+    display: none;
+    position: absolute;
+}
+.editarhistoria label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#eh {
+    display: none;
+}
+
+.modalh {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#eh:checked ~ .modalh {
+    opacity: 1;
+    visibility: visible;
+}
+#eh:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidoh {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidoh h2{
+    padding-bottom: 5%;
+}
+#contenidoh input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dh {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
 
 .content_histo{
     display: flex;
@@ -296,6 +632,69 @@ header label {
 }
 
 /*POLITICA DE BIENESTAR*/
+
+.editarpb {
+    display: none;
+    position: absolute;
+}
+.editarpb label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#epb {
+    display: none;
+}
+
+.modalpb {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#epb:checked ~ .modalpb {
+    opacity: 1;
+    visibility: visible;
+}
+#epb:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidopb {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidopb h2{
+    padding-bottom: 5%;
+}
+#contenidopb input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dpb {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+
 .PoliticasBien_Texto{
     display: flex;
     justify-content: space-around;
