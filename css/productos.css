@@ -383,8 +383,10 @@ header label {
     justify-content: space-between;
 }
 .fila img{
+    object-fit: contain;
     padding: 20px;
-    width: 88%;
+    width: 300px;
+    height: 350px;
     border:20px transparent ;
 }
 .item_container{
