@@ -105,8 +105,280 @@ header label {
     font-size: 15px;
 }
 
+.cerrarsesion {
+    position: relative;
+    display: none;
+    background-color:#F4E649;
+    padding: 0.5%;
+}
+.cerrarsesion a{
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    padding: 0.3%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cerrarsesion a:hover{
+   color: #fff;
+   text-shadow: 0px 2px 5px #000;
+}
+.cerrarsesion h2{
+   color:#e6e6e6;
+   text-shadow: 2px 2px 5px rgb(102, 0, 0);
+}
+
+
+
+
 
 /* IMAGENES*/
+
+/*producto 1*/
+.editarp1 {
+    display: none;
+}
+.editarp1 label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#ep1 {
+    display: none;
+}
+
+.modalp1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#ep1:checked ~ .modalp1 {
+    opacity: 1;
+    visibility: visible;
+}
+#ep1:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidop1 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidop1 h2{
+    padding-bottom: 5%;
+}
+#contenidop1 input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dp1 {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+/*producto 2*/
+.editarp2 {
+    display: none;
+}
+.editarp2 label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#ep2 {
+    display: none;
+}
+
+.modalp2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#ep2:checked ~ .modalp2 {
+    opacity: 1;
+    visibility: visible;
+}
+#ep2:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidop2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidop2 h2{
+    padding-bottom: 5%;
+}
+#contenidop2 input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dp2 {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+/*producto 3*/
+.editarp3 {
+    display: none;
+}
+.editarp3 label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#ep3 {
+    display: none;
+}
+
+.modalp3 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#ep3:checked ~ .modalp3 {
+    opacity: 1;
+    visibility: visible;
+}
+#ep3:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidop3 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidop3 h2{
+    padding-bottom: 5%;
+}
+#contenidop3 input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dp3 {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+/*producto 4*/
+.editarp4 {
+    display: none;
+}
+.editarp4 label {
+    padding: 0.5%;
+    top: 15%;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color:#F4E649;
+}
+#ep4 {
+    display: none;
+}
+
+.modalp4 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#ep4:checked ~ .modalp4 {
+    opacity: 1;
+    visibility: visible;
+}
+#ep4:checked ~ html {
+    opacity: 70%;
+    visibility: visible;
+}
+#contenidop4 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5% 0;
+}
+#contenidop4 h2{
+    padding-bottom: 5%;
+}
+#contenidop4 input {
+    outline: none;
+    font-size: 115%;
+    width: 82%;
+    margin: 1%;
+}
+#dp4 {
+    width: 80%;
+    height: 20%;
+    padding: 3%;
+}
+
+
 
 .container{
     margin-top: 110px;
