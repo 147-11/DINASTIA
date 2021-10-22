@@ -150,13 +150,11 @@ header label {
 }
 
 .modalp1 {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
-    left: 25%;
     opacity: 0;
     visibility: hidden;
 }
@@ -211,13 +209,11 @@ header label {
 }
 
 .modalp2 {
-    width: 50%;
+    width: 120%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
-    left: 25%;
     opacity: 0;
     visibility: hidden;
 }
@@ -272,13 +268,11 @@ header label {
 }
 
 .modalp3 {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
-    left: 25%;
     opacity: 0;
     visibility: hidden;
 }
@@ -333,13 +327,11 @@ header label {
 }
 
 .modalp4 {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
-    left: 25%;
     opacity: 0;
     visibility: hidden;
 }
@@ -378,7 +370,7 @@ header label {
     padding: 3%;
 }
 
-
+/* IMAGENES*/
 
 .container{
     margin-top: 110px;
@@ -389,19 +381,14 @@ header label {
 .fila{
     display: flex;
     justify-content: space-between;
-    
 }
 .fila img{
-    position: relative;
     padding: 20px;
-    width: 100%;
+    width: 88%;
     border:20px transparent ;
 }
 .item_container{
-    position: absolute;
-    overflow: hidden;
-    width: 359px;
-    height: 292px;
+    position: relative;
     padding:0 0 20px 0;
 }
 .item_container p{
@@ -422,6 +409,8 @@ header label {
     background-color:#FFDBDB;
     border-radius: 20px;
 }
+
+
 /*FINAL*/
 #final {
     display: grid;

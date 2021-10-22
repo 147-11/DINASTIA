@@ -1,7 +1,7 @@
 var comparar = "dinastia1234";
 if (sessionStorage.getItem("usuario") == comparar){
     
-    document.getElementById('cerrarsesionclub').style.display = 'block';
+    document.getElementById('cerrarsesion').style.display = 'block';
 
     //producto 1
     document.getElementById('editarp1').style.display = 'block';
