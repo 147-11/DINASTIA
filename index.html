@@ -50,8 +50,13 @@
                         <textarea id="dci" placeholder="Modificar Descripción"></textarea>
                         <p>Imagen</p>
                         <input type="file" id="ici" placeholder="Subir Imagen">
-                        <input onclick="jajaxd()" id="guardar_ci" type="submit" value="Guardar" >
+                        <input onclick="club()" id="guardar_ci" type="submit" value="Guardar" >
                         </div>
+                    </div>
+                    <div id="seguroclub" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DEL CLUB?</p>
+                        <input onclick="seguroclub(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="seguroclub(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
                 <h2 class="titulo" id="title"></h2>
@@ -87,7 +92,7 @@
                             <textarea id="di" placeholder="Modificar Descripción"></textarea>
                             <p>Imagen</p>
                             <input type="file" id="ii" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_i" type="submit" value="Guardar" >
+                            <input onclick="iniciacion()" id="guardar_i" type="submit" value="Guardar" >
                             </div>
                         </div>
                     </div>
