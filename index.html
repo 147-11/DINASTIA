@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.CSS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>DINASTÍA</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
                 <div class="editarclub" id="editarclub">
                     <input type="checkbox" id="ec">
                     <label for="ec" class="botoneditar"><b>Editar</b></label>
-                    <div class="modal">
+                    <div class="modal" id="modal_club">
                         <div id="contenido">
                             <h2>EDITAR CLUB</h2>
                         <p>Titulo</p> 
@@ -49,7 +50,7 @@
                         <textarea id="dci" placeholder="Modificar Descripción"></textarea>
                         <p>Imagen</p>
                         <input type="file" id="ici" placeholder="Subir Imagen">
-                        <input onclick="" id="guardar_ci" type="submit" value="Guardar" >
+                        <input onclick="jajaxd()" id="guardar_ci" type="submit" value="Guardar" >
                         </div>
                     </div>
                 </div>
@@ -409,5 +410,6 @@
     <script src="js/index.js"></script>
     <script src="js/login.js"></script>
     <script src="js/editor.js"></script>
+    <script src="js/actualizarindex.js"></script>
 </body>
 </html>
