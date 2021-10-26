@@ -21,11 +21,23 @@ function seguroclub(a) {
 }
 
 function iniciacion(){
+    
+    document.getElementById('seguroiniciacion').style.display = 'block';
+    document.getElementById('contenidoi').style.display = 'none';
+}
+
+function seguroiniciacion(a){
     var tituloiniciacion= $('#ti').val();
-    //var descripcionclub =$('#dci').val();
-    $.post('php/actualizarindex.php',{ti:tituloiniciacion/*, dci:descripcionclub*/ }, function(data, status){
+    var descripcioniniciacion = $('#di').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{ti:tituloiniciacion, di:descripcioniniciacion}, function(data, status){
     console.log(data+" "+status);
     alert("Información Guardada");
     window.location.href = "index.html";
 });
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguroiniciacion').style.display = 'none';
+    document.getElementById('contenidoi').style.display = 'flex';
+}
 }

@@ -176,6 +176,7 @@ header label {
 }
 
 #seguroclub {
+    display:table-column;
     display: none;
     width: 35%;
     text-align: center;
@@ -342,6 +343,7 @@ header label {
 }
 
 .modali {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -386,6 +388,32 @@ header label {
     height: 20%;
     padding: 3%;
 }
+
+#seguroiniciacion {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: -35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#seguroiniciacion input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /* basico */
 .editarbasico {
