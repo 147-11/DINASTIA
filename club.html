@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/Club.css">
     <title>EL CLUB</title>
 </head>
@@ -52,7 +53,12 @@
                 <textarea id="dm" placeholder="Modificar Descripción"></textarea>
                 <p>Imagen</p>
                 <input type="file" id="im" placeholder="Subir Imagen">
-                <input onclick="" id="guardar_m" type="submit" value="Guardar" >
+                <input onclick="mision()" id="guardar_m" type="submit" value="Guardar" >
+                </div>
+                <div id="seguromision" >
+                    <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN LA MISIÓN?</p>
+                    <input onclick="seguromision(1)" id="si_club" type="submit" value="SI" >
+                    <input onclick="seguromision(0)" id="no_club" type="submit" value="NO" >
                 </div>
             </div>
         </div>
@@ -81,7 +87,12 @@
                     <textarea id="dv" placeholder="Modificar Descripción"></textarea>
                     <p>Imagen</p>
                     <input type="file" id="iv" placeholder="Subir Imagen">
-                    <input onclick="" id="guardar_v" type="submit" value="Guardar" >
+                    <input onclick="vision()" id="guardar_v" type="submit" value="Guardar" >
+                    </div>
+                    <div id="segurovision" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE VISIÓN?</p>
+                        <input onclick="segurovision(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="segurovision(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -107,7 +118,12 @@
                     <input type="text" id="tog" placeholder="Modificar Titulo"> 
                     <p>Descripción</p>
                     <textarea id="dog" placeholder="Modificar Descripción"></textarea>
-                    <input onclick="" id="guardar_og" type="submit" value="Guardar" >
+                    <input onclick="OG()" id="guardar_og" type="submit" value="Guardar" >
+                    </div>
+                    <div id="seguroOG" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE OBJETIVO GÉNERAL?</p>
+                        <input onclick="seguroOG(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="seguroOG(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -122,7 +138,12 @@
                     <input type="text" id="toe" placeholder="Modificar Titulo"> 
                     <p>Descripción</p>
                     <textarea id="doe" placeholder="Modificar Descripción"></textarea>
-                    <input onclick="" id="guardar_oe" type="submit" value="Guardar" >
+                    <input onclick="goe()" id="guardar_oe" type="submit" value="Guardar" >
+                    </div>
+                    <div id="segurogoe" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE OBJETIVOS ESPECÍFICOS?</p>
+                        <input onclick="segurogoe(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="segurogoe(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -155,7 +176,12 @@
                     <input type="text" id="th" placeholder="Modificar Titulo"> 
                     <p>Descripción</p>
                     <textarea id="dh" placeholder="Modificar Descripción"></textarea>
-                    <input onclick="" id="guardar_h" type="submit" value="Guardar" >
+                    <input onclick="historia()" id="guardar_h" type="submit" value="Guardar" >
+                    </div>
+                    <div id="segurohistoria" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE HISTORIA?</p>
+                        <input onclick="segurohistoria(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="segurohistoria(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -206,7 +232,12 @@
                     <input type="text" id="tpb" placeholder="Modificar Titulo"> 
                     <p>Descripción</p>
                     <textarea id="dpb" placeholder="Modificar Descripción"></textarea>
-                    <input onclick="" id="guardar_pb" type="submit" value="Guardar" >
+                    <input onclick="pb()" id="guardar_pb" type="submit" value="Guardar" >
+                    </div>
+                    <div id="seguropb" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE POLÍTICA DE BIENESTAR?</p>
+                        <input onclick="seguropb(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="seguropb(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -252,5 +283,6 @@
     <script src="js/club.js"></script>
     <script src="js/editorclub.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/actualizarclub.js"></script>
 </body>
 </html>
