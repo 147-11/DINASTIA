@@ -20,6 +20,9 @@ function seguroclub(a) {
     }
 }
 
+//categorias
+
+//iniciacion
 function iniciacion(){
     
     document.getElementById('seguroiniciacion').style.display = 'block';
@@ -39,5 +42,184 @@ function seguroiniciacion(a){
     alert("Modificación Cancelada");
     document.getElementById('seguroiniciacion').style.display = 'none';
     document.getElementById('contenidoi').style.display = 'flex';
+}
+}
+
+//basico
+function basico(){
+    
+    document.getElementById('segurobasico').style.display = 'block';
+    document.getElementById('contenidob').style.display = 'none';
+}
+function segurobasico(a){
+    var titulobasico= $('#tb').val();
+    var descripcionbasico = $('#db').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{tb:titulobasico, db:descripcionbasico}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('segurobasico').style.display = 'none';
+    document.getElementById('contenidob').style.display = 'flex';
+}
+}
+
+
+//medio
+function medio(){
+    
+    document.getElementById('seguromedio').style.display = 'block';
+    document.getElementById('contenidom').style.display = 'none';
+}
+function seguromedio(a){
+    var titulomedio= $('#tm').val();
+    var descripcionmedio = $('#dm').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{tm:titulomedio, dm:descripcionmedio}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguromedio').style.display = 'none';
+    document.getElementById('contenidom').style.display = 'flex';
+}
+}
+
+//avanzado
+function avanzado(){
+    
+    document.getElementById('seguroavanzado').style.display = 'block';
+    document.getElementById('contenidoa').style.display = 'none';
+}
+function seguroavanzado(a){
+    var tituloavanzado= $('#ta').val();
+    var descripcionavanzado = $('#da').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{ta:tituloavanzado, da:descripcionavanzado}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguroavanzado').style.display = 'none';
+    document.getElementById('contenidoa').style.display = 'flex';
+}
+}
+
+//preclub
+function pre(){
+    
+    document.getElementById('seguropre').style.display = 'block';
+    document.getElementById('contenidop').style.display = 'none';
+}
+function seguropre(a){
+    var titulopre= $('#tp').val();
+    var descripcionpre = $('#dp').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{tp:titulopre, dp:descripcionpre}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguropre').style.display = 'none';
+    document.getElementById('contenidop').style.display = 'flex';
+}
+}
+
+//club
+function clubb(){
+    document.getElementById('seguroclubb').style.display = 'block';
+    document.getElementById('contenidocl').style.display = 'none';
+}
+function seguroclubb(a){
+    var tituloclubb= $('#tcl').val();
+    var descripcionclubb = $('#dcl').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{tcl:tituloclubb, dcl:descripcionclubb}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguroclubb').style.display = 'none';
+    document.getElementById('contenidocl').style.display = 'flex';
+}
+}
+
+
+//productos
+//ropa
+function ropa(){
+    
+    document.getElementById('seguroropa').style.display = 'block';
+    document.getElementById('contenidor').style.display = 'none';
+}
+
+function seguroropa(a){
+    var tituloiniciacion= $('#tr').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{tr:tituloiniciacion}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguroropa').style.display = 'none';
+    document.getElementById('contenidor').style.display = 'flex';
+}
+}
+
+//accesorios
+function accesorios(){
+    
+    document.getElementById('seguroaccesorios').style.display = 'block';
+    document.getElementById('contenidoacc').style.display = 'none';
+}
+
+function seguroaccesorios(a){
+    var tituloaccesorios= $('#tacc').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{ta:tituloaccesorios}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguroaccesorios').style.display = 'none';
+    document.getElementById('contenidoacc').style.display = 'flex';
+}
+}
+
+
+//patines
+function patines(){
+    
+    document.getElementById('seguropatines').style.display = 'block';
+    document.getElementById('contenidopat').style.display = 'none';
+}
+
+function seguropatines(a){
+    var titulopatines= $('#tpat').val();
+    if (a ==1){
+    $.post('php/actualizarindex.php',{tpat:titulopatines}, function(data, status){
+    console.log(data+" "+status);
+    alert("Información Guardada");
+    window.location.href = "index.html";
+});
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('seguropatines').style.display = 'none';
+    document.getElementById('contenidopat').style.display = 'flex';
 }
 }

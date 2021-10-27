@@ -115,7 +115,12 @@
                             <textarea id="db" placeholder="Modificar Descripción"></textarea>
                             <p>Imagen</p>
                             <input type="file" id="ib" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_b" type="submit" value="Guardar" >
+                            <input onclick="basico()" id="guardar_b" type="submit" value="Guardar" >
+                            </div>
+                            <div id="segurobasico" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE BÁSICO?</p>
+                                <input onclick="segurobasico(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="segurobasico(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>
@@ -133,7 +138,12 @@
                             <textarea id="dm" placeholder="Modificar Descripción"></textarea>
                             <p>Imagen</p>
                             <input type="file" id="im" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_m" type="submit" value="Guardar" >
+                            <input onclick="medio()" id="guardar_m" type="submit" value="Guardar" >
+                            </div>
+                            <div id="seguromedio" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE MEDIO?</p>
+                                <input onclick="seguromedio(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="seguromedio(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>
@@ -151,7 +161,12 @@
                             <textarea id="da" placeholder="Modificar Descripción"></textarea>
                             <p>Imagen</p>
                             <input type="file" id="ia" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_a" type="submit" value="Guardar" >
+                            <input onclick="avanzado()" id="guardar_a" type="submit" value="Guardar" >
+                            </div>
+                            <div id="seguroavanzado" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE AVANZADO?</p>
+                                <input onclick="seguroavanzado(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="seguroavanzado(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>
@@ -169,7 +184,12 @@
                             <textarea id="dp" placeholder="Modificar Descripción"></textarea>
                             <p>Imagen</p>
                             <input type="file" id="ip" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_p" type="submit" value="Guardar" >
+                            <input onclick="pre()" id="guardar_p" type="submit" value="Guardar" >
+                            </div>
+                            <div id="seguropre" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE PRE-CLUB?</p>
+                                <input onclick="seguropre(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="seguropre(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>
@@ -187,7 +207,12 @@
                             <textarea id="dcl" placeholder="Modificar Descripción"></textarea>
                             <p>Imagen</p>
                             <input type="file" id="icl" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_cl" type="submit" value="Guardar" >
+                            <input onclick="clubb()" id="guardar_cl" type="submit" value="Guardar" >
+                            </div>
+                            <div id="seguroclubb" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE CLUB?</p>
+                                <input onclick="seguroclubb(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="seguroclubb(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>
@@ -276,7 +301,12 @@
                             <input type="text" id="tr" placeholder="Modificar Titulo"> 
                             <p>Imagen</p>
                             <input type="file" id="ir" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_r" type="submit" value="Guardar" >
+                            <input onclick="ropa()" id="guardar_r" type="submit" value="Guardar" >
+                            </div>
+                            <div id="seguroropa" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE ROPA?</p>
+                                <input onclick="seguroropa(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="seguroropa(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>
@@ -291,7 +321,12 @@
                             <input type="text" id="tacc" placeholder="Modificar Titulo"> 
                             <p>Imagen</p>
                             <input type="file" id="iacc" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_acc" type="submit" value="Guardar" >
+                            <input onclick="accesorios()" id="guardar_acc" type="submit" value="Guardar" >
+                            </div>
+                            <div id="seguroaccesorios" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE ACCESORIOS?</p>
+                                <input onclick="seguroaccesorios(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="seguroaccesorios(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>
@@ -306,7 +341,12 @@
                             <input type="text" id="tpat" placeholder="Modificar Titulo"> 
                             <p>Imagen</p>
                             <input type="file" id="ipat" placeholder="Subir Imagen">
-                            <input onclick="" id="guardar_pat" type="submit" value="Guardar" >
+                            <input onclick="patines()" id="guardar_pat" type="submit" value="Guardar" >
+                            </div>
+                            <div id="seguropatines" >
+                                <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE PATINES?</p>
+                                <input onclick="seguropatines(1)" id="si_club" type="submit" value="SI" >
+                                <input onclick="seguropatines(0)" id="no_club" type="submit" value="NO" >
                             </div>
                         </div>
                     </div>

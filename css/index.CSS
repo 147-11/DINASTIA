@@ -435,6 +435,7 @@ header label {
 }
 
 .modalb {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -478,6 +479,29 @@ header label {
     width: 80%;
     height: 20%;
     padding: 3%;
+}
+
+#segurobasico {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: -5%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#segurobasico input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -546,6 +570,31 @@ header label {
     padding: 3%;
 }
 
+#seguromedio {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: -5%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#seguromedio input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* avanzado */
 .editaravanzado {
     top: 56.3%;
@@ -566,6 +615,7 @@ header label {
 }
 
 .modala {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -611,6 +661,29 @@ header label {
     padding: 3%;
 }
 
+#seguroavanzado {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    margin-top: 30%;
+    left: -35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#seguroavanzado input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
 /* preclub */
 .editarpreclub {
     top: 56.3%;
@@ -631,6 +704,7 @@ header label {
 }
 
 .modalp {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -675,6 +749,28 @@ header label {
     height: 20%;
     padding: 3%;
 }
+#seguropre {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    margin-top: 30%;
+    left: -35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#seguropre input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
 
 /* club */
 .editarcl {
@@ -696,6 +792,7 @@ header label {
 }
 
 .modalcl{
+    position: relative;
     width: 110%;
     display: flex;
     justify-content: center;
@@ -740,7 +837,28 @@ header label {
     height: 20%;
     padding: 3%;
 }
+#seguroclubb {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    margin-top: 30%;
+    left: -35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
 
+#seguroclubb input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -905,6 +1023,7 @@ header label {
 }
 
 .modalr {
+    position: relative;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -945,6 +1064,31 @@ header label {
     margin: 1%;
 }
 
+#seguroropa {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: -5%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#seguroropa input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* accesorios */
 .editaraccesorios {
     top: 15%;
@@ -965,6 +1109,7 @@ header label {
 }
 
 .modalacc {
+    position: relative;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -1003,6 +1148,29 @@ header label {
     font-size: 115%;
     width: 82%;
     margin: 1%;
+}
+
+#seguroaccesorios {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: -5%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#seguroaccesorios input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* patines */
@@ -1064,6 +1232,30 @@ header label {
     width: 82%;
     margin: 1%;
 }
+
+#seguropatines {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: -5%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#seguropatines input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
