@@ -167,6 +167,7 @@ header label {
     visibility: visible;
 }
 #contenidop1 {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -191,6 +192,27 @@ header label {
     width: 80%;
     height: 20%;
     padding: 3%;
+}
+#segurop1 {
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#segurop1 input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 /*producto 2*/
@@ -226,6 +248,7 @@ header label {
     visibility: visible;
 }
 #contenidop2 {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -250,6 +273,28 @@ header label {
     width: 80%;
     height: 20%;
     padding: 3%;
+}
+
+#segurop2 {
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#segurop2 input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 /*producto 3*/
@@ -285,6 +330,7 @@ header label {
     visibility: visible;
 }
 #contenidop3 {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -309,6 +355,27 @@ header label {
     width: 80%;
     height: 20%;
     padding: 3%;
+}
+#segurop3 {
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#segurop3 input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 /*producto 4*/
@@ -344,6 +411,7 @@ header label {
     visibility: visible;
 }
 #contenidop4 {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -368,6 +436,27 @@ header label {
     width: 80%;
     height: 20%;
     padding: 3%;
+}
+#segurop4 {
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#segurop4 input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* IMAGENES*/

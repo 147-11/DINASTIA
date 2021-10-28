@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/productos.css">
     <title>PRODUCTOS</title>
 </head>
@@ -52,11 +53,18 @@
                         <h2>EDITAR PRODUCTO 1</h2>
                     <p>Titulo</p> 
                     <input type="text" id="tp1" placeholder="Modificar Titulo"> 
+                    <p>Precio</p> 
+                    <input type="text" id="pp1" placeholder="Modificar Precio"> 
                     <p>Descripción</p>
                     <textarea id="dp1" placeholder="Modificar Descripción"></textarea>
                     <p>Imagen</p>
                     <input type="file" id="ip1" placeholder="Subir Imagen">
-                    <input onclick="" id="guardar_p1" type="submit" value="Guardar" >
+                    <input onclick="p1()" id="guardar_p1" type="submit" value="Guardar" >
+                    </div>
+                    <div id="segurop1" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 1?</p>
+                        <input onclick="segurop1(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="segurop1(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -79,11 +87,18 @@
                         <h2>EDITAR PRODUCTO 2</h2>
                     <p>Titulo</p> 
                     <input type="text" id="tp2" placeholder="Modificar Titulo"> 
+                    <p>Precio</p> 
+                    <input type="text" id="pp2" placeholder="Modificar Precio"> 
                     <p>Descripción</p>
                     <textarea id="dp2" placeholder="Modificar Descripción"></textarea>
                     <p>Imagen</p>
                     <input type="file" id="ip2" placeholder="Subir Imagen">
-                    <input onclick="" id="guardar_p2" type="submit" value="Guardar" >
+                    <input onclick="p2()" id="guardar_p2" type="submit" value="Guardar" >
+                    </div>
+                    <div id="segurop2" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 2?</p>
+                        <input onclick="segurop2(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="segurop2(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -106,11 +121,18 @@
                         <h2>EDITAR PRODUCTO 3</h2>
                     <p>Titulo</p> 
                     <input type="text" id="tp3" placeholder="Modificar Titulo"> 
+                    <p>Precio</p> 
+                    <input type="text" id="pp3" placeholder="Modificar Precio"> 
                     <p>Descripción</p>
                     <textarea id="dp3" placeholder="Modificar Descripción"></textarea>
                     <p>Imagen</p>
                     <input type="file" id="ip3" placeholder="Subir Imagen">
-                    <input onclick="" id="guardar_p3" type="submit" value="Guardar" >
+                    <input onclick="p3" id="guardar_p3" type="submit" value="Guardar" >
+                    </div>
+                    <div id="segurop3" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 3?</p>
+                        <input onclick="segurop3(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="segurop3(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -131,11 +153,18 @@
                         <h2>EDITAR PRODUCTO 4</h2>
                     <p>Titulo</p> 
                     <input type="text" id="tp4" placeholder="Modificar Titulo"> 
+                    <p>Precio</p> 
+                    <input type="text" id="pp4" placeholder="Modificar Precio"> 
                     <p>Descripción</p>
                     <textarea id="dp4" placeholder="Modificar Descripción"></textarea>
                     <p>Imagen</p>
                     <input type="file" id="ip4" placeholder="Subir Imagen">
-                    <input onclick="" id="guardar_p4" type="submit" value="Guardar" >
+                    <input onclick="p4()" id="guardar_p4" type="submit" value="Guardar" >
+                    </div>
+                    <div id="segurop4" >
+                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 4?</p>
+                        <input onclick="segurop4(1)" id="si_club" type="submit" value="SI" >
+                        <input onclick="segurop4(0)" id="no_club" type="submit" value="NO" >
                     </div>
                 </div>
             </div>
@@ -197,6 +226,7 @@
 <script src="js/productos.js"></script>
 <script src="js/editorproductos.js"></script>
 <script src="js/login.js"></script>
+<script src="js/actualizarproductos.js"></script>
 
 </body>
 </html>
