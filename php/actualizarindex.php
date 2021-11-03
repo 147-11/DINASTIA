@@ -96,4 +96,5 @@ $conn=conn();
    mysqli_query ($conn, "UPDATE productos_index SET nombre_producto_index = '$nombre_producto_indexpat' WHERE productos_index.id_producto_index = 3");}
 
 
+
 ?>

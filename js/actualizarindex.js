@@ -7,12 +7,32 @@ function club(){
 function seguroclub(a) {
     var tituloclub= $('#tci').val();
     var descripcionclub =$('#dci').val();
+
+    var imgclubi = document.querySelector('#ici').files;
+    
+
     if (a ==1){
         $.post('php/actualizarindex.php',{tci:tituloclub, dci:descripcionclub }, function(data, status){
             console.log(data+" "+status);
-            alert("Información Guardada");
-            window.location.href = "index.html";
+            //alert("Información Guardada");
+            //window.location.href = "index.html";
         });
+        if (imgclubi.length > 0) {
+            let formData = new FormData();
+            formData.append("ici", imgclubi[0]); // En la posición 0; es decir, el primer elemento
+            fetch('php/imagenindex.php', {
+                method: 'POST',
+                body: formData,
+                
+            })
+                .then(respuesta => respuesta.text())
+                .then(decodificado => {
+                    console.log(decodificado);
+                });
+        }
+            
+                alert("Información Guardada");
+                window.location.href = "index.html";
     } else {
         alert("Modificación Cancelada");
         document.getElementById('seguroclub').style.display = 'none';
@@ -222,4 +242,8 @@ function seguropatines(a){
     document.getElementById('seguropatines').style.display = 'none';
     document.getElementById('contenidopat').style.display = 'flex';
 }
+}
+
+function subirimgc(a){
+    insertaImagen()
 }

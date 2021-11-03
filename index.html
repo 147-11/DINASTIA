@@ -41,7 +41,7 @@
                 <div class="editarclub" id="editarclub">
                     <input type="checkbox" id="ec">
                     <label for="ec" class="botoneditar"><b>Editar</b></label>
-                    <div class="modal" id="modal_club">
+                    <div class="modal" id="modal_club" ">
                         <div id="contenido">
                             <h2>EDITAR CLUB</h2>
                         <p>Titulo</p> 
@@ -52,11 +52,11 @@
                         <input type="file" id="ici" placeholder="Subir Imagen">
                         <input onclick="club()" id="guardar_ci" type="submit" value="Guardar" >
                         </div>
-                        <div id="seguroclub" >
+                        <form id="seguroclub">
                             <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DEL CLUB?</p>
                             <input onclick="seguroclub(1)" id="si_club" type="submit" value="SI" >
                             <input onclick="seguroclub(0)" id="no_club" type="submit" value="NO" >
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <h2 class="titulo" id="title"></h2>
