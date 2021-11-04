@@ -9,7 +9,7 @@ $conn=conn();
 $imgci = $_FILES["ici"];
 $n_ci = $imgci["name"];
 $temp = $imgci["tmp_name"];
-$imagenci = "img/".$n_ci;
+$imagenci = "/DINASTIA/img/".$n_ci;
 
     if (move_uploaded_file($temp, $imagenci)){
         echo "subida";

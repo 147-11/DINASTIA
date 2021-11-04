@@ -18,12 +18,24 @@ function seguroclub(a) {
             //window.location.href = "index.html";
         });
         if (imgclubi.length > 0) {
+            /*$.ajax({
+                method: "POST",
+                url: "php/imagenindex.php",
+                data: { ici: imgclubi[0]}
+              })
+                .done(function( msg ) {
+                  alert( "Data Saved: " + msg );
+                });*/
+
+                
+                  /*  $.post("php/imagenindex.php", {ici: imgclubi[0]}, function(result){
+                      $("span").html(result);
+                    });*/
             let formData = new FormData();
             formData.append("ici", imgclubi[0]); // En la posición 0; es decir, el primer elemento
             fetch('php/imagenindex.php', {
                 method: 'POST',
                 body: formData,
-                
             })
                 .then(respuesta => respuesta.text())
                 .then(decodificado => {
