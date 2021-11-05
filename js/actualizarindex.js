@@ -5,34 +5,21 @@ function club(){
 }
 
 function seguroclub(a) {
-    var tituloclub= $('#tci').val();
-    var descripcionclub =$('#dci').val();
-
-    var imgclubi = document.querySelector('#ici').files;
     
 
     if (a ==1){
-        $.post('php/actualizarindex.php',{tci:tituloclub, dci:descripcionclub }, function(data, status){
-            console.log(data+" "+status);
-            //alert("Información Guardada");
-            //window.location.href = "index.html";
-        });
-        if (imgclubi.length > 0) {
-            /*$.ajax({
-                method: "POST",
-                url: "php/imagenindex.php",
-                data: { ici: imgclubi[0]}
-              })
-                .done(function( msg ) {
-                  alert( "Data Saved: " + msg );
-                });*/
-
-                
-                  /*  $.post("php/imagenindex.php", {ici: imgclubi[0]}, function(result){
-                      $("span").html(result);
-                    });*/
+        
+    
+    var tituloclub= $('#tci').val();
+    var descripcionclub =$('#dci').val();
+    var imgci = document.querySelector('#ici').files;
+    if (a ==1){
+    $.post('php/actualizarindex.php',{tci:tituloclub, dci:descripcionclub}, function(data, status){
+    console.log(data+" "+status);
+    if (imgci.length < 64227) {
             let formData = new FormData();
-            formData.append("ici", imgclubi[0]); // En la posición 0; es decir, el primer elemento
+            
+            formData.append("ici", imgci[0]); // En la posición 0; es decir, el primer elemento
             fetch('php/imagenindex.php', {
                 method: 'POST',
                 body: formData,
@@ -41,16 +28,18 @@ function seguroclub(a) {
                 .then(decodificado => {
                     console.log(decodificado);
                 });
+        }else{
+            alert("La imagen excede el peso recomendado");
         }
-            
-                alert("Información Guardada");
-                window.location.href = "index.html";
-    } else {
-        alert("Modificación Cancelada");
+    alert("Información Guardada");
+    window.location.href = "index.html#title";
+});
+} else {
+    alert("Modificación Cancelada");
         document.getElementById('seguroclub').style.display = 'none';
         document.getElementById('contenido').style.display = 'flex';
-    }
 }
+}}
 
 //categorias
 
@@ -64,11 +53,27 @@ function iniciacion(){
 function seguroiniciacion(a){
     var tituloiniciacion= $('#ti').val();
     var descripcioniniciacion = $('#di').val();
+    var imgii = document.querySelector('#ii').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{ti:tituloiniciacion, di:descripcioniniciacion}, function(data, status){
     console.log(data+" "+status);
+    if (imgii.length < 64227) {
+            let formData = new FormData();
+            
+            formData.append("ii", imgii[0]); // En la posición 0; es decir, el primer elemento
+            fetch('php/imagenindex.php', {
+                method: 'POST',
+                body: formData,
+            })
+                .then(respuesta => respuesta.text())
+                .then(decodificado => {
+                    console.log(decodificado);
+                });
+        }else{
+            alert("La imagen excede el peso recomendado");
+        }
     alert("Información Guardada");
-    window.location.href = "index.html";
+    window.location.href = "index.html#ii";
 });
 } else {
     alert("Modificación Cancelada");
@@ -254,8 +259,4 @@ function seguropatines(a){
     document.getElementById('seguropatines').style.display = 'none';
     document.getElementById('contenidopat').style.display = 'flex';
 }
-}
-
-function subirimgc(a){
-    insertaImagen()
 }

@@ -130,6 +130,7 @@ header label {
 }
 
 .modal {
+    z-index: 500;
     width: 50%;
     display: flex;
     justify-content: center;
