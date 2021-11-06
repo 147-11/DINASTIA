@@ -51,10 +51,11 @@ function iniciacion(){
 }
 
 function seguroiniciacion(a){
-    var tituloiniciacion= $('#ti').val();
+    
+    if (a ==1){
+        var tituloiniciacion= $('#ti').val();
     var descripcioniniciacion = $('#di').val();
     var imgii = document.querySelector('#ii').files;
-    if (a ==1){
     $.post('php/actualizarindex.php',{ti:tituloiniciacion, di:descripcioniniciacion}, function(data, status){
     console.log(data+" "+status);
     if (imgii.length < 64227) {
@@ -91,12 +92,29 @@ function basico(){
 function segurobasico(a){
     var titulobasico= $('#tb').val();
     var descripcionbasico = $('#db').val();
+    var imgib = document.querySelector('#ib').files;
     if (a ==1){
-    $.post('php/actualizarindex.php',{tb:titulobasico, db:descripcionbasico}, function(data, status){
-    console.log(data+" "+status);
+        $.post('php/actualizarindex.php',{tb:titulobasico, db:descripcionbasico}, function(data, status){
+        console.log(data+" "+status);
+    if (imgib.length < 64227) {
+            let formData = new FormData();
+            
+            formData.append("ib", imgib[0]); // En la posición 0; es decir, el primer elemento
+            fetch('php/imagenindex.php', {
+                method: 'POST',
+                body: formData,
+            })
+                .then(respuesta => respuesta.text())
+                .then(decodificado => {
+                    console.log(decodificado);
+                });
+        }else{
+            alert("La imagen excede el peso recomendado");
+        }
     alert("Información Guardada");
-    window.location.href = "index.html";
+    window.location.href = "index.html#ii";
 });
+
 } else {
     alert("Modificación Cancelada");
     document.getElementById('segurobasico').style.display = 'none';
@@ -114,9 +132,25 @@ function medio(){
 function seguromedio(a){
     var titulomedio= $('#tm').val();
     var descripcionmedio = $('#dm').val();
+    var imgim = document.querySelector('#im').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{tm:titulomedio, dm:descripcionmedio}, function(data, status){
     console.log(data+" "+status);
+    if (imgim.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("im", imgim[0]); // En la posición 0; es decir, el primer elemento
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
     alert("Información Guardada");
     window.location.href = "index.html";
 });
@@ -136,9 +170,25 @@ function avanzado(){
 function seguroavanzado(a){
     var tituloavanzado= $('#ta').val();
     var descripcionavanzado = $('#da').val();
+    var imgia = document.querySelector('#ia').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{ta:tituloavanzado, da:descripcionavanzado}, function(data, status){
     console.log(data+" "+status);
+    if (imgia.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("ia", imgia[0]); // En la posición 0; es decir, el primer elemento
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
     alert("Información Guardada");
     window.location.href = "index.html";
 });
@@ -158,9 +208,25 @@ function pre(){
 function seguropre(a){
     var titulopre= $('#tp').val();
     var descripcionpre = $('#dp').val();
+    var imgip = document.querySelector('#ip').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{tp:titulopre, dp:descripcionpre}, function(data, status){
     console.log(data+" "+status);
+    if (imgip.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("ip", imgip[0]); // En la posición 0; es decir, el primer elemento
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
     alert("Información Guardada");
     window.location.href = "index.html";
 });
@@ -179,9 +245,25 @@ function clubb(){
 function seguroclubb(a){
     var tituloclubb= $('#tcl').val();
     var descripcionclubb = $('#dcl').val();
+    var imgicl = document.querySelector('#icl').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{tcl:tituloclubb, dcl:descripcionclubb}, function(data, status){
     console.log(data+" "+status);
+    if (imgicl.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("icl", imgicl[0]); // En la posición 0; es decir, el primer elemento
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
     alert("Información Guardada");
     window.location.href = "index.html";
 });
@@ -203,9 +285,25 @@ function ropa(){
 
 function seguroropa(a){
     var tituloiniciacion= $('#tr').val();
+    var imgir = document.querySelector('#ir').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{tr:tituloiniciacion}, function(data, status){
     console.log(data+" "+status);
+    if (imgir.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("ir", imgir[0]); // En la posición 0; es decir, el primer elemento
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
     alert("Información Guardada");
     window.location.href = "index.html";
 });
@@ -225,9 +323,25 @@ function accesorios(){
 
 function seguroaccesorios(a){
     var tituloaccesorios= $('#tacc').val();
+    var imgiacc = document.querySelector('#iacc').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{ta:tituloaccesorios}, function(data, status){
     console.log(data+" "+status);
+    if (imgiacc.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("iacc", imgiacc[0]); // En la posición 0; es decir, el primer elemento
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
     alert("Información Guardada");
     window.location.href = "index.html";
 });
@@ -248,9 +362,25 @@ function patines(){
 
 function seguropatines(a){
     var titulopatines= $('#tpat').val();
+    var imgipat = document.querySelector('#ipat').files;
     if (a ==1){
     $.post('php/actualizarindex.php',{tpat:titulopatines}, function(data, status){
     console.log(data+" "+status);
+    if (imgipat.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("ipat", imgipat[0]); // En la posición 0; es decir, el primer elemento
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
     alert("Información Guardada");
     window.location.href = "index.html";
 });
