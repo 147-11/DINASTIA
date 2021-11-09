@@ -32,13 +32,13 @@ function seguroclub(a) {
             alert("La imagen excede el peso recomendado");
         }
     alert("Información Guardada");
-    window.location.href = "index.html#title";
+    window.location.href = "index.html";
 });
+}
 } else {
     alert("Modificación Cancelada");
         document.getElementById('seguroclub').style.display = 'none';
         document.getElementById('contenido').style.display = 'flex';
-}
 }}
 
 //categorias
@@ -74,7 +74,7 @@ function seguroiniciacion(a){
             alert("La imagen excede el peso recomendado");
         }
     alert("Información Guardada");
-    window.location.href = "index.html#ii";
+    window.location.href = "index.html";
 });
 } else {
     alert("Modificación Cancelada");
@@ -112,7 +112,7 @@ function segurobasico(a){
             alert("La imagen excede el peso recomendado");
         }
     alert("Información Guardada");
-    window.location.href = "index.html#ii";
+    window.location.href = "index.html";
 });
 
 } else {

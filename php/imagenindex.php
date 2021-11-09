@@ -14,6 +14,11 @@ $imagenci = "../img/".$n_ci;
 $imgurl = "img/".$n_ci;
 
 if($imgci != null){
+    /*$urloldici= mysqli_query($conn,"SELECT img_club_index FROM club_index");
+    while ($uici=mysqli_fetch_array($urloldici)){
+        unlink("../".$uici[img_club_index]);
+    }*/
+
     if (move_uploaded_file($temp, $imagenci)){
         echo "subida";
     }
@@ -30,14 +35,15 @@ if($imgci != null){
 $imgii = $_FILES["ii"];
 $n_ii = $imgii["name"];
 $tempii = $imgii["tmp_name"];
-$imagenii = "../img/".$n_ii;
-$imgurlii = "img/".$n_ii;
+$imagenii = "../img/index/cate_club/".$n_ii;
+$imgurlii = "img/index/cate_club/".$n_ii;
 
 if($imgii != null){
-    $urlold= "SELECT img_club_index FROM bddinastia`.`club_index`";
-    $urlold_r=mysqli_query($conn, $urlold); 
-    $urlold_mostrar=mysqli_fetch_assoc($urlold_r);
-    move_uploaded_file($urlold_mostrar, "img/");
+    $urloldii= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE 1");
+    while ($uii=mysqli_fetch_array($urloldii)){
+        unlink("../".$uii[cate_img_index]);
+    }
+    
 
     if (move_uploaded_file($tempii, $imagenii)){
         echo "subida";
@@ -53,28 +59,15 @@ if($imgii != null){
 $imgib = $_FILES["ib"];
 $n_ib = $imgib["name"];
 $tempib = $imgib["tmp_name"];
-$imagenib = "../img/".$n_ib;
-$imgurlib = "img/".$n_ib;
+$imagenib = "../img/index/cate_club/".$n_ib;
+$imgurlib = "img/index/cate_club/".$n_ib;
 
 if($imgib != null){
-    if (move_uploaded_file($tempib, $imagenib)){
-        echo "subida";
+    $urloldib= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE 2");
+    while ($uib=mysqli_fetch_array($urloldib)){
+        unlink("../".$uib[cate_img_index]);
     }
-    else {
-        echo "no hizo nothin";
-    };
 
-    mysqli_query ($conn, "UPDATE categorias_club_index SET cate_img_index = '$imgurlib' WHERE id_categorias_index = 2");
-};
-
-//basico
-$imgib = $_FILES["ib"];
-$n_ib = $imgib["name"];
-$tempib = $imgib["tmp_name"];
-$imagenib = "../img/".$n_ib;
-$imgurlib = "img/".$n_ib;
-
-if($imgib != null){
     if (move_uploaded_file($tempib, $imagenib)){
         echo "subida";
     }
@@ -89,10 +82,15 @@ if($imgib != null){
 $imgim = $_FILES["im"];
 $n_im = $imgim["name"];
 $tempim = $imgim["tmp_name"];
-$imagenim = "../img/".$n_im;
-$imgurlim = "img/".$n_im;
+$imagenim = "../img/index/cate_club/".$n_im;
+$imgurlim = "img/index/cate_club/".$n_im;
 
 if($imgim != null){
+    $urloldim= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE 3");
+    while ($uim=mysqli_fetch_array($urloldim)){
+        unlink("../".$uim[cate_img_index]);
+    }
+
     if (move_uploaded_file($tempim, $imagenim)){
         echo "subida";
     }
@@ -107,10 +105,15 @@ if($imgim != null){
 $imgia = $_FILES["ia"];
 $n_ia = $imgia["name"];
 $tempia = $imgia["tmp_name"];
-$imagenia = "../img/".$n_ia;
-$imgurlia = "img/".$n_ia;
+$imagenia = "../img/index/cate_club/".$n_ia;
+$imgurlia = "img/index/cate_club/".$n_ia;
 
 if($imgia != null){
+    $urloldia= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE 4");
+    while ($uia=mysqli_fetch_array($urloldia)){
+        unlink("../".$uia[cate_img_index]);
+    }
+
     if (move_uploaded_file($tempia, $imagenia)){
         echo "subida";
     }
@@ -125,10 +128,15 @@ if($imgia != null){
 $imgip = $_FILES["ip"];
 $n_ip = $imgip["name"];
 $tempip = $imgip["tmp_name"];
-$imagenip = "../img/".$n_ip;
-$imgurlip = "img/".$n_ip;
+$imagenip = "../img/index/cate_club/".$n_ip;
+$imgurlip = "img/index/cate_club/".$n_ip;
 
 if($imgip != null){
+    $urloldip= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE 5");
+    while ($uip=mysqli_fetch_array($urloldip)){
+        unlink("../".$uip[cate_img_index]);
+    }
+
     if (move_uploaded_file($tempip, $imagenip)){
         echo "subida";
     }
@@ -139,14 +147,19 @@ if($imgip != null){
     mysqli_query ($conn, "UPDATE categorias_club_index SET cate_img_index = '$imgurlip' WHERE id_categorias_index = 5");
 };
 
-//pre-club
+//club
 $imgicl = $_FILES["icl"];
 $n_icl = $imgicl["name"];
 $tempicl = $imgicl["tmp_name"];
-$imagenicl = "../img/".$n_icl;
-$imgurlicl = "img/".$n_icl;
+$imagenicl = "../img/index/cate_club/".$n_icl;
+$imgurlicl = "img/index/cate_club/".$n_icl;
 
 if($imgicl != null){
+    $urloldicl= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE 1");
+    while ($uicl=mysqli_fetch_array($urloldicl)){
+        unlink("../".$uicl[cate_img_index]);
+    }
+
     if (move_uploaded_file($tempicl, $imagenicl)){
         echo "subida";
     }
@@ -166,6 +179,11 @@ $imagenir = "../img/index/logos/".$n_ir;
 $imgurlir = "img/index/logos/".$n_ir;
 
 if($imgir != null){
+    $urloldir= mysqli_query($conn,"SELECT logo_producto_index FROM productos_index.id_producto_index = 1"");
+    while ($uir=mysqli_fetch_array($urloldir)){
+        unlink("../".$uir[logo_producto_index]);
+    }
+
     if (move_uploaded_file($tempir, $imagenir)){
         echo "subida";
     }
@@ -184,6 +202,11 @@ $imageniacc = "../img/index/logos/".$n_iacc;
 $imgurliacc = "img/index/logos/".$n_iacc;
 
 if($imgiacc != null){
+    $urloldiacc= mysqli_query($conn,"SELECT `logo_producto_index` FROM `productos_index` WHERE 2");
+    while ($uiacc=mysqli_fetch_array($urloldiacc)){
+        unlink("../".$uiacc[logo_producto_index]);
+    }
+
     if (move_uploaded_file($tempiacc, $imageniacc)){
         echo "subida";
     }
@@ -202,6 +225,11 @@ $imagenipat = "../img/index/logos/".$n_ipat;
 $imgurlipat = "img/index/logos/".$n_ipat;
 
 if($imgipat != null){
+    $urloldipat= mysqli_query($conn,"SELECT logo_producto_index FROM productos_index WHERE 3");
+    while ($uipat=mysqli_fetch_array($urloldipat)){
+        unlink("../".$uipat[logo_producto_index]);
+    }
+
     if (move_uploaded_file($tempipat, $imagenipat)){
         echo "subida";
     }
