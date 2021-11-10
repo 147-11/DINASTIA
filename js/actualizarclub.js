@@ -7,9 +7,27 @@ function mision(){
 function seguromision(a) {
     var titulomision= $('#tm').val();
     var descripcionmision =$('#dm').val();
+    var imgm = document.querySelector('#im').files;
     if (a == 1){
         $.post('php/actualizarclub.php',{tm:titulomision, dm:descripcionmision }, function(data, status){
             console.log(data+" "+status);
+            if (imgm.length < 64227) {
+                let formData = new FormData();
+                
+                formData.append("im", imgm[0]); // En la posición 0; es decir, el primer elemento
+                fetch('php/imagenclub.php', {
+                    method: 'POST',
+                    body: formData,
+                })
+                    .then(respuesta => respuesta.text())
+                    .then(decodificado => {
+                        console.log(decodificado);
+                    });
+            }else{
+                alert("La imagen excede el peso recomendado");
+            }
+
+
             alert("Información Guardada");
             window.location.href = "club.html";
         });
@@ -29,9 +47,25 @@ function vision(){
 function segurovision(a) {
     var titulovision= $('#tv').val();
     var descripcionvision =$('#dv').val();
+    var imgv = document.querySelector('#iv').files;
     if (a ==1){
         $.post('php/actualizarclub.php',{tv:titulovision, dv:descripcionvision }, function(data, status){
             console.log(data+" "+status);
+            if (imgv.length < 64227) {
+                let formData = new FormData();
+                
+                formData.append("iv", imgv[0]); // En la posición 0; es decir, el primer elemento
+                fetch('php/imagenclub.php', {
+                    method: 'POST',
+                    body: formData,
+                })
+                    .then(respuesta => respuesta.text())
+                    .then(decodificado => {
+                        console.log(decodificado);
+                    });
+            }else{
+                alert("La imagen excede el peso recomendado");
+            }
             alert("Información Guardada");
             window.location.href = "club.html";
         });

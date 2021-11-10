@@ -4,12 +4,8 @@ function club(){
     document.getElementById('contenido').style.display = 'none';
 }
 
-function seguroclub(a) {
-    
-
+function seguroclub(a) {  
     if (a ==1){
-        
-    
     var tituloclub= $('#tci').val();
     var descripcionclub =$('#dci').val();
     var imgci = document.querySelector('#ici').files;
