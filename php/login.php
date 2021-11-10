@@ -5,14 +5,25 @@ function conn(){
 
 $conn=conn();
 
-    $tablas=array();
+$usuario = "DinastíaClubFP";//$_POST['u'];
+$clave = "*Dinastiaclub21*";//$_POST['c'];
 
-    $login="SELECT * FROM `login`";
+
+    $tablas=array();
+    $login="SELECT id_login FROM `login`";
     $login_r=mysqli_query($conn, $login);
     while($login_mostrar=mysqli_fetch_assoc($login_r)){
-        array_push($tablas, $login_mostrar); 
+        $tablas= $login_mostrar;   
     };
 
-    echo json_encode($tablas,JSON_UNESCAPED_SLASHES);
+    $u=$tablas[1];
+    if ($tablas[1]==$usuario){
+        $a= 1;
+    }else{
+        $a=0;
+    };
+
+
+    echo json_encode($u,JSON_UNESCAPED_SLASHES);
 
 ?>
