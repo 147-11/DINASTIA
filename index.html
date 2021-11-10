@@ -379,12 +379,17 @@
                         <div class="contenidog" id="contenidog">
                             <h2>EDITAR GALERIA</h2>
                         <p>Imagen 1</p> 
-                        <input type="file" id="g1" placeholder="Modificar Titulo"> 
+                        <input type="file" id="g1" placeholder="subir Imagen 1"> 
                         <p>Imagen 2</p>
-                        <input type="file" id="g2" placeholder="Subir Imagen">
+                        <input type="file" id="g2" placeholder="Subir Imagen 2">
                         <p>Imagen 3</p>
-                        <input type="file" id="g3" placeholder="Subir Imagen">
-                        <input onclick="" id="guardar_pat" type="submit" value="Guardar" >
+                        <input type="file" id="g3" placeholder="Subir Imagen 3">
+                        <input onclick="galeria()" id="guardar_pat" type="submit" value="Guardar" >
+                        </div>
+                        <div id="segurogaleria" >
+                            <p>¿SEGURO QUE QUIERE MODIFICAR LA INFORMACIÓN DE PATINES?</p>
+                            <input onclick="segurogaleria(1)" id="si_club" type="submit" value="SI" >
+                            <input onclick="segurogaleria(0)" id="no_club" type="submit" value="NO" >
                         </div>
                     </div>
                 </div>

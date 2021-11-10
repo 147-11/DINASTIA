@@ -240,5 +240,73 @@ if($imgipat){
     mysqli_query ($conn, "UPDATE productos_index SET logo_producto_index = '$imgurlipat' WHERE productos_index.id_producto_index = 3");
 };
 
+//galeria
+$imgg1 = $_FILES["g1"];
+$n_g1 = $imgg1["name"];
+$tempg1 = $imgg1["tmp_name"];
+$imageng1 = "../img/index/galeria/G1".$n_g1;
+$imgurlg1 = "img/index/galeria/G1".$n_g1;
+
+$imgg2 = $_FILES["g2"];
+$n_g2 = $imgg2["name"];
+$tempg2 = $imgg2["tmp_name"];
+$imageng2 = "../img/index/galeria/G2".$n_g2;
+$imgurlg2 = "img/index/galeria/G2".$n_g2;
+
+$imgg3 = $_FILES["g3"];
+$n_g3 = $imgg3["name"];
+$tempg3 = $imgg3["tmp_name"];
+$imageng3 = "../img/index/galeria/G3".$n_g3;
+$imgurlg3 = "img/index/galeria/G3".$n_g3;
+
+
+if($imgg1){
+    $urloldg1= mysqli_query($conn,"SELECT g_img1 FROM galeria ");
+    while ($ug1=mysqli_fetch_array($urloldg1)){
+        unlink("../".$ug1[g_img1]);
+    }
+
+    if (move_uploaded_file($tempg1, $imageng1)){
+        echo "subida";
+    }
+    else {
+        echo "no hizo nothin";
+    };
+
+    mysqli_query ($conn, "UPDATE galeria SET g_img1 = '$imgurlg1'");
+};
+
+if($imgg2){
+    $urloldg2= mysqli_query($conn,"SELECT g_img2 FROM galeria ");
+    while ($ug2=mysqli_fetch_array($urloldg2)){
+        unlink("../".$ug2[g_img2]);
+    }
+
+    if (move_uploaded_file($tempg2, $imageng2)){
+        echo "subida";
+    }
+    else {
+        echo "no hizo nothin";
+    };
+
+    mysqli_query ($conn, "UPDATE galeria SET g_img2 = '$imgurlg2'");
+};
+
+if($imgg3){
+    $urloldg3= mysqli_query($conn,"SELECT g_img3 FROM galeria ");
+    while ($ug3=mysqli_fetch_array($urloldg3)){
+        unlink("../".$ug3[g_img3]);
+    }
+
+    if (move_uploaded_file($tempg3, $imageng3)){
+        echo "subida";
+    }
+    else {
+        echo "no hizo nothin";
+    };
+
+    mysqli_query ($conn, "UPDATE galeria SET g_img3 = '$imgurlg3'");
+};
+
 
 ?>

@@ -1397,7 +1397,6 @@ header label {
 }
 
 /*GALERIA FOTOS*/
-/* ropa */
 .editargaleria {
     top: 5%;
     left: 5%;
@@ -1455,6 +1454,29 @@ header label {
     font-size: 115%;
     width: 82%;
     margin: 1%;
+}
+
+#segurogaleria {
+    z-index: 1;
+    display:table-column;
+    display: none;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: -35%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0px 0px 20px 5px #000;
+    transition: all 500ms ease;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+#segurogaleria input {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 

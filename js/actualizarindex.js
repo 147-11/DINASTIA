@@ -390,3 +390,41 @@ function seguropatines(a){
     document.getElementById('contenidopat').style.display = 'flex';
 }
 }
+
+//galería
+function galeria(){
+    
+    document.getElementById('segurogaleria').style.display = 'block';
+    document.getElementById('contenidog').style.display = 'none';
+}
+
+function segurogaleria(a){
+    var imgigale1= document.querySelector('#g1').files;
+    var imgigale2 = document.querySelector('#g2').files;
+    var imgigale3 = document.querySelector('#g3').files;
+if (a ==1){
+    if (imgigale1.length < 64227 && imgigale2.length < 64227 && imgigale3.length < 64227) {
+        let formData = new FormData();
+        
+        formData.append("g1", imgigale1[0]); // En la posición 0; es decir, el primer elemento
+        formData.append("g2", imgigale2[0]);
+        formData.append("g3", imgigale3[0]);
+        fetch('php/imagenindex.php', {
+            method: 'POST',
+            body: formData,
+        })
+            .then(respuesta => respuesta.text())
+            .then(decodificado => {
+                console.log(decodificado);
+            });
+    }else{
+        alert("La imagen excede el peso recomendado");
+    }
+    alert("Información Guardada");
+    window.location.href = "index.html";
+} else {
+    alert("Modificación Cancelada");
+    document.getElementById('segurogaleria').style.display = 'none';
+    document.getElementById('contenidog').style.display = 'flex';
+}
+}
