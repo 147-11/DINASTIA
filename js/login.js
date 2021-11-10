@@ -1,31 +1,22 @@
-var usuario; var clave; var a=0;
-
-var xhr = new XMLHttpRequest();
-var u; var c;
-
-xhr.open("GET","php/login.php");
-xhr.send();
-xhr.onload=function(){
-    var login= JSON.parse(this.response);
-    alert(login[0].a);
-};
-
 function login(){
-        usuario=document.getElementById("usuario_correo").value;
-        clave=document.getElementById("clave").value;
+        usuario=$('#usuario_correo').val();
+        clave=$('#clave').val();
 
         $.post('php/login.php',{u:usuario, c:clave}, function(data, status){
-          console.log(data+" "+status);})
+          console.log(data+" "+status);
     
-        if(usuario==u && clave==c){
+          $.post('php/sesion.php',{}, function(UwU, status){
+        if(data==1){
           window.location.href = "index.html";
-          sessionStorage.setItem("usuario","dinastia1234");
+          sessionStorage.setItem("usuario",UwU);
+          window.alert("datos correctos");
         }
         else{
-          window.alert(login[0].a);
-        }
+          window.alert("Contraseña o Nombre de Usuario incorrecto(s)");
+        }})
+      })
 }
 function sesion(){
   sessionStorage.removeItem("usuario");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }

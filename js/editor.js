@@ -1,5 +1,5 @@
-var comparar = "dinastia1234";
-if (sessionStorage.getItem("usuario") == comparar){
+$.post('php/sesion.php',{}, function(confirmo, status){
+if (sessionStorage.getItem("usuario") == confirmo){
 
     document.getElementById('cerrarsesion').style.display = 'block';
 
@@ -36,3 +36,4 @@ if (sessionStorage.getItem("usuario") == comparar){
     document.getElementById('editargaleria').style.display = 'block';
 
 }
+});
