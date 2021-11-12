@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/productos.css">
     <title>PRODUCTOS</title>
 </head>
+
 <body>
     <header>
         <div class="cerrarsesion" id="cerrarsesion">
@@ -27,8 +29,8 @@
     </header>
     <section class="banner">
         <img src="img/index/logos/LOLOGO BLANCO.png" id="logo_img" alt="loguito">
-            <h1 id="titlee">
-            </h1>
+        <h1 id="titlee">
+        </h1>
         <section class="ins">
             <h2 class="primera_clase">
                 ¡Tu Primera Clase Gratis!
@@ -38,165 +40,163 @@
             </div>
         </section>
     </section>
-<main>
-  
-    <div class="container">
-        <div class="fila">
-            <div class="item_container">
-                <!--editar porducto 1-->
-            <div class="editarp1" id="editarp1">
-                <input type="checkbox" id="ep1">
-                <label for="ep1" class="botoneditarp1"><b>Editar</b></label>
-                <div class="modalp1">
-                    <div id="contenidop1">
-                        <h2>EDITAR PRODUCTO 1</h2>
-                    <p>Titulo</p> 
-                    <input type="text" id="tp1" placeholder="Modificar Titulo"> 
-                    <p>Precio</p> 
-                    <input type="text" id="pp1" placeholder="Modificar Precio"> 
-                    <p>Descripción</p>
-                    <textarea id="dp1" placeholder="Modificar Descripción"></textarea>
-                    <p>Imagen</p>
-                    <input type="file" id="ip1" placeholder="Subir Imagen">
-                    <input onclick="p1()" id="guardar_p1" type="submit" value="Guardar" >
+    <main>
+
+        <div class="container">
+            <div class="fila">
+                <div class="item_container" data-producto="1" id="producto-1">
+                    <!--editar porducto 1-->
+                    <div class="editarp1" id="editarp1">
+                        <input type="checkbox" id="ep1">
+                        <label for="ep1" class="botoneditarp1"><b>Editar</b></label>
+                        <div class="modalp1">
+                            <div id="contenidop1">
+                                <h2>EDITAR PRODUCTO 1</h2>
+                                <p>Titulo</p>
+                                <input type="text" id="tp1" placeholder="Modificar Titulo">
+                                <p>Precio</p>
+                                <input type="text" id="pp1" placeholder="Modificar Precio">
+                                <p>Descripción</p>
+                                <textarea id="dp1" placeholder="Modificar Descripción"></textarea>
+                                <p>Imagen</p>
+                                <input type="file" id="ip1" placeholder="Subir Imagen">
+                                <input onclick="p1()" id="guardar_p1" type="submit" value="Guardar">
+                            </div>
+                            <div id="segurop1">
+                                <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 1?</p>
+                                <input onclick="segurop1(1)" id="si_club" type="submit" value="SI">
+                                <input onclick="segurop1(0)" id="no_club" type="submit" value="NO">
+                            </div>
+                        </div>
                     </div>
-                    <div id="segurop1" >
-                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 1?</p>
-                        <input onclick="segurop1(1)" id="si_club" type="submit" value="SI" >
-                        <input onclick="segurop1(0)" id="no_club" type="submit" value="NO" >
-                    </div>
+                        <img src="" alt="imagen1" id="i1">
+                        <section class="texto">
+                            <h2 id="t1"></h2>
+                            <h3 id="p1"></h3>
+                            <p id="d1"></p>
+                        </section>
                 </div>
-            </div>
-                <section>
-                    <img src="" alt="imagen1" id="i1">
+                <div class="item_container" data-id="2">
+                    <!--editar porducto 2-->
+                    <div class="editarp2" id="editarp2">
+                        <input type="checkbox" id="ep2">
+                        <label for="ep2" class="botoneditarp2"><b>Editar</b></label>
+                        <div class="modalp2">
+                            <div id="contenidop2">
+                                <h2>EDITAR PRODUCTO 2</h2>
+                                <p>Titulo</p>
+                                <input type="text" id="tp2" placeholder="Modificar Titulo">
+                                <p>Precio</p>
+                                <input type="text" id="pp2" placeholder="Modificar Precio">
+                                <p>Descripción</p>
+                                <textarea id="dp2" placeholder="Modificar Descripción"></textarea>
+                                <p>Imagen</p>
+                                <input type="file" id="ip2" placeholder="Subir Imagen">
+                                <input onclick="p2()" id="guardar_p2" type="submit" value="Guardar">
+                            </div>
+                            <div id="segurop2">
+                                <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 2?</p>
+                                <input onclick="segurop2(1)" id="si_club" type="submit" value="SI">
+                                <input onclick="segurop2(0)" id="no_club" type="submit" value="NO">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="" alt="imagen1" id="i2">
                     <section class="texto">
-                        <h2 id="t1"></h2>
-                        <h3 id="p1"></h3>
-                        <p id="d1"></p>
+                        <h2 id="t2"></h2>
+                        <h3 id="p2"></h3>
+                        <p id="d2"></p>
                     </section>
-                </section>
-            </div>
-            <div class="item_container">
-                 <!--editar porducto 2-->
-            <div class="editarp2" id="editarp2">
-                <input type="checkbox" id="ep2">
-                <label for="ep2" class="botoneditarp2"><b>Editar</b></label>
-                <div class="modalp2">
-                    <div id="contenidop2">
-                        <h2>EDITAR PRODUCTO 2</h2>
-                    <p>Titulo</p> 
-                    <input type="text" id="tp2" placeholder="Modificar Titulo"> 
-                    <p>Precio</p> 
-                    <input type="text" id="pp2" placeholder="Modificar Precio"> 
-                    <p>Descripción</p>
-                    <textarea id="dp2" placeholder="Modificar Descripción"></textarea>
-                    <p>Imagen</p>
-                    <input type="file" id="ip2" placeholder="Subir Imagen">
-                    <input onclick="p2()" id="guardar_p2" type="submit" value="Guardar" >
-                    </div>
-                    <div id="segurop2" >
-                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 2?</p>
-                        <input onclick="segurop2(1)" id="si_club" type="submit" value="SI" >
-                        <input onclick="segurop2(0)" id="no_club" type="submit" value="NO" >
-                    </div>
                 </div>
             </div>
-                <img src="" alt="imagen1" id="i2">
-                <section class="texto">
-                    <h2 id="t2"></h2>
-                    <h3 id="p2"></h3>
-                    <p id="d2"></p>
-                </section>
+            <div class="fila">
+                <div class="item_container" data-id="3" >
+                    <!--editar porducto 3-->
+                    <div class="editarp3" id="editarp3">
+                        <input type="checkbox" id="ep3">
+                        <label for="ep3" class="botoneditarp3"><b>Editar</b></label>
+                        <div class="modalp3">
+                            <div id="contenidop3">
+                                <h2>EDITAR PRODUCTO 3</h2>
+                                <p>Titulo</p>
+                                <input type="text" id="tp3" placeholder="Modificar Titulo">
+                                <p>Precio</p>
+                                <input type="text" id="pp3" placeholder="Modificar Precio">
+                                <p>Descripción</p>
+                                <textarea id="dp3" placeholder="Modificar Descripción"></textarea>
+                                <p>Imagen</p>
+                                <input type="file" id="ip3" placeholder="Subir Imagen">
+                                <input onclick="p3" id="guardar_p3" type="submit" value="Guardar">
+                            </div>
+                            <div id="segurop3">
+                                <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 3?</p>
+                                <input onclick="segurop3(1)" id="si_club" type="submit" value="SI">
+                                <input onclick="segurop3(0)" id="no_club" type="submit" value="NO">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="" alt="imagen1" id="i3">
+                    <section class="texto">
+                        <h2 id="t3"></h2>
+                        <h3 id="p3"></h3>
+                        <p id="d3"></p>
+                    </section>
+                </div>
+                <div class="item_container" data-id="4">
+                    <!--editar porducto 4-->
+                    <div class="editarp4" id="editarp4">
+                        <input type="checkbox" id="ep4">
+                        <label for="ep4" class="botoneditarp4"><b>Editar</b></label>
+                        <div class="modalp4">
+                            <div id="contenidop4">
+                                <h2>EDITAR PRODUCTO 4</h2>
+                                <p>Titulo</p>
+                                <input type="text" id="tp4" placeholder="Modificar Titulo">
+                                <p>Precio</p>
+                                <input type="text" id="pp4" placeholder="Modificar Precio">
+                                <p>Descripción</p>
+                                <textarea id="dp4" placeholder="Modificar Descripción"></textarea>
+                                <p>Imagen</p>
+                                <input type="file" id="ip4" placeholder="Subir Imagen">
+                                <input onclick="p4()" id="guardar_p4" type="submit" value="Guardar">
+                            </div>
+                            <div id="segurop4">
+                                <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 4?</p>
+                                <input onclick="segurop4(1)" id="si_club" type="submit" value="SI">
+                                <input onclick="segurop4(0)" id="no_club" type="submit" value="NO">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="" alt="imagen1" id="i4">
+                    <section class="texto">
+                        <h2 id="t4"></h2>
+                        <h3 id="p4"></h3>
+                        <p id="d4"></p>
+                    </section>
+                </div>
             </div>
         </div>
-        <div class="fila">
-            <div class="item_container">
-                <!--editar porducto 3-->
-            <div class="editarp3" id="editarp3">
-                <input type="checkbox" id="ep3">
-                <label for="ep3" class="botoneditarp3"><b>Editar</b></label>
-                <div class="modalp3">
-                    <div id="contenidop3">
-                        <h2>EDITAR PRODUCTO 3</h2>
-                    <p>Titulo</p> 
-                    <input type="text" id="tp3" placeholder="Modificar Titulo"> 
-                    <p>Precio</p> 
-                    <input type="text" id="pp3" placeholder="Modificar Precio"> 
-                    <p>Descripción</p>
-                    <textarea id="dp3" placeholder="Modificar Descripción"></textarea>
-                    <p>Imagen</p>
-                    <input type="file" id="ip3" placeholder="Subir Imagen">
-                    <input onclick="p3" id="guardar_p3" type="submit" value="Guardar" >
-                    </div>
-                    <div id="segurop3" >
-                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 3?</p>
-                        <input onclick="segurop3(1)" id="si_club" type="submit" value="SI" >
-                        <input onclick="segurop3(0)" id="no_club" type="submit" value="NO" >
-                    </div>
-                </div>
-            </div>
-                <img src="" alt="imagen1" id="i3">
-                <section class="texto">
-                    <h2 id="t3"></h2>
-                    <h3 id="p3"></h3>
-                    <p id="d3"></p>
+        <div id="final">
+            <div class="galeria__buttons">
+                <section>
+                    <button class="galeria__btn--left" href="#imagen3">
+                        <img src="img/left.png">
+                    </button>
                 </section>
             </div>
-            <div class="item_container">
-                <!--editar porducto 4-->
-            <div class="editarp4" id="editarp4">
-                <input type="checkbox" id="ep4">
-                <label for="ep4" class="botoneditarp4"><b>Editar</b></label>
-                <div class="modalp4">
-                    <div id="contenidop4">
-                        <h2>EDITAR PRODUCTO 4</h2>
-                    <p>Titulo</p> 
-                    <input type="text" id="tp4" placeholder="Modificar Titulo"> 
-                    <p>Precio</p> 
-                    <input type="text" id="pp4" placeholder="Modificar Precio"> 
-                    <p>Descripción</p>
-                    <textarea id="dp4" placeholder="Modificar Descripción"></textarea>
-                    <p>Imagen</p>
-                    <input type="file" id="ip4" placeholder="Subir Imagen">
-                    <input onclick="p4()" id="guardar_p4" type="submit" value="Guardar" >
-                    </div>
-                    <div id="segurop4" >
-                        <p>¿SEGURO QUE QUIERE MODIFICAR EL PRODUCTO 4?</p>
-                        <input onclick="segurop4(1)" id="si_club" type="submit" value="SI" >
-                        <input onclick="segurop4(0)" id="no_club" type="submit" value="NO" >
-                    </div>
-                </div>
-            </div>
-                <img src="" alt="imagen1" id="i4">
-                <section class="texto">
-                    <h2 id="t4"></h2>
-                    <h3 id="p4"></h3>
-                    <p id="d4"></p>
-                </section>
-            </div>
-        </div>
-    </div>
-    <div id="final">
-        <div class="galeria__buttons">
-            <section>
-            <button class="galeria__btn--left" href="#imagen3">
-                <img src="img/left.png">
-            </button>
+            <section class="btn-ins">
+                <h2 class="primera_clase">!Tu primera clase Gratis! </h2>
+                <a href="incribete_ya">Inscribete YA</a>
             </section>
-        </div>
-        <section class="btn-ins">
-            <h2 class="primera_clase">!Tu primera clase Gratis! </h2>
-            <a href="incribete_ya">Inscribete YA</a>
-        </section>
-        <div class="galeria__buttons">
-            <section>
-            <button class="galeria__btn--right" href="#imagen2">
-                <img src="img/right.png">
-            </button>
-            </section>
-        </div>
-</main>
-    <footer class="pie"> 
+            <div class="galeria__buttons">
+                <section>
+                    <button class="galeria__btn--right" href="#imagen2">
+                        <img src="img/right.png">
+                    </button>
+                </section>
+            </div>
+    </main>
+    <footer class="pie">
         <div class="contactos_text">
             <nav class="nav_footer">
                 <ul>
@@ -207,25 +207,26 @@
                 </ul>
             </nav>
             <section class="contac">
-            <h1 class="contactos">
-                CONTACTOS
-            </h1>
-            <nav class="l_contactos" id="l_con">
-                <ul>
-                    <il><a class="fas fa-envelope" hrfe="" id="f1" target="blank"> </a> </il><br>
-                    <il><a class="fab fa-facebook-f" hrfe="" id="f2" target="blank"></a> </il><br>
-                    <il><a class="fab fa-instagram" hrfe="" id="f3" target="blank"></a> </il><br>
-                    <il><a class="fab fa-whatsapp" hrfe="" id="f4" target="blank"></a> </il>
-                </ul>
-            </nav>
+                <h1 class="contactos">
+                    CONTACTOS
+                </h1>
+                <nav class="l_contactos" id="l_con">
+                    <ul>
+                        <il><a class="fas fa-envelope" hrfe="" id="f1" target="blank"> </a> </il><br>
+                        <il><a class="fab fa-facebook-f" hrfe="" id="f2" target="blank"></a> </il><br>
+                        <il><a class="fab fa-instagram" hrfe="" id="f3" target="blank"></a> </il><br>
+                        <il><a class="fab fa-whatsapp" hrfe="" id="f4" target="blank"></a> </il>
+                    </ul>
+                </nav>
             </section>
         </div>
     </footer>
-<script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
-<script src="js/productos.js"></script>
-<script src="js/editorproductos.js"></script>
-<script src="js/login.js"></script>
-<script src="js/actualizarproductos.js"></script>
+    <script src="https://kit.fontawesome.com/8dda978b9e.js" crossorigin="anonymous"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/editorproductos.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/actualizarproductos.js"></script>
 
 </body>
+
 </html>

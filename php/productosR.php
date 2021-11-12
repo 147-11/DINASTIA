@@ -13,7 +13,7 @@ $conn=conn();
         array_push($tablas, $productos_pagetitulo_mostrar); 
     };
 
-    $productos_page="SELECT * FROM `productos_page` WHERE categoria_producto = 1";
+    $productos_page="SELECT * FROM `productos_page_r`";
     $productos_page_r=mysqli_query($conn, $productos_page);
     while($productos_page_mostrar=mysqli_fetch_assoc($productos_page_r)){
         array_push($tablas, $productos_page_mostrar); 
@@ -25,7 +25,7 @@ $conn=conn();
         array_push($tablas, $productos_pagetituloa_mostrar); 
     };
 
-    $productos_pagea="SELECT * FROM `productos_page` WHERE categoria_producto = 2";
+    $productos_pagea="SELECT * FROM `productos_page_a`";
     $productos_pagea_r=mysqli_query($conn, $productos_pagea);
     while($productos_pagea_mostrar=mysqli_fetch_assoc($productos_pagea_r)){
         array_push($tablas, $productos_pagea_mostrar); 
@@ -37,7 +37,7 @@ $conn=conn();
         array_push($tablas, $productos_pagetitulop_mostrar); 
     };
 
-    $productos_pagep="SELECT * FROM `productos_page` WHERE categoria_producto = 3";
+    $productos_pagep="SELECT * FROM `productos_page_p`";
     $productos_pagep_r=mysqli_query($conn, $productos_pagep);
     while($productos_pagep_mostrar=mysqli_fetch_assoc($productos_pagep_r)){
         array_push($tablas, $productos_pagep_mostrar); 
