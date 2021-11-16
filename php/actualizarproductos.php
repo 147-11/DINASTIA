@@ -49,7 +49,7 @@ if ($p1 == 3) {
         mysqli_query($conn, "UPDATE productos_page_p set descripcion_producto_p ='$descripcion_producto' WHERE id_producto_p = '$id_producto'");
     }
 }
-
+/*
 //prodcuto2
 $nombre_producto = $_POST['tp2'];
 $precio_producto = $_POST['pp2'];
