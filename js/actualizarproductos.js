@@ -274,8 +274,8 @@ function segurop2(a) {
       );*/
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop2").style.display = "none";
+      document.getElementById("contenidop2").style.display = "flex";
     }
   }
 
@@ -340,8 +340,8 @@ function segurop2(a) {
       window.location.href = "productos.html";
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop2").style.display = "none";
+      document.getElementById("contenidop2").style.display = "flex";
     }
   }
 
@@ -406,8 +406,8 @@ function segurop2(a) {
       window.location.href = "productos.html";
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop2").style.display = "none";
+      document.getElementById("contenidop2").style.display = "flex";
     }
   }
 }
@@ -481,8 +481,8 @@ function segurop3(a) {
       );*/
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop3").style.display = "none";
+      document.getElementById("contenidop3").style.display = "flex";
     }
   }
 
@@ -547,8 +547,8 @@ function segurop3(a) {
       window.location.href = "productos.html";
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop3").style.display = "none";
+      document.getElementById("contenidop3").style.display = "flex";
     }
   }
 
@@ -613,8 +613,8 @@ function segurop3(a) {
       window.location.href = "productos.html";
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop3").style.display = "none";
+      document.getElementById("contenidop3").style.display = "flex";
     }
   }
 }
@@ -689,8 +689,8 @@ function segurop4(a) {
       );*/
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop4").style.display = "none";
+      document.getElementById("contenidop4").style.display = "flex";
     }
   }
 
@@ -755,8 +755,8 @@ function segurop4(a) {
       window.location.href = "productos.html";
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop4").style.display = "none";
+      document.getElementById("contenidop4").style.display = "flex";
     }
   }
 
@@ -821,8 +821,8 @@ function segurop4(a) {
       window.location.href = "productos.html";
     } else {
       alert("Modificación Cancelada");
-      document.getElementById("segurop1").style.display = "none";
-      document.getElementById("contenidop1").style.display = "flex";
+      document.getElementById("segurop4").style.display = "none";
+      document.getElementById("contenidop4").style.display = "flex";
     }
   }
   } else {

@@ -7,6 +7,7 @@ const carousel = function () {
     // Se hace visible el primer slide
     slides[0].classList.add('galeria__img--visible');
 
+
     let position = 0;
     // Numero de Slides totales
     const totalSlides = slides.length;

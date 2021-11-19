@@ -73,16 +73,17 @@ header label {
  
  .inscribirse a {
      color:#707070;
-     margin: 0 auto;
+     background-color: #F4E649;
+     padding: 10%;
+     border-radius: 10px;
      width: 100%;
      height: 100%;
      text-decoration: none;
  }
  .inscribirse {
-     background-color: #F4E649;
-     width: 20%;
      padding: 2%;
-     border-radius: 10px;
+     width: 20%;
+     height: 20%;
      margin: 0 auto;
  }
  .primera_clase{
@@ -326,7 +327,7 @@ header label {
 
  /* iniciacion */
  .editariniciacion {
-    z-index: 222;
+    z-index: 1;
     top: 17.5%;
     left: 5%;
     position: absolute;
@@ -345,7 +346,7 @@ header label {
 }
 
 .modali {
-    z-index: 223;
+    z-index: 2;
     position: relative;
     width: 100%;
     display: flex;
@@ -360,12 +361,7 @@ header label {
     opacity: 1;
     visibility: visible;
 }
-#ei:checked ~ .contenidom {
-    opacity: 0;
-    visibility: hidden;
-}
 #contenidoi {
-    z-index: 1;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -393,7 +389,7 @@ header label {
 }
 
 #seguroiniciacion {
-    z-index: 224;
+    z-index:3;
     display:table-column;
     display: none;
     width: 35%;
@@ -439,6 +435,7 @@ header label {
 }
 
 .modalb {
+    z-index: 1;
     position: relative;
     width: 100%;
     display: flex;
@@ -458,7 +455,7 @@ header label {
     visibility: visible;
 }
 #contenidob {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -486,7 +483,7 @@ header label {
 }
 
 #segurobasico {
-    z-index: 1;
+    z-index: 3;
     display:table-column;
     display: none;
     width: 35%;
@@ -511,6 +508,7 @@ header label {
 
 /* medio */
 .editarmedio {
+    z-index: 1;
     top: 17.5%;
     left: 68.5%;
     position: absolute;
@@ -529,6 +527,7 @@ header label {
 }
 
 .modalm{
+    z-index: 1;
     width: 110%;
     display: flex;
     justify-content: center;
@@ -547,7 +546,7 @@ header label {
     visibility: visible;
 }
 #contenidom {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -575,7 +574,7 @@ header label {
 }
 
 #seguromedio {
-    z-index: 1;
+    z-index: 3;
     display:table-column;
     display: none;
     width: 35%;
@@ -601,6 +600,7 @@ header label {
 
 /* avanzado */
 .editaravanzado {
+    z-index: 1;
     top: 56.3%;
     left: 5%;
     position: absolute;
@@ -619,6 +619,7 @@ header label {
 }
 
 .modala {
+    z-index: 1;
     position: relative;
     width: 100%;
     display: flex;
@@ -638,7 +639,7 @@ header label {
     visibility: visible;
 }
 #contenidoa {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -666,7 +667,7 @@ header label {
 }
 
 #seguroavanzado {
-    z-index: 1;
+    z-index: 3;
     display:table-column;
     display: none;
     width: 35%;
@@ -690,6 +691,7 @@ header label {
 
 /* preclub */
 .editarpreclub {
+    
     top: 56.3%;
     left: 36.8%;
     position: absolute;
@@ -698,7 +700,7 @@ header label {
 .editarpreclub label {
     
     padding: 0.5%;
-    top: 15%;
+    top: 5%;
     border-radius: 5px;
     cursor: pointer;
     background-color:#F4E649;
@@ -708,6 +710,7 @@ header label {
 }
 
 .modalp {
+    z-index: 1;
     position: relative;
     width: 100%;
     display: flex;
@@ -754,7 +757,7 @@ header label {
     padding: 3%;
 }
 #seguropre {
-    z-index: 1;
+    z-index: 3;
     display:table-column;
     display: none;
     width: 35%;
@@ -778,6 +781,7 @@ header label {
 
 /* club */
 .editarcl {
+    z-index: 1;
     top: 56.3%;
     left: 68.5%;
     position: absolute;
@@ -796,6 +800,7 @@ header label {
 }
 
 .modalcl{
+    z-index: 1;
     position: relative;
     width: 110%;
     display: flex;
@@ -815,7 +820,7 @@ header label {
     visibility: visible;
 }
 #contenidocl {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -842,14 +847,14 @@ header label {
     padding: 3%;
 }
 #seguroclubb {
-    z-index: 1;
+    z-index: 3;
     display:table-column;
     display: none;
     width: 35%;
     text-align: center;
     position: relative;
     margin-top: 30%;
-    left: -35%;
+    left: 0%;
     background-color: rgb(207, 207, 207);
     box-shadow: 0px 0px 20px 5px #000;
     transition: all 500ms ease;
@@ -866,7 +871,7 @@ header label {
 
 
 
-/* resto */
+/* resto CATEGORIAS*/
 #cate_intro{
     padding: 40px;
     margin: 0 auto;
@@ -891,12 +896,14 @@ header label {
 }
 
 .grilla_img .inici_img img{
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
 .grilla_img .inici_img{
-    width: 30%;
+    width: 230px;
+    height: 230px;
     position: relative;
     overflow:hidden;
     margin-top: 20px;
@@ -1503,12 +1510,19 @@ header label {
 }
 
 .galeria__slide {
+    mix-blend-mode: lighten;
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
+.galeria__slide img {
+    width: 100%;
+    height: 550px;
+}
+
 .galeria__img {
+    object-fit: cover;
     position: absolute;
     top: 48%;
     left: 50%;

@@ -151,7 +151,7 @@ function agregar() {
     enviar.id = "botonn";
     enviar.style.display = "flex";
     enviar.style.margin = "5%";
-    enviar.style.backgroundColor = "red";
+    enviar.style.backgroundColor = "yellow";
     enviar.onclick = function () {
       $.post(
         "php/agregar.php",
@@ -259,7 +259,7 @@ function agregar() {
     enviar.id = "botonn";
     enviar.style.display = "flex";
     enviar.style.margin = "5%";
-    enviar.style.backgroundColor = "red";
+    enviar.style.backgroundColor = "yellow";
     enviar.onclick = function () {
       //console.log(im);
       //alert(im);
