@@ -550,6 +550,7 @@ header label {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
+    display: none;
 }
 
 /*Footer*/
