@@ -59,8 +59,8 @@ if($imgii != null){
 $imgib = $_FILES["ib"];
 $n_ib = $imgib["name"];
 $tempib = $imgib["tmp_name"];
-$imagenib = "../img/index/cate_club/".$n_ib;
-$imgurlib = "img/index/cate_club/".$n_ib;
+$imagenib = "../img/index/cate_club/ib".$n_ib;
+$imgurlib = "img/index/cate_club/ib".$n_ib;
 
 if($imgib != null){
     $urloldib= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE id_categorias_index = 2");
@@ -82,8 +82,8 @@ if($imgib != null){
 $imgim = $_FILES["im"];
 $n_im = $imgim["name"];
 $tempim = $imgim["tmp_name"];
-$imagenim = "../img/index/cate_club/".$n_im;
-$imgurlim = "img/index/cate_club/".$n_im;
+$imagenim = "../img/index/cate_club/im".$n_im;
+$imgurlim = "img/index/cate_club/im".$n_im;
 
 if($imgim != null){
     $urloldim= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE id_categorias_index = 3");
@@ -105,8 +105,8 @@ if($imgim != null){
 $imgia = $_FILES["ia"];
 $n_ia = $imgia["name"];
 $tempia = $imgia["tmp_name"];
-$imagenia = "../img/index/cate_club/".$n_ia;
-$imgurlia = "img/index/cate_club/".$n_ia;
+$imagenia = "../img/index/cate_club/ia".$n_ia;
+$imgurlia = "img/index/cate_club/ia".$n_ia;
 
 if($imgia != null){
     $urloldia= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE id_categorias_index = 4");
@@ -128,8 +128,8 @@ if($imgia != null){
 $imgip = $_FILES["ip"];
 $n_ip = $imgip["name"];
 $tempip = $imgip["tmp_name"];
-$imagenip = "../img/index/cate_club/".$n_ip;
-$imgurlip = "img/index/cate_club/".$n_ip;
+$imagenip = "../img/index/cate_club/ip".$n_ip;
+$imgurlip = "img/index/cate_club/ip".$n_ip;
 
 if($imgip != null){
     $urloldip= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE id_categorias_index = 5");
@@ -151,8 +151,8 @@ if($imgip != null){
 $imgicl = $_FILES["icl"];
 $n_icl = $imgicl["name"];
 $tempicl = $imgicl["tmp_name"];
-$imagenicl = "../img/index/cate_club/".$n_icl;
-$imgurlicl = "img/index/cate_club/".$n_icl;
+$imagenicl = "../img/index/cate_club/icl".$n_icl;
+$imgurlicl = "img/index/cate_club/icl".$n_icl;
 
 if($imgicl != null){
     $urloldicl= mysqli_query($conn,"SELECT `cate_img_index` FROM `categorias_club_index` WHERE id_categorias_index = 6");
