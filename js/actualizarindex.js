@@ -301,7 +301,7 @@ function seguroropa(a){
         alert("La imagen excede el peso recomendado");
     }
     alert("Información Guardada");
-    //window.location.href = "index.html";
+    window.location.href = "index.html";
 });
 } else {
     alert("Modificación Cancelada");

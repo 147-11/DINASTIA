@@ -52,19 +52,19 @@ xhr.onload=function(){
     //footer
     document.getElementById('f1').href = index[11].f_correo;
     document.getElementById('f1').setAttribute("style","color:#707070; text-decoration: none;");
-    document.getElementById('f1').innerHTML = index[11].f_correo;
+    document.getElementById('f1').innerHTML = " Correo";
 
     document.getElementById('f2').href = index[11].f_facebook;
     document.getElementById('f2').setAttribute("style","color:#707070; text-decoration: none;");
-    document.getElementById('f2').innerHTML = index[11].f_facebook;
+    document.getElementById('f2').innerHTML = " Facebook";
 
     document.getElementById('f3').href = index[11].f_instagram;
     document.getElementById('f3').setAttribute("style","color:#707070; text-decoration: none;");
-    document.getElementById('f3').innerHTML = index[11].f_instagram;
+    document.getElementById('f3').innerHTML = " Instagram";
 
     document.getElementById('f4').href = index[11].f_whatsapp;
     document.getElementById('f4').setAttribute("style","color:#707070; text-decoration: none;");
-    document.getElementById('f4').innerHTML = index[11].f_whatsapp;
+    document.getElementById('f4').innerHTML = " Whatsapp";
 
 
 

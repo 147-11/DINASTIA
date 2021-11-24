@@ -881,7 +881,7 @@ header label {
   height: 230px;
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 43px;
 }
 .grilla_img .incia_text {
   padding: 15px;
@@ -963,10 +963,15 @@ header label {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 15px;
+    padding: 4px;
+    margin: 50px 0 50px 0;
+  }
+  .grilla_img .inici_img img {
+    object-fit: cover;
   }
   .grilla_img .inici_img {
-    width: 100%;
+    width: 130px;
+    height: 130px;
     position: relative;
     overflow: hidden;
     padding-top: 20px;
