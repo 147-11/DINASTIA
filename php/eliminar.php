@@ -1,7 +1,8 @@
 <?php
 function conn()
 {
-    return mysqli_connect('localhost', 'root', 'root', 'bddinastia');
+    //return mysqli_connect('localhost', 'root', 'root', 'bddinastia');
+    return mysqli_connect('remotemysql.com','ltwVf9jGZs','8L6H07OoPV','ltwVf9jGZs');
 }
 
 $conn = conn();

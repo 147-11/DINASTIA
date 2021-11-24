@@ -73,7 +73,7 @@ if (sessionStorage.getItem("ropa") == 1) {
         let h2 = document.createElement("h2");
         h2.innerText = productosR[i].nombre_producto_r; //debe ir texto nuevo cargado
         let h3 = document.createElement("h3");
-        h3.innerText = productosR[i].precio_producto_r; //debe ir texto nuevo cargado
+        h3.innerText = "$"+productosR[i].precio_producto_r; //debe ir texto nuevo cargado
         let p = document.createElement("p");
         p.innerText = productosR[i].descripcion_producto_r;
         let e = document.createElement("input");
@@ -94,6 +94,7 @@ if (sessionStorage.getItem("ropa") == 1) {
             },
             function (data, status) {
               alert(data);
+              window.location.href = "productos.html";
             }
           );
         };
@@ -168,7 +169,7 @@ if (sessionStorage.getItem("ropa") == 2) {
         let h2 = document.createElement("h2");
         h2.innerText = productosR[i].nombre_producto_a; //debe ir texto nuevo cargado
         let h3 = document.createElement("h3");
-        h3.innerText = productosR[i].precio_producto_a; //debe ir texto nuevo cargado
+        h3.innerText = "$"+productosR[i].precio_producto_a; //debe ir texto nuevo cargado
         let p = document.createElement("p");
         p.innerText = productosR[i].descripcion_producto_a;
         let e = document.createElement("input");
@@ -189,6 +190,7 @@ if (sessionStorage.getItem("ropa") == 2) {
             },
             function (data, status) {
               alert(data);
+              window.location.href = "productos.html";
             }
           );
         };
@@ -265,7 +267,7 @@ if (sessionStorage.getItem("ropa") == 3) {
         let h2 = document.createElement("h2");
         h2.innerText = productosR[i].nombre_producto_p; //debe ir texto nuevo cargado
         let h3 = document.createElement("h3");
-        h3.innerText = productosR[i].precio_producto_p; //debe ir texto nuevo cargado
+        h3.innerText = "$"+productosR[i].precio_producto_p; //debe ir texto nuevo cargado
         let p = document.createElement("p");
         p.innerText = productosR[i].descripcion_producto_p;
         let e = document.createElement("input");
@@ -286,6 +288,7 @@ if (sessionStorage.getItem("ropa") == 3) {
             },
             function (data, status) {
               alert(data);
+              window.location.href = "productos.html";
             }
           );
         };
